@@ -37,9 +37,9 @@ label splashscreen:
         with Pause(2)
     return
 
-    define C = Character("Conrad" , color = "#c8ffc8")
-    define A = Character("Anne")
-    define P = ("Player_name")
+    define C = Character("Conrad" , color = "#7289DA")
+    define A = Character("Anne" , color = "#ff7f50")
+    define P = Character("Player_name" , color = "#3cd070")
     scene black
 
 
@@ -71,46 +71,46 @@ label name:
         "INITIATING MALWARE DOWNLOAD"
         jump splashscreen
 
-    if P == 'donovan':
+    if P == 'Donovan':
         $ P = P.title()
         "Bruh"
 
-    if P == 'anthony':
+    if P == 'Anthony':
         $ P = P.title()
         "Are you a fan of Salad and Doritoes?"
 
-    if P == 'ant':
+    if P == 'Ant':
         $ P = P.title()
         "Squish it"
 
-    if P == 'eli':
+    if P == 'Eli':
         $ P = P.title()
         "Hey Eli, remember those graphics you were supposed to make?"
 
-    if P == 'hunter' :
+    if P == 'Hunter' :
         $ P = P.title()
         "Praise Lord Cthulhu!"
 
-    if P == 'francine':
+    if P == 'Francine':
         $ P = P.title()
         "Tsukasa sucks lol."
         "KSDKSDKSDKSD It's Joke"
 
-    if P == 'credits':
+    if P == 'Credits':
         $ P = P.title()
         jump splashscreen
 
-    if P == 'maki' :
+    if P == 'Maki' :
         $ P = P.title()
         "That's a pretty name!"
 
-    if P == 'speachbyte':
+    if P == 'Speachbyte':
         $ P = P.title()
-        "I'm soo cool"
+        "I'm the coolest"
 
-    if P == 'kyle':
+    if P == 'Kyle':
         $ P = P.title()
-        "I'm soo cool!"
+        "I'm the coolest!"
 
     if P == 'umi':
         $ P = P.title()
