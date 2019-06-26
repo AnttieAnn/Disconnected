@@ -1,28 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 118, in script
-    if player_name == 'restart':
-  File "game/script.rpy", line 118, in <module>
-    if player_name == 'restart':
-NameError: name 'player_name' is not defined
+  File "game/ImagePrep.rpy", line 2, in script
+    image Aangry1 = im.factorscale("images/Anne/A_Angry_A1.png", .5)
+  File "game/ImagePrep.rpy", line 2, in <module>
+    image Aangry1 = im.factorscale("images/Anne/A_Angry_A1.png", .5)
+AttributeError: 'module' object has no attribute 'factorscale'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 118, in script
-    if player_name == 'restart':
-  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\ast.py", line 1830, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\python.py", line 1990, in py_eval
-    return py_eval_bytecode(code, globals, locals)
+  File "game/ImagePrep.rpy", line 2, in script
+    image Aangry1 = im.factorscale("images/Anne/A_Angry_A1.png", .5)
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\ast.py", line 1011, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
   File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\python.py", line 1983, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 118, in <module>
-    if player_name == 'restart':
-NameError: name 'player_name' is not defined
+  File "game/ImagePrep.rpy", line 2, in <module>
+    image Aangry1 = im.factorscale("images/Anne/A_Angry_A1.png", .5)
+AttributeError: 'module' object has no attribute 'factorscale'
 
 Windows-8-6.2.9200
 Ren'Py 7.3.0.271
 Disconnected 1.0
-Tue Jun 25 22:56:53 2019
+Tue Jun 25 23:39:27 2019

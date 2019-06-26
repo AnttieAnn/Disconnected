@@ -1,7 +1,8 @@
 #Randomized Splash screen
+label prep:
+    jump AnneI
+
 label splashscreen:
-    scene black
-    with Pause(1)
 
     $ randomnum = renpy.random.randint(1,10)
 
@@ -48,8 +49,6 @@ label start:
 
 
     scene bg room
-
-
 
 
 
