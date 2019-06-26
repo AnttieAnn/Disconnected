@@ -800,7 +800,13 @@ screen preferences():
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
 
+init -1 style navigation_button:
+    size_group "navigation"
+    properties gui.button_properties("navigation_button")
+    hover_sound gui.hover_sound
+    activate_sound gui.activate_sound
 
+                                
 style pref_label is gui_label
 style pref_label_text is gui_label_text
 style pref_vbox is vbox

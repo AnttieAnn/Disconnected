@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 115: invalid syntax
-    player)name = "Umi"
-           ^
-    
+File "game/Act1.rpy", line 49: reached end of line when expecting ':'.
+    if gift == "tortoise"
+                         ^
 
-Ren'Py Version: Ren'Py 7.3.0.271
-Tue Jun 25 17:00:26 2019
+Ren'Py Version: Ren'Py 7.1.1.929
+Tue Jun 25 21:54:09 2019

@@ -17,7 +17,9 @@ init python:
 ## GUI Configuration Variables
 ################################################################################
 
-
+##Sound Effects#################################################################
+define -2 gui.hover_sound = "audio/sounds/hover.wav"
+define -2 gui.activate_sound = "audio/sounds/select.wav"
 ## Colors ######################################################################
 ##
 ## The colors of text in the interface.
@@ -80,7 +82,6 @@ define gui.notify_text_size = 24
 
 ## The size of the game's title.
 define gui.title_text_size = 75
-
 
 ## Main and Game Menus #########################################################
 
@@ -469,6 +470,3 @@ init python:
 
         gui.nvl_button_width = 1860
         gui.nvl_button_xpos = 30
-
-
-
