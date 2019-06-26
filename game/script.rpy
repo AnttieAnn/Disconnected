@@ -53,75 +53,73 @@ label start:
 
 
 
-
-    show Aangry1
-    with Pause(1)
     "You've created a new Ren'py game."
 
     "Once you add a story, pictures and music, you can release it to the world!"
 
-    $ player_name = renpy.input("What is your name?")
+    $ P = renpy.input("What is your name?")
 
-    $ player_name = player_name.strip()
-    $ player_name.lower()
+    $ P = P.strip()
+    $ P.lower()
 
 label name:
 
 
-    if player_name == '' :
-        $ player_name = "bruh"
+    if P == '' :
+        $ P = P.title()
         "ERROR. ERROR. NAME NOT DETECTED."
         "INITIATING MALWARE DOWNLOAD"
         jump splashscreen
 
-    if player_name == 'donovan':
-        $ player_name = "Donovan"
+    if P == 'donovan':
+        $ P = P.title()
         "Bruh"
 
-    if player_name == 'anthony':
-        $ player_name = "Anthony"
+    if P == 'anthony':
+        $ P = P.title()
         "Are you a fan of Salad and Doritoes?"
 
-    if player_name == 'ant':
-        $ player_name = "Ant"
+    if P == 'ant':
+        $ P = P.title()
         "Squish it"
 
-    if player_name == 'eli':
-        $ player_name = "Eli"
+    if P == 'eli':
+        $ P = P.title()
         "Hey Eli, remember those graphics you were supposed to make?"
 
-    if player_name == 'hunter' :
-        $ player_name = "Hunter"
+    if P == 'hunter' :
+        $ P = P.title()
         "Praise Lord Cthulhu!"
 
-    if player_name == 'francine':
-        $ player_name = "Francine"
+    if P == 'francine':
+        $ P = P.title()
         "Tsukasa sucks lol."
         "KSDKSDKSDKSD It's Joke"
 
-    if player_name == 'credits':
-        $ player_name = "Credits"
+    if P == 'credits':
+        $ P = P.title()
         jump splashscreen
 
-    if player_name == 'maki' :
-        $player_name = "Maki"
+    if P == 'maki' :
+        $ P = P.title()
         "That's a pretty name!"
 
-    if player_name == 'speachbyte':
-        $ player_name = "Speachbyte"
+    if P == 'speachbyte':
+        $ P = P.title()
         "I'm soo cool"
 
-    if player_name == 'kyle':
-        $ player_name = "Kyle"
+    if P == 'kyle':
+        $ P = P.title()
         "I'm soo cool!"
 
-    if player_name == 'umi':
-        $ player_name = "Umi"
+    if P == 'umi':
+        $ P = P.title()
         "That's a beautiful name"
 
-    if player_name == 'restart':
-        $ player_name = "Restart"
+    if P == 'restart':
+        $ P = P.title()
         jump splashscreen
+    $ P = P.title()
 
 label keywords:
     $ color = renpy.input("What is your favorite color?")

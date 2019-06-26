@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 54: invalid syntax
-    show Aangry1
-                ^
-    
+File "game/script.rpy", line 122: expected statement.
+    P = P.title()
+      ^
 
 Ren'Py Version: Ren'Py 7.3.0.271
-Wed Jun 26 11:47:38 2019
+Wed Jun 26 12:45:56 2019
