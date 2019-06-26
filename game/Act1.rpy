@@ -8,14 +8,24 @@ label act1:
     show Aspeak1o
     A "*yawns* Yeah, it was really fun. I’m really tired, though."
     hide Aspeak1o
+    #Anne close her mouth
     show Aspeak1c at left
+    #show conrad image at right
     C "Hey, how are you tired? I’m the one who’s three hours ahead of you and I’m totally energized after that battle!"
-    
+    #hide conrad image
+    #show a new conrad image (Mouth close)
     P "Sometimes I forget that you live on the east coast, Conrad."
+    hide Aspeak1c
+    show Aspeak1o at left
     A "Oh well, It’s past 11 PM. "
     A "I should go to sleep. And so should both of you, too."
+    hide Aspeak1o
+    show Aspeak1c at left
+    #Show conrad open mouth
     C "No way! There’s gonna be a huge in-game event on Friday. We have to grind as much as we can until then."
-    A "If anything, _ and I are the ones who have to grind. You’ve been playing this game non-stop! "
+    hide Aspeak1c
+    show Aspeak1o at left
+    A "If anything, [P] and I are the ones who have to grind. You’ve been playing this game non-stop! "
     A "I swear, ever since you graduated most of your free time is spent either being on Discord or killing zombies."
     C "Yeah, but I have a lot more fun playing when I’m with you guys!"
     P "That’s true. I’m always having a good time whenever we’re voice chatting no matter what we’re doing together."
