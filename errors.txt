@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Act1.rpy", line 95: is not terminated with a newline. (Check strings and parenthesis.)
-    ("A horde of zombies chases after Anne and _. They retreat back to base and kill off some lower level enemies while they wait for Conrad.)"
+File "game/Act1.rpy", line 80: Line is indented, but the preceding jump statement statement does not expect a block. Please check this line's indentation.
+    "Let her start the call."
+    ^
 
 Ren'Py Version: Ren'Py 7.1.1.929
-Tue Jun 25 23:02:02 2019
+Tue Jun 25 23:05:14 2019

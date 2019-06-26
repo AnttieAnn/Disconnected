@@ -76,7 +76,6 @@ menu:
         P "I can start the call."
         A "Oh good! I was hoping you'd do it actually."
         A "I mean it's not like I don't know where the call button is or anything."
-jump ripconradcall:
     "Let her start the call.":
         A "..."
         P "...?"
@@ -92,7 +91,7 @@ A "This would be a lot easier if he was here…"
 A "I keep checking his online status and he’s still offline. That’s a rare sight to see."
 P "Let’s keep going until he gets online."
 A "I’m all out of medicine, so we’ll have to be care- watch out, _!"
-("A horde of zombies chases after Anne and _. They retreat back to base and kill off some lower level enemies while they wait for Conrad.)"
+"(A horde of zombies chases after Anne and _. They retreat back to base and kill off some lower level enemies while they wait for Conrad.)"
 "(Most of their game session has been filled with silence with Conrad gone.)"
 P "You’re awfully quiet, Anne."
 A "Hm? Sorry, I’m not really good with starting conversations. That’s always been Conrad’s strong suit."
