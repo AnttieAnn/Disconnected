@@ -1,28 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/Act1.rpy", line 11, in script
-    with flip
-  File "game/Act1.rpy", line 11, in <module>
-    with flip
-NameError: name 'flip' is not defined
+  File "game/Act1.rpy", line 60, in script
+    $ Aholepoints -=1
+  File "game/Act1.rpy", line 60, in <module>
+    $ Aholepoints -=1
+NameError: name 'Aholepoints' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Act1.rpy", line 11, in script
-    with flip
-  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\ast.py", line 1380, in execute
-    trans = renpy.python.py_eval(self.expr)
-  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\python.py", line 1990, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\python.py", line 1983, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/Act1.rpy", line 11, in <module>
-    with flip
-NameError: name 'flip' is not defined
+  File "game/Act1.rpy", line 60, in script
+    $ Aholepoints -=1
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\ast.py", line 912, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\python.py", line 1959, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/Act1.rpy", line 60, in <module>
+    $ Aholepoints -=1
+NameError: name 'Aholepoints' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 7.3.0.271
 Disconnected 1.0
-Wed Jun 26 14:08:51 2019
+Wed Jun 26 16:06:38 2019

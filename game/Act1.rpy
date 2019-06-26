@@ -56,10 +56,14 @@ label act1:
 
             A "I can’t believe I fell asleep in voice chat again."
             P "Did you get a good night’s sleep?"
-            if sleepscare == "non":
-                jump goodsleep
-            if sleepscare == "ye":
-                jump badsleep
+    if sleepscare == "non":
+        $ Aholepoints = Aholepoints - 1
+        #subtract asshole point
+        jump goodsleep
+    if sleepscare == "ye":
+        $ Aholepoints = Aholepoints + 1
+        #add asshole points
+        jump badsleep
 label goodsleep:
     A "One of my best nights in weeks!"
     A "I appreciate you letting me sleep, I was really tired last night."
