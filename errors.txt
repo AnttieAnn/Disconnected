@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 122: expected statement.
-    P = P.title()
-      ^
+File "game/Act1.rpy", line 10: expected statement.
+    hid Aspeak1o
+                ^
 
 Ren'Py Version: Ren'Py 7.3.0.271
-Wed Jun 26 12:45:56 2019
+Wed Jun 26 14:12:12 2019
