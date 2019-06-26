@@ -1,4 +1,7 @@
 #Randomized Splash screen
+label PrePrep :
+    jump AnneI
+
 label splashscreen:
     scene black
     with Pause(1)
@@ -51,7 +54,8 @@ label start:
 
 
 
-
+    show Aangry1
+    with Pause(1)
     "You've created a new Ren'py game."
 
     "Once you add a story, pictures and music, you can release it to the world!"

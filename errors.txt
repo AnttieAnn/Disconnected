@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/Act1.rpy", line 80: Line is indented, but the preceding jump statement statement does not expect a block. Please check this line's indentation.
-    "Let her start the call."
-    ^
+File "game/script.rpy", line 54: invalid syntax
+    show Aangry1
+                ^
+    
 
-Ren'Py Version: Ren'Py 7.1.1.929
-Tue Jun 25 23:05:14 2019
+Ren'Py Version: Ren'Py 7.3.0.271
+Wed Jun 26 11:47:38 2019
