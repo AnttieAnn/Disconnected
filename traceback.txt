@@ -1,28 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/Act1.rpy", line 45, in script
-    jump goodsleep
-  File "game/Act1.rpy", line 45, in <module>
-    jump goodsleep
-NameError: name 'non' is not defined
+  File "game/script.rpy", line 118, in script
+    if player_name == 'restart':
+  File "game/script.rpy", line 118, in <module>
+    if player_name == 'restart':
+NameError: name 'player_name' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Act1.rpy", line 45, in script
-    jump goodsleep
-  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\ast.py", line 1760, in execute
+  File "game/script.rpy", line 118, in script
+    if player_name == 'restart':
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\ast.py", line 1830, in execute
     if renpy.python.py_eval(condition):
-  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\python.py", line 1944, in py_eval
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\python.py", line 1990, in py_eval
     return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\python.py", line 1937, in py_eval_bytecode
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\python.py", line 1983, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/Act1.rpy", line 45, in <module>
-    jump goodsleep
-NameError: name 'non' is not defined
+  File "game/script.rpy", line 118, in <module>
+    if player_name == 'restart':
+NameError: name 'player_name' is not defined
 
 Windows-8-6.2.9200
-Ren'Py 7.1.1.929
+Ren'Py 7.3.0.271
 Disconnected 1.0
-Tue Jun 25 21:59:11 2019
+Tue Jun 25 22:56:53 2019
