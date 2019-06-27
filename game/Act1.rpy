@@ -3,7 +3,7 @@
 
 label act1:
 
-    "The time is 11:58 PM, I'm playing GAME NAME with some of my close online friends"
+    "The time is 11:58 PM, you're playing GAME NAME with some of my close online friends"
     show Csmileo
     C "That was a great battle, guys! We made a lot of progress in-game so far."
     hide Csmileo
@@ -134,7 +134,7 @@ label ripconrad:
     hide Aspeak1c
     hide Aspeak1o
 
-    "(An awkward pause)"
+    P "..."
     show Aarmsf1u
     P "Um, should you start the call or should I?"
     A "Oh! Right... I forgot."
@@ -441,4 +441,5 @@ label annexplain:
 A "Uh the soonest flight is tomorrow evening. my Aunt said she'd pick me up at the airport."
 A "You could probably stay with us"
 A "Just uh, meet me at LAX."
+jump act2
 #End of Act 1

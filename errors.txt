@@ -2,9 +2,41 @@
 errors listed below, and try again.
 
 
-File "game/Act1.rpy", line 435: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-                "So price wouldn't be a problem.
+The label act1 is defined twice, at
+  File "game/Act1.rpy", line 4 and
+  File "game/Act2.rpy", line 4.
+
+The label goodsleep is defined twice, at
+  File "game/Act1.rpy", line 103 and
+  File "game/Act2.rpy", line 103.
+
+The label badsleep is defined twice, at
+  File "game/Act1.rpy", line 110 and
+  File "game/Act2.rpy", line 110.
+
+The label ripconrad is defined twice, at
+  File "game/Act1.rpy", line 117 and
+  File "game/Act2.rpy", line 117.
+
+The label ripconradcall is defined twice, at
+  File "game/Act1.rpy", line 165 and
+  File "game/Act2.rpy", line 165.
+
+The label location is defined twice, at
+  File "game/Act1.rpy", line 236 and
+  File "game/Act2.rpy", line 236.
+
+The label ahole1 is defined twice, at
+  File "game/Act1.rpy", line 251 and
+  File "game/Act2.rpy", line 251.
+
+The label location2 is defined twice, at
+  File "game/Act1.rpy", line 254 and
+  File "game/Act2.rpy", line 254.
+
+The label annexplain is defined twice, at
+  File "game/Act1.rpy", line 414 and
+  File "game/Act2.rpy", line 414.
 
 Ren'Py Version: Ren'Py 7.1.1.929
-Thu Jun 27 14:28:41 2019
+Thu Jun 27 15:32:16 2019
