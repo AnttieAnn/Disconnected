@@ -119,71 +119,130 @@ label ripconrad:
     hide Aarmsb1u
     show Aangry1
     A "Last time I fell asleep in voice chat I woke up with a massive headache and the dubstep nightcore version of the WumpCraft OST blasting from Conrad’s end."
+    hide Aangry1
     show Aspeak1o
     A "Oh well, I don’t really have any plans for today. Speaking of WumpCraft, do you want to play a session?"
+    show Aspeak1c
     P "Conrad isn’t online yet."
+    hide Aspeak1c
     A "Huh, that’s weird. He’s usually always the first one up and the last one to go to sleep."
     A "We were up pretty late last night, maybe he’s all tired out?"
     A "He did say that he’s already prepared for Friday’s event, so we should try to grind a bit while he’s gone in order to catch up to him in levels."
+    show Aspeak1c
     P "Yeah, I agree."
+    hide Aspeak1c
+    hide Aspeak1o
 
     "(An awkward pause)"
-
+    show Aarmsf1u
     P "Um, should you start the call or should I?"
     A "Oh! Right... I forgot."
     A "Conrad is usually the one who starts all our calls. It’s been a while with just the two of us, I’m not used to it."
     A "You can decide who starts the call."
+    hide Aarmsf1u
+
     menu:
         "You start the call.":
             P "I can start the call."
+            show Ahappy1o
             A "Oh good! I was hoping you'd do it actually."
+            hide Ahappy1o
+            show Aspeak1o
             A "I mean it's not like I don't know where the call button is or anything."
+            hide Aspeak1o
+
         "Let her start the call.":
+            show Aarmsf1u
             A "..."
             P "...?"
+            hide Aarmsf1u
+            show Aarmsf1d
             A "I uh, don't know how to start the call."
-            "Resisting the urge to laugh, you help Anne out with starting the call."
+            hide Aarmsf1d
+            "*Resisting the urge to laugh, you help Anne out with starting the call.*"
+
 label ripconradcall:
     P "Ouch! That enemy did a lot of damage."
+    show Aspeak1o
     A "Here, I have some medicine. I don’t know if it’s enough, though."
-    "(Anne heals [P] by a small amount)"
+    hide Aspeak1o
 
+    "(Anne heals [P] by a small amount)"
+    show Aarmsb1u
     A "I never realized how difficult these enemies were. Usually, Conrad would take care of the tougher enemies and we’d get the EXP and loot."
+    hide Aarmsb1u
+    show Aarmsb1d
     A "This would be a lot easier if he was here…"
+    hide Aarmsb1d
+    show Aarmsb1u
     A "I keep checking his online status and he’s still offline. That’s a rare sight to see."
     P "Let’s keep going until he gets online."
+    hide Aarmsb1u
+    show Aspeak1o
     A "I’m all out of medicine, so we’ll have to be care- watch out, [P]!"
+    hide Aspeak1o
     "(A horde of zombies chases after Anne and [P]. They retreat back to base and kill off some lower level enemies while they wait for Conrad.)"
     "(Most of their game session has been filled with silence with Conrad gone.)"
     P "You’re awfully quiet, Anne."
+    show Aarmsf1d
     A "Hm? Sorry, I’m not really good with starting conversations. That’s always been Conrad’s strong suit."
     P "Yeah, he’s always been the talkative one compared to the two of us."
     A "Yeah..."
     P "…"
+    hide Aarmsf1d
+    show Aarmsf1u
     A "…"
+    hide Aarmsf1u
+    show Aspeak1o
     A "… Um, so, We’ve been fighting off these enemies for a while now. It’s getting kind of tedious. What do you want to do now?"
+    hide Aspeak1o
 menu:
         "Start a conversation.":
+            show Aspeak1c
             P "How's the weather"
+            show Aspeak1o
             A "Well it says it's gonna rain for at least few minutes, probably a few more in game days."
+            hide Aspeak1o
             P "No I meant in real life."
+            hide Aspeak1c
+            show Aarmsb1u
             A "Oh!"
             P "..."
+            hide Aarmsb1u
+            show Aarmsb1d
             A "It's uh, nice, a little hot even though it's the middle of the night."
             P "That's nice."
+            hide Aarmsb1d
 
         "Suggest fighting some enemies.":
             P "We should go back to the caves."
+            show Aarmsf1d
             A "Are you sure, I'd love to mine some materials but remember what Conrad would say?"
+            hide Aarmsf1d
+            show Aarmsf1u
             A "'Don't mine at night, even if you're feelin kinda brave'"
+            hide Aarmsf1u
+            show Ahappy1o
             A "But you know what? We can at least go after some of the stronger enemies in there, we should have an easier time since I have this fancy blue sword now."
+            hide Ahappy1o
             "Despite having a fancy sword, you did not have an easier time with enemies."
+            "Minutes Later..."
+            show Aarmsf1d
             A "Well that didn't end well."
             A "Man I'm really tired after that."
+            hide Aarmsf1d
+
 label location:
+    show Aspeak1o
     A "Hey you live pretty close to me right?"
+    hide Aspeak1o
+    show Aspeak1c
     P "I mean, San Francisco is a couple hours away. LA."
+    hide Aspeak1c
+    show Ahappy1o
     A "Okay first of all, I live in Glendale." #She isn't offended here, use her playful/happy emotes.
+    hide Ahappy1o
+    show Ahappy1c
 if Aholepoints == 1:
     jump ahole1
 if Aholepoints == -1:
