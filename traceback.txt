@@ -1,28 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/Act1.rpy", line 167, in script
-    if Aholepoint == 1:
-  File "game/Act1.rpy", line 167, in <module>
-    if Aholepoint == 1:
-NameError: name 'Aholepoint' is not defined
+  File "game/Act1.rpy", line 90, in script
+    $ Aholepoints = Aholepoints + 1
+  File "game/Act1.rpy", line 90, in <module>
+    $ Aholepoints = Aholepoints + 1
+NameError: name 'Aholepoints' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Act1.rpy", line 167, in script
-    if Aholepoint == 1:
-  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\ast.py", line 1830, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\python.py", line 1990, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\python.py", line 1983, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/Act1.rpy", line 167, in <module>
-    if Aholepoint == 1:
-NameError: name 'Aholepoint' is not defined
+  File "game/Act1.rpy", line 90, in script
+    $ Aholepoints = Aholepoints + 1
+  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\ast.py", line 882, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\python.py", line 1913, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/Act1.rpy", line 90, in <module>
+    $ Aholepoints = Aholepoints + 1
+NameError: name 'Aholepoints' is not defined
 
 Windows-8-6.2.9200
-Ren'Py 7.3.0.271
+Ren'Py 7.1.1.929
 Disconnected 1.0
-Thu Jun 27 00:11:44 2019
+Thu Jun 27 01:20:28 2019

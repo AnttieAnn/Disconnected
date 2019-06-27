@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Act1.rpy", line 145: indentation mismatch.
+File "game/Act1.rpy", line 185: end of line expected.
+    P "Nah, he's probably busy.":
+                                ^
 
-Ren'Py Version: Ren'Py 7.3.0.271
-Thu Jun 27 00:07:36 2019
+Ren'Py Version: Ren'Py 7.1.1.929
+Thu Jun 27 01:19:58 2019
