@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/Act1.rpy", line 45: expected 'image_name_component' not found.
-    show
-        ^
+File "game/Act1.rpy", line 145: indentation mismatch.
 
 Ren'Py Version: Ren'Py 7.3.0.271
-Wed Jun 26 21:19:59 2019
+Thu Jun 27 00:07:36 2019
