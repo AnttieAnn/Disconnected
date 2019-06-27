@@ -2,7 +2,6 @@
 
 
 label act1:
-
     "The time is 11:58 PM, I'm playing GAME NAME with some of my close online friends"
     show Csmileo
     C "That was a great battle, guys! We made a lot of progress in-game so far."
@@ -11,13 +10,11 @@ label act1:
     A "*yawns* Yeah, it was really fun. I’m really tired, though."
     hide Aspeak1o
     #Anne close her mouth
-    show Aspeak1c at midtoleft
+    show Aspeak1c at left
     show Cspeako at right
-    with dissolve
     C "Hey, how are you tired? I’m the one who’s three hours ahead of you and I’m totally energized after that battle!"
     hide Cspeako
     show Cspeakc at right
-    with dissolve
     P "Sometimes I forget that you live on the east coast, Conrad."
     hide Aspeak1c
     show Aspeak1o at left
@@ -82,11 +79,11 @@ label act1:
             A "I can’t believe I fell asleep in voice chat again."
             P "Did you get a good night’s sleep?"
     if sleepscare == "non":
-        $ Aholepoints = Aholepoints - 1
+        $ Aholepoints = "Aholepoints - 1"
         #subtract asshole point
         jump goodsleep
     if sleepscare == "ye":
-        $ Aholepoints = Aholepoints + 1
+        $ Aholepoints = "Aholepoints + 1"
         #add asshole points
         jump badsleep
 label goodsleep:
@@ -143,3 +140,33 @@ label ripconradcall:
     P "…"
     A "…"
     A "… Um, so, We’ve been fighting off these enemies for a while now. It’s getting kind of tedious. What do you want to do now?"
+    menu:
+        "Start a conversation.":
+            P "How's the weather"
+            A "Well it says it's gonna rain for at least few minutes, probably a few more in game days."
+            P "No I meant in real life."
+            A "Oh!"
+            P "..."
+            A "It's uh, nice, a little hot even though it's the middle of the night."
+            P "That's nice."
+            jump location
+        "Suggest fighting some enemies.":
+            P "We should go back to the caves."
+            A "Are you sure, I'd love to mine some materials but remember what Conrad would say?"
+            A "'Don't mine at night, even if you're feelin kinda brave'"
+            A "But you know what? We can at least go after some of the stronger enemies in there, we should have an easier time since I have this fancy blue sword now."
+            "Despite having a fancy sword, you did not have an easier time with enemies."
+            A "Well that didn't end well."
+            A "Man I'm really tired after that."
+label location:
+    A "Hey you live pretty close to me right?"
+    P "I mean, San Francisco is a couple hours away. LA."
+    A "Okay first of all, I live in Glendale." #She isn't offended here, use her playful/happy emotes.
+if Aholepoints = "Aholepoints == +1":
+    jump ahole1
+if Aholepoints "Aholepoints == - 1":
+    jump location2
+label ahole1:
+    P "Okay so Los Angeles negative, my bad."
+label location2:
+A "Second,"
