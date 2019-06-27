@@ -52,8 +52,6 @@ label start:
     scene bg room
 
 
-    "Welcome to Discconected, The Omnia Leagues first visual novel!"
-
     $ P = renpy.input("What is your name?")
 
     $ P = P.lower()
