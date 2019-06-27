@@ -52,9 +52,7 @@ label start:
     scene bg room
 
 
-    "You've created a new Ren'py game."
-
-    "Once you add a story, pictures and music, you can release it to the world!"
+    "Welcome to Discconected, The Omnia Leagues first visual novel!"
 
     $ P = renpy.input("What is your name?")
 
@@ -102,6 +100,10 @@ label name:
         $ P = P.title()
         "That's a pretty name!"
 
+    if P == 'anttie' :
+        $ p = P.title()
+        "Follow @AnttieAnt on Twitter ;)"
+
     if P == 'speachbyte':
         $ P = P.title()
         "I'm soo cool"
@@ -118,13 +120,11 @@ label name:
         $ P = P.title()
         jump splashscreen
     $ P = P.title()
-
-label keywords:
-    $ color = renpy.input("What is your favorite color?")
-    $ color.lower()
-    if (color.find('monika') != -1) :
-        "Hey that's a cool color"
-        jump splashscreen
-    else :
-        "You have a cool taste of color"
-        jump act1
+    "I hope you like playing games because we are about to start!"
+    "."
+    ".."
+    "..."
+    "It takes some time..."
+    "you know what here's a bootleg story to entertain you"
+    ""
+    jump act1

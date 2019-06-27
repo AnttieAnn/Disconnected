@@ -15,8 +15,7 @@ label act1:
     show Cspeako at right with dissolve
     C "Hey, how are you tired? I’m the one who’s three hours ahead of you and I’m totally energized after that battle!"
     hide Cspeako
-    show Cspeakc at right
-    with dissolve
+    show Cspeakc at right with dissolve
     P "Sometimes I forget that you live on the east coast, Conrad."
     hide ABspeak1c
     show Aspeak1o at left
@@ -48,8 +47,8 @@ label act1:
     show Aarmsb1u
     A "What was that sound?"
     hide Aarmsb1u
-    show Aarmsb1u at left
-    show Cidleo at right
+    show Aarmsb1u at midtoleft
+    show Cidleo at right with dissolve
     C "Oh, uh- sorry! Just a notification, no biggie."
     hide Aarmsb1u
     hide Cidleo
@@ -62,46 +61,65 @@ label act1:
     hide Csmilec
     "Conrad leaves the call in a hurry"
 
+    show Aarmsb1d
     A "*yawn* I’m already on the verge of passing out. Goodnight, Con- "
+    hide Aarmsb1d
+    show Aarmsb1u with dissolve
     A "Oh, he’s already gone."
     A "Looks like it’s just you and me, [P]. "
+    hide Aarmsb1u
+    show Aarmsf1u
     A "Conrad really wants us to participate on friday’s event, so we’ll pick up where we left off tomorrow in order to prepare."
     A "I have no idea where that boy gets his energy. It’s barely midnight and I’m already so sleeeeeee-"
+    hide Aarmsf1u
     "(Anne starts to mumble, she fell asleep in Voice Chat... again.)"
     menu:
         "Let her sleep.":
             $ sleepscare = "non"
             A "zzzzz"
             "You decide to leave the call."
-            "The next evening..."
         "Wake her up.":
             $ sleepscare = "ye"
+            show Aangry1
             A "ahhHHHH"
+            hide Aangry1
             "You decide to leave the call before Anne has time to yell at you."
-            "The next evening.."
 
-            A "I can’t believe I fell asleep in voice chat again."
-            P "Did you get a good night’s sleep?"
+    show Aarmsb1d
+    A "I can’t believe I fell asleep in voice chat again."
+    show Aarmsb1u
+    P "Did you get a good night’s sleep?"
+    hide Aarmsb1u
+    hide Aarmsb1d
     if sleepscare == "non":
-        $ Aholepoints = "Aholepoints - 1"
+        $ Aholepoints = Aholepoints - 1
         #subtract asshole point
         jump goodsleep
     if sleepscare == "ye":
-        $ Aholepoints = "Aholepoints + 1"
+        $ Aholepoints = Aholepoints + 1
         #add asshole points
         jump badsleep
 label goodsleep:
+    show Ahappy1o
     A "One of my best nights in weeks!"
     A "I appreciate you letting me sleep, I was really tired last night."
     A "I fell asleep faster than you running away from zombies."
+    hide Ahappy1o
     jump ripconrad
 label badsleep:
+    show Aangry1
     A "No thanks to you! Your little stunt last night terrified me!"
     A "Although, I think I scared you more than you scared me."
     A "You ran out of that call faster than me running away from zombies."
+    hide Aangry1
+
 label ripconrad:
+    show Aarmsb1u
     A "At least I didn’t fall asleep with Conrad in the call or else he would have tried to jumpscare me."
-    A "Last time I fell asleep in voice chat I woke up with a massive headache and really loud weeaboo music blasting from Conrad’s end."
+    hide Aarmsb1u
+    show Aangry1
+    A "Last time I fell asleep in voice chat I woke up with a massive headache and the dubstep nightcore version of the WumpCraft OST blasting from Conrad’s end."
+    show Aspeak1o
     A "Oh well, I don’t really have any plans for today. Speaking of WumpCraft, do you want to play a session?"
     P "Conrad isn’t online yet."
     A "Huh, that’s weird. He’s usually always the first one up and the last one to go to sleep."
@@ -174,38 +192,4 @@ label ahole1:
     P "Okay so Los Angeles negative, my bad."
     #jump
 label location2:
-    A "Second, a couple hours away is pretty close considering that we only use discord to talk."
-    A "I think it's a really cool coincidence that's all."
-    A "Plus Conrad lives all the way out in Orlando, imagine how long of a drive THAT would be."
-    A "Speaking of Conrad, where the heck is he?"
-    P "That's weird, he's usually spamming our DMs right now."
-    A "Should I send him a message?"
-menu:
-        "Nah, he's probably busy.":
-            P "Nah, he's probably busy."
-            P "That, or he's sleeping still, since we last heard from him around 3 AM his time."
-            A "I don't know, it's weird. Conrad always dedicates his evening to gamer time."
-            A "AND he always spends it with us, unless he's playing that stupid battle royale game."
-            A "Man I HATE games where it's just 100 people fighting to the death."
-            A "Anyway, I'm just worried him. I can't remember the last time he didn't at least DM us a good morning message."
-
-        "Yeah you should, maybe something's wrong.":
-            P "Yeah you should, maybe something's wrong."
-            A "I can't remember the last time that he didn't at least DM us a good morning message."
-            A "I almost never DM anyone privately, I don't really know what to say."
-            A "You know what, this is dumb. I don't know what to say."
-menu:
-        "I'll DM him if you want.":
-            $ Aholepoints = "Aholepoints - 1"
-            P "I can DM him."
-            A "Are you okay with doing that?"
-            A "Yeah, I'll tell you when he replies"
-
-        "We'll probably hear from him tomorrow.":
-            P "We'll probably hear from him tomorrow."
-            A "Yeah I guess..."
-            A "Well I'm really tired, I'm gonna go to bed."
-            A "Good night [P]!"
-            "Anne left the call."
-            "Despite telling Anne you didn't want to DM Conrad, something is compelling you to do so."
-            "You have no idea why, but you open up your direct message history with Conrad. It's mostly blank."
+    A "Second,"
