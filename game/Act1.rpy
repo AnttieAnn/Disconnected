@@ -15,7 +15,7 @@ label act1:
     show Cspeako at right with dissolve
     C "Hey, how are you tired? I’m the one who’s three hours ahead of you and I’m totally energized after that battle!"
     hide Cspeako
-    show Cspeakc at right with dissolve
+    show Cspeakc at right
     P "Sometimes I forget that you live on the east coast, Conrad."
     hide ABspeak1c
     show Aspeak1o at left
@@ -64,7 +64,7 @@ label act1:
     show Aarmsb1d
     A "*yawn* I’m already on the verge of passing out. Goodnight, Con- "
     hide Aarmsb1d
-    show Aarmsb1u with dissolve
+    show Aarmsb1u
     A "Oh, he’s already gone."
     A "Looks like it’s just you and me, [P]. "
     hide Aarmsb1u
