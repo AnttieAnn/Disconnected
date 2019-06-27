@@ -216,7 +216,9 @@ menu:
             hide Aarmsb1d
 
         "Suggest fighting some enemies.":
+            show Aspeak1c
             P "We should go back to the caves."
+            hide Aspeak1c
             show Aarmsf1d
             A "Are you sure, I'd love to mine some materials but remember what Conrad would say?"
             hide Aarmsf1d
@@ -244,173 +246,230 @@ label location:
     A "Okay first of all, I live in Glendale." #She isn't offended here, use her playful/happy emotes.
     hide Ahappy1o
     show Ahappy1c
-if Aholepoints == 1:
-    jump ahole1
-if Aholepoints == -1:
-    jump location2
+    if Aholepoints == 1:
+        jump ahole1
+    if Aholepoints == -1:
+        jump location2
 label ahole1:
     P "Okay so Los Angeles negative, my bad."
-    #jump
 label location2:
+    hide Ahappy1c
+    show Ahappy1o
     A "Second, a couple hours away is pretty close considering that we only use discord to talk."
     A "I think it's a really cool coincidence that's all."
     A "Plus Conrad lives all the way out in Orlando, imagine how long of a drive THAT would be."
+    hide Ahappy1o
+    show Aarmsb1u
     A "Speaking of Conrad, where the heck is he?"
     P "That's weird, he's usually spamming our DMs right now."
+    show Aarmsb1d
+    hide Aarmsb1u
     A "Should I send him a message?"
-menu:
-        "Nah, he's probably busy.":
-            P "Nah, he's probably busy."
-            P "That, or he's sleeping still, since we last heard from him around 3 AM his time."
-            A "I don't know, it's weird. Conrad always dedicates his evening to gamer time."
-            A "AND he always spends it with us, unless he's playing that stupid battle royale game."
-            A "Man I HATE games where it's just 100 people fighting to the death."
-            A "Anyway, I'm just worried him. I can't remember the last time he didn't at least DM us a good morning message."
+    hide Aarmsb1d
+    menu:
+            "Nah, he's probably busy.":
+                show Aarmsb1u
+                P "Nah, he's probably busy."
+                P "That, or he's sleeping still, since we last heard from him around 3 AM his time."
+                hide Aarmsb1u
+                show Aarmsb1d
+                A "I don't know, it's weird. Conrad always dedicates his evening to gamer time."
+                A "AND he always spends it with us, unless he's playing that stupid battle royale game."
+                hide Aarmsb1d
+                show Aangry1
+                A "Man I HATE games where it's just 100 people fighting to the death."
+                hide Aangry1
+                show Aarmsb1d
+                A "Anyway, I'm just worried him. I can't remember the last time he didn't at least DM us a good morning message."
+                hide Aarmsb1d
 
-        "Yeah you should, maybe something's wrong.":
-            P "Yeah you should, maybe something's wrong."
-            A "I can't remember the last time that he didn't at least DM us a good morning message."
-            A "I almost never DM anyone privately, I don't really know what to say."
-            A "You know what, this is dumb. I don't know what to say."
-menu:
-        "I'll DM him if you want.":
-            $ Aholepoints = "Aholepoints - 1"
-            P "I can DM him."
-            A "Are you okay with doing that?"
-            A "Yeah, I'll tell you when he replies"
-            "You open your Direct Message history with Conrad, it's mostly blank."
-        "We'll probably hear from him tomorrow.":
-            P "We'll probably hear from him tomorrow."
-            A "Yeah I guess..."
-            A "Well I'm really tired, I'm gonna go to bed."
-            A "Good night [P]!"
-            "Anne left the call."
-            "Despite telling Anne you didn't want to DM Conrad, something is compelling you to do so."
-            "You have no idea why, but you open up your direct message history with Conrad. It's mostly blank."
-"What kind of message will you send Conrad?"
-menu:
-    "Personal":
-        "You send Conrad a sweet DM, detailing how personal the relationship between you to it, and how much it means to you."
-    "Humorous":
-        "You send Conrad a funny DM, filled with jokes and puns."
-    "Serious":
-        "You send Conrad a very formal DM. Addressing your concern regarding his absence."
-    "Flirty":
-        "You send Conrad a very flirty DM. Complete with emojis of hearts and fruit."
-"You wrote more than you intended, but are happy with what you sent."
+            "Yeah you should, maybe something's wrong.":
+                show Aarmsb1u
+                P "Yeah you should, maybe something's wrong."
+                hide Aarmsb1u
+                show Aarmsb1d
+                A "I can't remember the last time that he didn't at least DM us a good morning message."
+                A "I almost never DM anyone privately, I don't really know what to say."
+                hide Aarmsb1d
+                show Aangry1
+                A "You know what, this is dumb. I don't know what to say."
+                hide Aangry1
+    menu:
+            "I'll DM him if you want.":
+                $ Aholepoints = "Aholepoints - 1"
+                show Aarmsb1u
+                P "I can DM him."
+                A "Are you okay with doing that?"
+                P "Yeah, I'll tell you when he replies"
+                hide Aarmsb1u
+                "You open your Direct Message history with Conrad, it's mostly blank."
+
+            "We'll probably hear from him tomorrow.":
+                show Aarmsb1u
+                P "We'll probably hear from him tomorrow."
+                hide Aarmsb1u
+                show Aarmsb1d
+                A "Yeah I guess..."
+                hide Aarmsb1d
+                show Aarmsb1u
+                A "Well I'm really tired, I'm gonna go to bed."
+                A "Good night [P]!"
+                hide Aarmsb1u
+                "Anne left the call."
+                "Despite telling Anne you didn't want to DM Conrad, something is compelling you to do so."
+                "You have no idea why, but you open up your direct message history with Conrad. It's mostly blank."
+    "What kind of message will you send Conrad?"
+    menu:
+        "Personal":
+            "You send Conrad a sweet DM, detailing how personal the relationship between you to it, and how much it means to you."
+        "Humorous":
+            "You send Conrad a funny DM, filled with jokes and puns."
+        "Serious":
+            "You send Conrad a very formal DM. Addressing your concern regarding his absence."
+        "Flirty":
+            "You send Conrad a very flirty DM. Complete with emojis of hearts and fruit."
+    "You wrote more than you intended, but are happy with what you sent."
 #Transition effect
-"A week passes, you haven't heard back from Conrad"
-"Anne hasn't messaged you at all..."
-"Until... right now!" #We need to add discord sound effects.
-show Aspeak1o
-P "Hey [P]! It's been a while."
-hide Aspeak1o
-show Aarmsb1d
-P "We uh, missed the event on Friday. I'm really surprised that Conrad hasn't reached out to either of us."
-hide Aarmsb1d
-show Ahappy1o
-P "Kinda hard to think that we played games together almost every day for 3 years!"
-hide Ahappy1o
-show Asas1
-P "Do you remember how we all first met?"
-menu:
-    "No not really.":
-        P "No, not really."
-        hide Asas1
-        show Aangry1
-        A "Hey! how could you forget!?!"
-        P "It’s been a long time since then."
-        hide Aangry1
-        show Aspeak1o
-        A "Yeah, and we’ve changed a lot since then, haven’t we?"
-        hide Aspeak1o
-        show Ahappy1o
-        A "Conrad was stuck on this boss fight and was trying to get some advice from this Discord server we were all in."
-        hide Ahappy1o
-        show Ashrug1
-        A "*chuckles* It’s funny thinking back on how Conrad would dive headfirst into random caves to fight enemies head-on without any help."
-        A "No wonder he had such a hard time with the game back then."
-        P "That sounds like Conrad, alright."
-        hide Ashrug1
-        show Aspeak1o
-        A "It was pretty late at night, so you and I were the only other people online and tried to help him out."
-        hide Aspeak1o
-        show Aarmsb1u
-        A "He made a group DM so he could screenshare the game for us and we’d give him advice on how to defeat enemies."
-        A "Eventually, he was able to get the hang of it and wanted us to keep playing together."
-        A "We made a pretty great team in-game! We complemented each other’s strengths and weaknesses really well."
-        A "Conrad was the brave one. He’d always try to defeat every enemy he encountered."
-        A "He’d always get hurt, so I’d be the one to heal him."
-        P "And whenever you and Conrad got lost, I’d be the one to guide us back on track."
-        A "We started playing more and more sessions after that."
-        A "It started to become a daily routine for us. We’d come online to play a session with him and then afterwards we’d talk about anything and everything."
-        A "I can’t really pinpoint the exact time it happened, but…"
-        A "Somewhere along the way, we became friends."
+    scene black with fade
+    scene bg room with fade
+    "A week passes, you haven't heard back from Conrad"
+    "Anne hasn't messaged you at all..."
+    "Until... right now!" #We need to add discord sound effects.
+    show Aspeak1o
+    A "Hey [P]! It's been a while."
+    hide Aspeak1o
+    show Aarmsb1d
+    P "We uh, missed the event on Friday. I'm really surprised that Conrad hasn't reached out to either of us."
+    hide Aarmsb1d
+    show Ahappy1o
+    A "Kinda hard to think that we played games together almost every day for 3 years!"
+    hide Ahappy1o
+    show Asas1
+    A "Do you remember how we all first met?"
+    hide Asas1
+    menu:
+        "No not really.":
+            show Asas1
+            P "No, not really."
+            hide Asas1
+            show Aangry1
+            A "Hey! how could you forget!?!"
+            P "It’s been a long time since then."
+            hide Aangry1
+            show Aspeak1o
+            A "Yeah, and we’ve changed a lot since then, haven’t we?"
+            hide Aspeak1o
+            show Ahappy1o
+            A "Conrad was stuck on this boss fight and was trying to get some advice from this Discord server we were all in."
+            hide Ahappy1o
+            show Ashrug1
+            A "*chuckles* It’s funny thinking back on how Conrad would dive headfirst into random caves to fight enemies head-on without any help."
+            A "No wonder he had such a hard time with the game back then."
+            P "That sounds like Conrad, alright."
+            hide Ashrug1
+            show Aspeak1o
+            A "It was pretty late at night, so you and I were the only other people online and tried to help him out."
+            hide Aspeak1o
+            show Aarmsb1u
+            A "He made a group DM so he could screenshare the game for us and we’d give him advice on how to defeat enemies."
+            hide Aarmsb1u
+            show Ahappy1o
+            A "Eventually, he was able to get the hang of it and wanted us to keep playing together."
+            A "We made a pretty great team in-game! We complemented each other’s strengths and weaknesses really well."
+            hide Ahappy1o
+            show Aarmsb1u
+            A "Conrad was the brave one. He’d always try to defeat every enemy he encountered."
+            hide Aarmsb1u
+            show Ashrug1
+            A "He’d always get hurt, so I’d be the one to heal him."
+            hide Ashrug1
+            show Aarmsb1u
+            P "And whenever you and Conrad got lost, I’d be the one to guide us back on track."
+            A "We started playing more and more sessions after that."
+            A "It started to become a daily routine for us. We’d come online to play a session with him and then afterwards we’d talk about anything and everything."
+            A "I can’t really pinpoint the exact time it happened, but…"
+            hide Aarmsb1u
+            show Ahappy1o
+            A "Somewhere along the way, we became friends."
+            hide Ahappy1o
 
-    "Yeah of course!":
-        P "Yeah of course!"
-        A "Oh yeah, it was a pretty special moment so I wouldn't expect you to forget."
-        A "But you better not be lying about remembering, it's pretty important information!"
-        A "Important to me at least.."
-menu:
-    "Our friendship grew gradually.":
-        P "Our friendship grew gradually."
-        A "Yeah, that's what I was thinking, as we continued to play more and more together, and of course use discord to talk more and more, we became closer."
-        A "And the closer we got, it became clear that we were all meant to be friends."
-    "We all became friends overnight.":
-        P "We all became friends overnight."
-        A "Yeah, it's almost like we were all meant to be together."
-A "Anyway, there's really no point in playing without Conrad, we need his help to clear the next boss."
-A "So we'll just wait until he comes back."
-"1 month later..."
-"You are receiving a call from Anne on discord!"
-"Accept the call?"
-menu:
-    "Accept call":
-        "You answered the discord call."
-        A "H-hey!!"
-        A "It's Anne."
-        A "Uh, you knew that, discord shows you who's calling."
-        A "I don't know why I said who I was."
-        A "A-anyway! I need to tell you something."
-        A "I'm uh, really worried about Conrad."
-        A "Like maybe he's okay and we're overreacting."
-        A "B-but I want to go make sure he's okay."
-        A "So uh, how do I explain this?"
-        A "I uh, went snooping around his friend list, specifically the mutual ones that him and I share."
-        A "And it turns out, I'm friends with one of his close friends."
-        A "Just a total coincidence, but I hit her up and she hasn't heard from him in a while either."
-        A "So she's gonna take me to her."
-        A "I'm uh, going to Orlando"
-        jump annexplain
+        "Yeah of course!":
+            show Aarmsb1u
+            P "Yeah of course!"
+            hide Aarmsb1u
+            show Ahappy1o
+            A "Oh yeah, it was a pretty special moment so I wouldn't expect you to forget."
+            hide Ahappy1o
+            show Aarmsb1u
+            A "But you better not be lying about remembering, it's pretty important information!"
+            hide Aarmsb1u
+            show Aarmsb1d
+            A "Important to me at least.."
+            hide Aarmsb1d
+    menu:
+        "Our friendship grew gradually.":
+            show Aarmsb1u
+            P "Our friendship grew gradually."
+            A "Yeah, that's what I was thinking, as we continued to play more and more together, and of course use discord to talk more and more, we became closer."
+            hide Aarmsb1u
+            show Ahappy1o
+            A "And the closer we got, it became clear that we were all meant to be friends."
+            hide Ahappy1o
+        "We all became friends overnight.":
+            P "We all became friends overnight."
+            A "Yeah, it's almost like we were all meant to be together."
+
+    A "Anyway, there's really no point in playing without Conrad, we need his help to clear the next boss."
+    A "So we'll just wait until he comes back."
+    "1 month later..."
+    "You are receiving a call from Anne on discord!"
+    "Accept the call?"
+    menu:
+        "Accept call":
+            "You answered the discord call."
+            A "H-hey!!"
+            A "It's Anne."
+            A "Uh, you knew that, discord shows you who's calling."
+            A "I don't know why I said who I was."
+            A "A-anyway! I need to tell you something."
+            A "I'm uh, really worried about Conrad."
+            A "Like maybe he's okay and we're overreacting."
+            A "B-but I want to go make sure he's okay."
+            A "So uh, how do I explain this?"
+            A "I uh, went snooping around his friend list, specifically the mutual ones that him and I share."
+            A "And it turns out, I'm friends with one of his close friends."
+            A "Just a total coincidence, but I hit her up and she hasn't heard from him in a while either."
+            A "So she's gonna take me to her."
+            A "I'm uh, going to Orlando"
+            jump annexplain
 
 
-    "Reject call.":
-        "You don't answer the discord call."
-        "You have recieved a message from Anne!"
-        A "Hey [P]! Give me a call when you can please!!"
-        A "I uh, have something really important to tell you."
+        "Reject call.":
+            "You don't answer the discord call."
+            "You have recieved a message from Anne!"
+            A "Hey [P]! Give me a call when you can please!!"
+            A "I uh, have something really important to tell you."
 
-        menu:
-            "Call Anne back":
-                "You decide to Call Anne back."
-                A "H-hey!!"
-                A "You uh, didn't answer the first time, sorry if I interuppted something.."
-                A "It's Anne by the way."
-                A "Uh wait, you knew that, discord shows you who's calling."
-                A "I don't know why I said who I was."
-                A "A-anyway! I need to tell you something."
-                A "I'm uh, really worried about Conrad."
-                A "Like maybe he's okay and we're overreacting."
-                A "B-but I want to go make sure he's okay."
-                A "So uh, how do I explain this?"
-                A "I uh, went snooping around his friend list, specifically the mutual ones that him and I share."
-                A "And it turns out, I'm friends with one of his close friends."
-                A "Just a total coincidence, but I hit her up and she hasn't heard from him in a while either."
-                A "So she's gonna take me to her."
-                A "I'm uh, going to Orlando"
-                jump annexplain
-    "Incoming Call: Anne062819"
+    menu:
+        "Call Anne back":
+            "You decide to Call Anne back."
+            A "H-hey!!"
+            A "You uh, didn't answer the first time, sorry if I interuppted something.."
+            A "It's Anne by the way."
+            A "Uh wait, you knew that, discord shows you who's calling."
+            A "I don't know why I said who I was."
+            A "A-anyway! I need to tell you something."
+            A "I'm uh, really worried about Conrad."
+            A "Like maybe he's okay and we're overreacting."
+            A "B-but I want to go make sure he's okay."
+            A "So uh, how do I explain this?"
+            A "I uh, went snooping around his friend list, specifically the mutual ones that him and I share."
+            A "And it turns out, I'm friends with one of his close friends."
+            A "Just a total coincidence, but I hit her up and she hasn't heard from him in a while either."
+            A "So she's gonna take me to her."
+            A "I'm uh, going to Orlando"
+            jump annexplain
+        "Incoming Call: Anne062819"
 label annexplain:
     A "I need to find out if Conrad is okay."
     A "I have a place to stay, I've got a really cool Aunt out there."
@@ -438,8 +497,8 @@ label annexplain:
             A "R-Really!?"
             A "That, means a lot to me, that you would agree to come with me."
 
-A "Uh the soonest flight is tomorrow evening. my Aunt said she'd pick me up at the airport."
-A "You could probably stay with us"
-A "Just uh, meet me at LAX."
-jump act2
+    A "Uh the soonest flight is tomorrow evening. my Aunt said she'd pick me up at the airport."
+    A "You could probably stay with us"
+    A "Just uh, meet me at LAX."
+    jump act2
 #End of Act 1
