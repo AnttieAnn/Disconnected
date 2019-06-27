@@ -2,6 +2,7 @@
 
 
 label act1:
+
     "The time is 11:58 PM, I'm playing GAME NAME with some of my close online friends"
     show Csmileo
     C "That was a great battle, guys! We made a lot of progress in-game so far."
@@ -10,11 +11,13 @@ label act1:
     A "*yawns* Yeah, it was really fun. I’m really tired, though."
     hide Aspeak1o
     #Anne close her mouth
-    show Aspeak1c at left
+    show Aspeak1c at midtoleft
     show Cspeako at right
+    with dissolve
     C "Hey, how are you tired? I’m the one who’s three hours ahead of you and I’m totally energized after that battle!"
     hide Cspeako
     show Cspeakc at right
+    with dissolve
     P "Sometimes I forget that you live on the east coast, Conrad."
     hide Aspeak1c
     show Aspeak1o at left
