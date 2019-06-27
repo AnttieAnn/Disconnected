@@ -40,7 +40,7 @@ label act1:
 
     A "*yawn* I’m already on the verge of passing out. Goodnight, Con- "
     A "Oh, he’s already gone."
-    A "Looks like it’s just you and me, _. "
+    A "Looks like it’s just you and me, [P]. "
     A "Conrad really wants us to participate on friday’s event, so we’ll pick up where we left off tomorrow in order to prepare."
     A "I have no idea where that boy gets his energy. It’s barely midnight and I’m already so sleeeeeee-"
     "(Anne starts to mumble, she fell asleep in Voice Chat... again.)"
@@ -102,14 +102,14 @@ label ripconrad:
 label ripconradcall:
     P "Ouch! That enemy did a lot of damage."
     A "Here, I have some medicine. I don’t know if it’s enough, though."
-    "(Anne heals _ by a small amount)"
+    "(Anne heals [P] by a small amount)"
 
     A "I never realized how difficult these enemies were. Usually, Conrad would take care of the tougher enemies and we’d get the EXP and loot."
     A "This would be a lot easier if he was here…"
     A "I keep checking his online status and he’s still offline. That’s a rare sight to see."
     P "Let’s keep going until he gets online."
-    A "I’m all out of medicine, so we’ll have to be care- watch out, _!"
-    "(A horde of zombies chases after Anne and _. They retreat back to base and kill off some lower level enemies while they wait for Conrad.)"
+    A "I’m all out of medicine, so we’ll have to be care- watch out, [P]!"
+    "(A horde of zombies chases after Anne and [P]. They retreat back to base and kill off some lower level enemies while they wait for Conrad.)"
     "(Most of their game session has been filled with silence with Conrad gone.)"
     P "You’re awfully quiet, Anne."
     A "Hm? Sorry, I’m not really good with starting conversations. That’s always been Conrad’s strong suit."

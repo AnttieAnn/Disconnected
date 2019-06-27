@@ -51,16 +51,13 @@ label start:
 
     scene bg room
 
-
-
     "You've created a new Ren'py game."
 
     "Once you add a story, pictures and music, you can release it to the world!"
 
     $ P = renpy.input("What is your name?")
 
-    $ P = P.strip()
-    $ P.lower()
+    $ P = P.lower()
 
 label name:
 
