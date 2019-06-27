@@ -3,17 +3,18 @@
 
 label act1:
     "The time is 11:58 PM, I'm playing GAME NAME with some of my close online friends"
-
+    show Csmileo
     C "That was a great battle, guys! We made a lot of progress in-game so far."
+    hide Csmileo
     show Aspeak1o
     A "*yawns* Yeah, it was really fun. I’m really tired, though."
     hide Aspeak1o
     #Anne close her mouth
     show Aspeak1c at left
-    #show conrad image at right
+    show Cspeako at right
     C "Hey, how are you tired? I’m the one who’s three hours ahead of you and I’m totally energized after that battle!"
-    #hide conrad image
-    #show a new conrad image (Mouth close)
+    hide Cspeako
+    show Cspeakc at right
     P "Sometimes I forget that you live on the east coast, Conrad."
     hide Aspeak1c
     show Aspeak1o at left
@@ -21,21 +22,42 @@ label act1:
     A "I should go to sleep. And so should both of you, too."
     hide Aspeak1o
     show Aspeak1c at left
-    #Show conrad open mouth
+    hide Cspeakc
+    show Csmileo at right
     C "No way! There’s gonna be a huge in-game event on Friday. We have to grind as much as we can until then."
     hide Aspeak1c
+    hide Csmileo
+    show Cspeakc at right
     show Aspeak1o at left
     A "If anything, [P] and I are the ones who have to grind. You’ve been playing this game non-stop! "
     A "I swear, ever since you graduated most of your free time is spent either being on Discord or killing zombies."
+    hide Aspeak1o
+    show Aspeak1c at left
+    hide Cspeakc
+    show Cspeako at right
     C "Yeah, but I have a lot more fun playing when I’m with you guys!"
+    hide Cspeakp
+    show Cspeakc at right
     P "That’s true. I’m always having a good time whenever we’re voice chatting no matter what we’re doing together."
-    C "*ping*"
+    hide Cspeakc
+    hide Cspeako
+    hide Aspeak1c
+    "*ping*"
+    show Aarmsb1u
     A "What was that sound?"
+    hide Aarmsb1u
+    show Aarmsb1u at left
+    show Cidleo at right
     C "Oh, uh- sorry! Just a notification, no biggie."
+    hide Aarmsb1u
+    hide Cidleo
+    show Cspeako
     C "I guess we’ll have to leave the game here and continue later."
+    hide Cspeako
+    show Csmilec
     C "Both of you better be playing tomorrow! It’s going to take a while before you’re both the same level as me. I’m already super prepared for Friday’s event."
     C "Goodnight!"
-
+    hide Csmilec
     "Conrad leaves the call in a hurry"
 
     A "*yawn* I’m already on the verge of passing out. Goodnight, Con- "

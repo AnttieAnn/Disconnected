@@ -34,4 +34,13 @@ label Tif:
     image Tidleo = im.FactorScale("images/Tiff/T_Idle_O.png",1.15)
     image Tflatterc = im.FactorScale("images/Tiff/T_Idle2_C.png",1.15)
     image Tflattero = im.FactorScale("images/Tiff/T_Idle2_O.png", 1.15)
+
+label ConradI:
+    image Cidlec = im.FactorScale("images/Conrad/C_idle_C.png",.545)
+    image Cidleo = im.FactorScale("images/Conrad/C_Idle_O.png",.545)
+    image Cidle = im.FactorScale("images/Conrad/C_Idle.png",.545)
+    image Csmilec = im.FactorScale("images/Conrad/C_Smile_C.png",.545)
+    image Csmileo = im.FactorScale("images/Conrad/C_Smile_O.png",.545)
+    image Cspeakc = im.FactorScale("images/Conrad/C_Speak_C.png",.545)
+    image Cspeako = im.FactorScale("images/Conrad/C_speak_O.png",.545)
     return

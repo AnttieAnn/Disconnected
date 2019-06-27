@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Act1.rpy", line 27: end of line expected.
-    A "If anything," P.(title) " and I are the ones who have to grind. You’ve been playing this game non-stop! "
-                     ^
+File "game/Act1.rpy", line 45: expected 'image_name_component' not found.
+    show
+        ^
 
 Ren'Py Version: Ren'Py 7.3.0.271
-Wed Jun 26 15:26:39 2019
+Wed Jun 26 21:19:59 2019
