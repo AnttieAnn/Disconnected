@@ -1,50 +1,101 @@
 label act3:
-    define SPV = ("Soft-Spoken Voice")
+    scene bg room with fade
+    define SSV = ("Soft-Spoken Voice")
     "You knock on the door a few times. When there's no answer, you open it yourself."
     "You notice most of the drawers are open and Anne's bags are half packed."
-
+    show Cidleo
     C "Leaving already?"
+    hide Cidleo
+    show Cidlec
     "His voice catches Anne by surprise. She stares at you and Conrad before responding."
-
+    show Cidlec at midtoright
+    show Aspeak2o at left with dissolve
     A "I was planning on it, but then I had to think a few things out."
-
     A "[P], do you remmeber when I told you that I wasn't sure what I wanted to do after high school?"
     A "I told my aunt about it while we were here."
-    A "I asked her for advice on what to do since she's o successful."
+    hide Aspeak2o
+    show Aarmsf2u at left
+    A "I asked her for advice on what to do since she's successful."
     A "She suggested that I try out working for her over the summer."
     A "She sad that, if I do good job and I like it, it could be a permanent position."
     A "The pay is decent and she said that I can live with her until I find a place of my own."
+    hide Cidlec
+    show Cidleo at right
     C "Woah, that's great news! That's an amazing opportunity for you, Anne!"
+    hide Cidleo
+    show Cidlec at right
+    hide Aarmsf2u
+    show Aarmsf2d at left
     A "I'm not sure if I want to accept it, though"
+    hide Cidlec
+    show Cspeako at right
     C "Are you kidding? You'd be crazy not to accept it!"
+    hide Cspeako
+    show Cidleo at right
     C "Er, well... I guess I'm not being considerate, am I?"
     C "What's giving you second thoughts?"
-    A "This would be a drastic change for my life. I'd have to go through training, move across the country, and..."
+    hide Cidleo
+    show Cidlec at right
+    A "This would be a drastic change for my life. I'd have to go through training, move across the country."
+    hide Cidlec
+    hide Aarmsf2d
+    show Aarmsb2d
+    A "and..."
     "She looks at you and Conrad"
     P "... And you wouldn't be able to talk to us as often."
     A "Yeah, exactly..."
+    hide Aarmsb2d
+    show Aarmsb2d at midtoleft
+    show Cidle at right with dissolve
     C "This is a big decision for you. Don't let us affect your decision."
+    hide Aarmsb2d
+    show Aarmsf2u at left
     A "No, it's alright! I'd like to hear what both of you think."
+    hide Cidle
+    show Csmileo at right
     C "I guess if it were up to me, I'd accept it in a heartbeat"
+    hide Csmileo
+    show Cidle at right
     C "I can't really compare my situation to yours, though"
+    hide Cidle
+    show Cidleo at right
     C "I always knew I wanted to keep playing football after high school, so accepting my scholarship was a big no-brainer to me."
+    hide Cidleo
+    show Cidle at right
     C "But I'll admit that afterwards I had some second thoughts. Especially after I stop talking to both of you..."
     C "And ESPECIALLY after I found out that I hurt you."
+    hide Cidle
+    show Csmilec at right
     C "But now that I have both of you supporting me, all of the stress I had from training and moving to a different state is nothing anymore."
     C "I'm glad I accepted my offer, and I feel like you should accept yours."
+    hide Csmilec
+    show Cidle at right
     C "Those are just my two cents. I dont know about you or [P], though."
+    hide Cidle
+    hide Aarmsf2u
 
     #menu:
         #"You should accept the offer.":
 
         #"You should think about this longer.":
 
+    show Aarmsf2u at left
     A "Yeah, it's a really great opportunity."
+    hide Aarmsf2u
+    show Aarmsf2d at left
     A "But"
-
+    hide Aarmsf2d
+    scene black with fade
+    scene bg room with fade
     "You arrive at the airport with Conrad as you both prepare to leave."
+
+    show Csmilec
     C "What are the odds of us leaving on the same day, huh?"
+    hide Csmilec
+    show Cspeako
     C "When's your flight back to San Francisco?"
+    hide Cspeako
+    show Cspeakc
     P "In about a couple hours. I just wanted to be early."
     C "Yeah, that seems like you. My flight leaves in about half an hour."
     SSV "Guess I have half an hour to say my sappy goodbyes, then."#Soft-Spoken voice
@@ -196,7 +247,8 @@ label ConEnd:
     C "I'll try to message you back whenever I manage to get the time."
     C "Take care, [P]."
 
-    "Conrad sends a selfie of him in his plane to the group DM with Anne with the caption: ‘🐊 + 🍊 + 🌙 = ✈️💙’."
+    "Conrad sends a selfie of him in his plane to the group DM with Anne with a caption"
+    "It's an alligator emoji follow by a plus sign with an orange emoji follow by another plus sign with a moon emoji and it would all equal an Airplane emoji with a blue heart emoji next to it"
     "He has a bright smile while holding up his alligator keychain!"
     "Anne reacts with a bunch of smiley face emojis."
     "You pin that image to the group DM."
