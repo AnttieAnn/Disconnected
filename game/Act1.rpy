@@ -432,8 +432,8 @@ label location2:
     A "Anyway, there's really no point in playing without Conrad, we need his help to clear the next boss."
     A "So we'll just wait until he comes back."
     hide Aspeak1o
-    scene black with dissolve
-    scene bg room with dissolve
+    scene black with fade
+    scene bg room with fade
     "1 month later..."
     "You are receiving a call from Anne on discord!"
     "Accept the call?"
@@ -616,6 +616,6 @@ label annexplain:
     show Aspeak1o
     A "Just uh, meet me in Florida I guess." #I wanna add a better transition into act 2
     hide Aspeak1o
-    scene black with dissolve
-    jump act2
+    scene black with fade
+    jump act3
 #End of Act 1
