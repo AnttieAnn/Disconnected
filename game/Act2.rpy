@@ -313,5 +313,48 @@ menu:
 "She made a lot of food for the both of you. Eggs, bacon, grits, and even a hashbrown casserole!"
 "There are some biscuits, with gravy for dipping."
 A "Thank you for breakfast Aunt Tiff, we'll be headed out now."
-T "Good luck finding your friend!"
+T "Good luck BrilliAnee, I hope ya find your friend!"
 "You and Anne step outside."
+A "Okay [P], we're meeting Conrad's friend at a football field."
+A "She said he'd probably be there."
+A "Freight Train will be here soon with the limo, Aunt Tiff told me that we could use it all day."
+"You see the limo pull up and get in."
+"Freight Train drives you to a football field."
+"You look out and see a number of football players practicing, with a few spectators."
+A "Let's see if we can find Jade."
+"You sit in the stands, looking around for her."
+define J = ("Jade")
+whomst "You look lost, can I help you?"
+A "O-Oh! We're just looking for a friend."
+whomst "Really? Which friend?"
+A "Well, a friend who's gonna take us to our other friend, so we can find out if he's okay."
+"Anne pulls out a picture of Conrad."
+A "You wouldn't happen to know who this is do you? I was told he might be around here."
+whomst "Conrad?"
+A "Yeah! Do you know him?
+Young Athlete: "I’d like to think so. It would be pretty strange if I didn’t during all those years of dating.
+Anne: "Wait a minute, Jade?"
+J "Took ya long enough to recognize me, and Conrad said you were supposed to be the smart one."
+J "How are you doing Anne?"
+A "Oh my gosh I didn't even recognize you! Which makes sense because I've literally never seen your face before."
+A "[P] this is Jade, Conrad's girlfriend."
+Jade: Ex-girlfriend, currently.
+Anne: Oh, I’m sorry! I didn’t realize…
+J "It’s fine, it was fairly recent so I don’t expect you to have known. Guess I didn't mention it when we were talking."
+J "Now that I think about it, Conrad did mention having friends from California. I apologize for not being able to recognize you both.
+A "Can you help us find him? It’s really important.
+J "We haven’t talked to each other since we’ve broken up, so I’m not quite sure where he is right now.
+P "When was that, if you don’t mind me asking?
+J "A little over a month ago.
+A "That’s around the same time he stopped talking to us..."
+J "He's out there walking onto the field."
+J "He just got out of church, so he's talking to some of his buddies before they practice."
+A "Brilliant! I can see him."
+J "Be careful if you approach him, he gets really serious when he's practicing."
+A "That's funny, he gets really passionate about video games when we play together."
+A "Er. used to play."
+J "Well I'm glad I could help ya find him."
+J "Best of luck to ya."
+Anne: Jade is really nice. I wonder why she and Conrad broke up?
+Anne: And around the same time he stopped talking to us…
+Anne: Do you think it’s somehow connected?
