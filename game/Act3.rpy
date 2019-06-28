@@ -119,3 +119,89 @@ label act3:
     A "Hey! Before you go, I have something to give you."
     "Anne reaches into her purse and pulls out an alligator keychain and hands it to Conrad"
     A "I got this at the gift shop when [P] and I first landed here."
+    A "I know it's pretty weird giving you a souvenir from the city you grew up in, but i wanted you to have something to remmeber this moment."
+    A "The Alligator looks really cool and as if it's prepared for anything that stands in its way!"
+    A "It kind of reminded me of you."
+
+    "Conrad smiles and hooks up the keychain to his bag."
+
+    C "I'll keep it with me always, Anne."
+    C "I'll text you guys right before I have to depart, I'm glad we got to see each other."
+    P "Same here."
+    A "Who knows, maybe one day the stars will align for us to meet up in real life again some day for some reason!"
+    P "I'll be looking forward to then."
+
+    "Conrad carries his bags and gives you and Anne one last look before he goes to catch his flight."
+    "You carry your bags too, planning to go to check-in. But before you can go, Anne stops you."
+
+    A "Don't think I forgot about you, silly!"
+    A "Do me a favor and hold out your wrist."
+
+    "You hesitantly hold out your wrist as Anne wraps a bracelet around it."
+    "It has some kind of stone attached on it."
+
+    A "Brilliant! It looks great on you."
+    A "While I was buying stuff at the gift shop, I saw this hanging by the counter."
+    A "The cashier told me that it's a moonstone, the state stone of Florida."
+    A "I looked it up on my phone and apparently it's a healing stone that's supposed to help bring calm, peace, and balance."
+    A "All of those descriptions fit you pretty well, so I decided to get it for you!"
+    "Anne presses on her necklace. To your surprise, it lights up!"
+    A "I also got a little something for myself, too!"
+    A "It's the orange necklace I got from the gift shop when we arrived here."
+    P "It shines brightly, just like you."
+    A "D-do you really think so?"
+    A "If I'm being totally honest, I only got it because the smiley face looked cute..."
+    A "But I'm glad we were each able to have something that fits each of us."
+    A "This way, we each have something to remember this moment."
+    A "Not that I'll ever forget this moment, but it's always nice to have a souvenir!"
+
+    A "Have a safe trip home, [P]"
+    "You say goodbye to Anne and head towards baggage check-in."
+    "You glance at the bracelet Anne gave you. You find it difficult to hold back a smile."
+    "You recieve a notification from Discord."
+    "Conrad pinned a message to your DM."
+    "It was the DM you sent to him a month ago!"
+    "Conrad is typing..."
+    C "I was just reading that message again before my plane takes off."
+    C "I didn't realized how many messages you and Anne sent me since I disapeared. I've only got around to reading through all of them today."
+    C "I wish I read this a lot sooner."
+
+    if ConDM == "Person":
+        C "[P], you truly mean a lot to me."
+        C "You're one of my closest friends and I'm grateful that you're a part of my life."
+        C "Your message was pretty sappy. Maybe even more sappy than all of Anne's messages, if that's even possible."
+        jump ConEnd
+
+    if ConDM == "Humor":
+        C "I know we like to make fun of each other a lot, [P]."
+        C "But I want you to know that you're one of my closest friends."
+        C "Your message made me lough. That was definitely refreashing after reading all of Anne's sappy messages."
+        jump ConEnd
+
+    if ConDM == "Seri":
+        C "You're one of my closest friends, [P]."
+        C "No amount of distance or inactivity will ever change that."
+        C "I don't think I've ever seen you this serious. I'ts a huge contrast from all of Anne's sappy messages."
+        jump ConEnd
+        
+    if ConDM == "Fl"
+        C "You're more than a friend, [P]"
+        C "N-not that way! What I'm trying to say is that you're one of my closest friends."
+        C "You have quite a way with words. You should try sending Anne one of these. She'll probably send you one of her sappy messages in response."
+        jump ConEnd
+
+label ConEnd
+    C "I wanted to pin your messages so I can read it back whenever I need a quick smile."
+    C "It's probably going to be a long while until the next time I check Discord, but don't hesitate in staying in touch."
+    C "I'll try to message you back whenever I manage to get the time."
+    C "Take care, [P]."
+
+    "Conrad sends a selfie of him in his plane to the group DM with Anne with the caption: ‘🐊 + 🍊 + 🌙 = ✈️💙’."
+    "He has a bright smile while holding up his alligator keychain!"
+    "Anne reacts with a bunch of smiley face emojis."
+    "You pin that image to the group DM."
+    "Conrad goes offline."
+    "You smile to yourself as you put your phone away."
+    "Your lives are going to be busier from now on and you won't be able to talk as much."
+    "But the memories you've shared together, online and offline, will stay with you forever."
+    #Cue credits
