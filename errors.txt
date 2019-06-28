@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Act2.rpy", line 60: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-    A "Hey! I hope you aren't typing on the plane.
+File "game/Act1.rpy", line 481: end of line expected.
+    label AnneCall:s
+                   ^
 
 Ren'Py Version: Ren'Py 7.1.1.929
-Fri Jun 28 13:31:46 2019
+Fri Jun 28 14:39:50 2019

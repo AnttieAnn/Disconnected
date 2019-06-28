@@ -464,7 +464,6 @@ label location2:
             hide Aarmsb1d
             jump annexplain
 
-
         "Reject call.":
             "You don't answer the discord call."
             "You have recieved a message from Anne!"
@@ -472,68 +471,86 @@ label location2:
             A "Hey [P]! Give me a call when you can please!!"
             A "I uh, have something really important to tell you."
             hide Aarmsb1u
+            jump CallBackLoop
 
-    menu:
-        "Call Anne back":
-            "You decide to Call Anne back."
-            show Aarmsb1u
-            A "H-hey!!"
-            A "You uh, didn't answer the first time, sorry if I interuppted something.."
-            A "It's Anne."
-            A "Uh wait, you knew that, discord shows you who's calling."
-            A "I don't know why I said who I was."
-            A "A-anyway! I need to tell you something."
-            hide Aarmsb1u
-            show Aarmsb1d
-            A "I'm uh, really worried about Conrad."
-            A "Like maybe he's okay and we're overreacting."
-            A "B-but I want to go make sure he's okay."
-            A "So uh, how do I explain this?"
-            hide Aarmsb1d
-            show Aarmsb1u
-            A "I uh, went snooping around his friend list, specifically the mutual ones that him and I share."
-            A "And it turns out, I'm friends with one of his close friends."
-            hide Aarmsb1u
-            show Aarmsb1d
-            A "Just a total coincidence, but I hit her up and she hasn't heard from him in a while either."
-            hide Aarmsb1d
-            show Aarmsb1u
-            A "So she's gonna take me to him."
-            hide Aarmsb1u
-            show Aarmsb1d
-            A "I'm uh, going to Orlando"
-            hide Aarmsb1d
-            jump annexplain
-        "Incoming Call: Anne062819" :
-            "You decide to Call Anne back."
-            show Aarmsb1u
-            A "H-hey!!"
-            A "You uh, didn't answer the first time, sorry if I interuppted something.."
-            A "It's Anne."
-            A "Uh wait, you knew that, discord shows you who's calling."
-            A "I don't know why I said who I was."
-            A "A-anyway! I need to tell you something."
-            hide Aarmsb1u
-            show Aarmsb1d
-            A "I'm uh, really worried about Conrad."
-            A "Like maybe he's okay and we're overreacting."
-            A "B-but I want to go make sure he's okay."
-            A "So uh, how do I explain this?"
-            hide Aarmsb1d
-            show Aarmsb1u
-            A "I uh, went snooping around his friend list, specifically the mutual ones that him and I share."
-            A "And it turns out, I'm friends with one of his close friends."
-            hide Aarmsb1u
-            show Aarmsb1d
-            A "Just a total coincidence, but I hit her up and she hasn't heard from him in a while either."
-            hide Aarmsb1d
-            show Aarmsb1u
-            A "So she's gonna take me to him."
-            hide Aarmsb1u
-            show Aarmsb1d
-            A "I'm uh, going to Orlando"
-            hide Aarmsb1d
-            jump annexplain
+label CallBackLoop:
+menu:
+    "Call Anne back":
+        "You decide to Call Anne back."
+        jump AnneCall
+        label AnneCall:
+        show Aarmsb1u
+        "Ringing..."
+        A "H-hey!!"
+        A "You uh, didn't answer the first time, sorry if I interuppted something.."
+        A "It's Anne."
+        A "Uh wait, you knew that, discord shows you who's calling."
+        A "I don't know why I said who I was."
+        A "A-anyway! I need to tell you something."
+        hide Aarmsb1u
+        show Aarmsb1d
+        A "I'm uh, really worried about Conrad."
+        A "Like maybe he's okay and we're overreacting."
+        A "B-but I want to go make sure he's okay."
+        A "So uh, how do I explain this?"
+        hide Aarmsb1d
+        show Aarmsb1u
+        A "I uh, went snooping around his friend list, specifically the mutual ones that him and I share."
+        A "And it turns out, I'm friends with one of his close friends."
+        hide Aarmsb1u
+        show Aarmsb1d
+        A "Just a total coincidence, but I hit her up and she hasn't heard from him in a while either."
+        hide Aarmsb1d
+        show Aarmsb1u
+        A "So she's gonna take me to him."
+        hide Aarmsb1u
+        show Aarmsb1d
+        A "I'm uh, going to Orlando"
+        hide Aarmsb1d
+        jump annexplain
+        "You decide to Call Anne back."
+        show Aarmsb1u
+        A "H-hey!!"
+        A "You uh, didn't answer the first time, sorry if I interuppted something.."
+        A "It's Anne."
+        A "Uh wait, you knew that, discord shows you who's calling."
+        A "I don't know why I said who I was."
+        A "A-anyway! I need to tell you something."
+        hide Aarmsb1u
+        show Aarmsb1d
+        A "I'm uh, really worried about Conrad."
+        A "Like maybe he's okay and we're overreacting."
+        A "B-but I want to go make sure he's okay."
+        A "So uh, how do I explain this?"
+        hide Aarmsb1d
+        show Aarmsb1u
+        A "I uh, went snooping around his friend list, specifically the mutual ones that him and I share."
+        A "And it turns out, I'm friends with one of his close friends."
+        hide Aarmsb1u
+        show Aarmsb1d
+        A "Just a total coincidence, but I hit her up and she hasn't heard from him in a while either."
+        hide Aarmsb1d
+        show Aarmsb1u
+        A "So she's gonna take me to him."
+        hide Aarmsb1u
+        show Aarmsb1d
+        A "I'm uh, going to Orlando"
+        hide Aarmsb1d
+        jump annexplain
+    "Don't call Anne back.":
+        "You decide not to call Anne back."
+        "Some time passes."
+        "Will you call her back now?"
+        menu:
+            "Call Anne back.":
+                jump AnneCall
+            "Ignore her.":
+                "The plot won't advance until you call her back..."
+                "If you just want to waste time to see what the outcome is, then sorry to disappoint but it's nothing."
+                jump CallBackLoop
+
+
+
 label annexplain:
     show Aarmsb1d
     A "I need to find out if Conrad is okay."
@@ -569,12 +586,14 @@ label annexplain:
             A "I-Is there anyway that you could uh, come with me?"
             P "..."
             A "..."
-            A "I don't like flying by myself."
+            A "I don't wanna be out there alone."
+            A "I can even cover the cost for your ticket!"
             hide Aarmsb1d
             "You recall some money that you have left over from selling some of your old consoles"
-            "So price wouldn't be a problem."
+            "You were going to spend that money to get a figurine of your favorite anime character but..."
             show Aarmsb1d
             P "Alright, I'll go with you."
+            P "No need to pay, I have money left over."
             hide Aarmsb1d
             show Ahappy1o
             A "R-Really!?"
