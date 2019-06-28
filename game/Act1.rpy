@@ -323,12 +323,16 @@ label location2:
     "What kind of message will you send Conrad?"
     menu:
         "Personal":
+            $ ConDM = "Person"
             "You send Conrad a sweet DM, detailing how personal the relationship between you to it, and how much it means to you."
         "Humorous":
+            $ ConDM = "Humor"
             "You send Conrad a funny DM, filled with jokes and puns."
         "Serious":
+            $ ConDM = "Seri"
             "You send Conrad a very formal DM. Addressing your concern regarding his absence."
         "Flirty":
+            $ ConDM = "Fl"
             "You send Conrad a very flirty DM. Complete with emojis of hearts and fruit."
     "You wrote more than you intended, but are happy with what you sent."
 #Transition effect
