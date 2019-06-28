@@ -118,11 +118,5 @@ label name:
         $ P = P.title()
         jump splashscreen
     $ P = P.title()
-    "I hope you like playing games because we are about to start!"
-    "."
-    ".."
-    "..."
-    "It takes some time..."
-    "you know what here's a bootleg story to entertain you"
-    ""
+
     jump act1

@@ -25,12 +25,12 @@ label act1:
     show Aspeak1c at left
     hide Cspeakc
     show Csmileo at right
-    C "No way! There’s gonna be a huge in-game event on Friday. We have to grind as much as we can until then."
+    C "No way! There’s gonna be a huge in-game event on Friday. We have to level grind as much as we can until then."
     hide Aspeak1c
     hide Csmileo
     show Cspeakc at right
     show Aspeak1o at left
-    A "If anything, [P] and I are the ones who have to grind. You’ve been playing this game non-stop! "
+    A "If anything, [P] and I are the ones who have to level grind. You’ve been playing this game non-stop! "
     A "I swear, ever since you graduated most of your free time is spent either being on Discord or killing zombies."
     hide Aspeak1o
     show Aspeak1c at left
@@ -128,7 +128,7 @@ label ripconrad:
     hide Aspeak1c
     A "Huh, that’s weird. He’s usually always the first one up and the last one to go to sleep."
     A "We were up pretty late last night, maybe he’s all tired out?"
-    A "He did say that he’s already prepared for Friday’s event, so we should try to grind a bit while he’s gone in order to catch up to him in levels."
+    A "He did say that he’s already prepared for Friday’s event, so we should try to level grind a bit while he’s gone in order to catch up to him in levels."
     show Aspeak1c
     P "Yeah, I agree."
     hide Aspeak1c
@@ -184,8 +184,8 @@ label ripconradcall:
     show Aspeak1o
     A "I’m all out of medicine, so we’ll have to be care- watch out, [P]!"
     hide Aspeak1o
-    "(A horde of zombies chases after Anne and [P]. They retreat back to base and kill off some lower level enemies while they wait for Conrad.)"
-    "(Most of their game session has been filled with silence with Conrad gone.)"
+    "A horde of zombies chases after Anne and you. They retreat back to base and kill off some lower level enemies while they wait for Conrad."
+    "Most of their game session has been filled with silence with Conrad gone."
     P "You’re awfully quiet, Anne."
     show Aarmsf1d
     A "Hm? Sorry, I’m not really good with starting conversations. That’s always been Conrad’s strong suit."
@@ -202,7 +202,7 @@ label ripconradcall:
 menu:
         "Start a conversation.":
             show Aspeak1c
-            P "How's the weather"
+            P "How's the weather?"
             show Aspeak1o
             A "Well it says it's gonna rain for at least few minutes, probably a few more in game days."
             hide Aspeak1o
@@ -225,7 +225,7 @@ menu:
             A "Are you sure, I'd love to mine some materials but remember what Conrad would say?"
             hide Aarmsf1d
             show Aarmsf1u
-            A "'Don't mine at night, even if you're feelin kinda brave'"
+            A "'Don't mine at night, even if you're feelin kinda brave. Nothing will change if you just wait until day."
             hide Aarmsf1u
             show Ahappy1o
             A "But you know what? We can at least go after some of the stronger enemies in there, we should have an easier time since I have this fancy blue sword now."
@@ -579,7 +579,11 @@ label annexplain:
         "Well, good luck with that.":
             show Aarmsb1u
             P "Well, good luck with that."
+            hide Aarmsb1u
+            show Aarmsb1d
             A "..."
+            hide Aarmsb1d
+            show Aarmsb1u
             A "Wait! I need to ask you something."
             hide Aarmsb1u
             show Aarmsb1d
@@ -587,25 +591,27 @@ label annexplain:
             P "..."
             A "..."
             A "I don't wanna be out there alone."
+            hide Aarmsb1d
+            show Asas1
+            hide Ahappy1o
             A "I can even cover the cost for your ticket!"
             hide Aarmsb1d
             "You recall some money that you have left over from selling some of your old consoles"
             "You were going to spend that money to get a figurine of your favorite anime character but..."
-            show Aarmsb1d
             P "Alright, I'll go with you."
-            P "No need to pay, I have money left over."
-            hide Aarmsb1d
+            hide Asas1
             show Ahappy1o
             A "R-Really!?"
+            P "No need to pay, I have money left over."
             A "That, means a lot to me, that you would agree to come with me."
             hide Ahappy1o
     show Aarmsb1u
     A "Uh there's a few flights tomorrow"
-    A "You could probably stay with us"
+    A "You could probably stay with us."
     hide Aarmsb1u
-    show Aarmsb1d
-    A "Just uh, meet me in Florida I guess."
-    hide Aarmsb1d
+    show Aspeak1o
+    A "Just uh, meet me in Florida I guess." #I wanna add a better transition into act 2
+    hide Aspeak1o
     scene black with dissolve
     jump act2
 #End of Act 1

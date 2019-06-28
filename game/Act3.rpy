@@ -85,7 +85,7 @@ label act3:
             A "But hey, that's a great idea. You know we'll always support your decision no matter what."
             C "And don't hesitate to reach out to us!"
 
-        "I'm not really sure what I want to do, yet"
+        "I'm not really sure what I want to do, yet":
             P "I'm not really sure what I want to do, yet."
             A "That's totally fine. You know we'll always have your back no matter what you decide."
             C "I couldn't have said it better myself!"

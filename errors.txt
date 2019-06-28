@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Act1.rpy", line 481: end of line expected.
-    label AnneCall:s
-                   ^
+File "game/Act3.rpy", line 88: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "I'm not really sure what I want to do, yet"
+                                                ^
 
 Ren'Py Version: Ren'Py 7.1.1.929
-Fri Jun 28 14:39:50 2019
+Fri Jun 28 15:17:20 2019
