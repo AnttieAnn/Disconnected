@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Act2.rpy", line 2: expected statement.
-    Aholepints2 = Aholepoints
-                ^
+File "game/Act2.rpy", line 317: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+    "You and Anne step outside.
 
-Ren'Py Version: Ren'Py 7.3.0.271
-Fri Jun 28 15:53:04 2019
+Ren'Py Version: Ren'Py 7.1.1.929
+Fri Jun 28 19:18:19 2019
