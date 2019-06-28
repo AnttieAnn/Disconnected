@@ -3,7 +3,7 @@
 
 label act1:
 
-    "The time is 11:58 PM, you're playing GAME NAME with some of my close online friends"
+    "The time is 11:58 PM, and you're playing GAME NAME with some of your close online friends"
     show Csmileo
     C "That was a great battle, guys! We made a lot of progress in-game so far."
     hide Csmileo

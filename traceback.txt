@@ -1,22 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/Act1.rpy", line 85, in script
-    hide Aangry1
-Exception: Sayer 'D' is not defined.
+  File "renpy/common/00keymap.rpy", line 421, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 421, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 440, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+AttributeError: 'NoneType' object has no attribute 'stores'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Act1.rpy", line 85, in script
-    hide Aangry1
-  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\ast.py", line 650, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\ast.py", line 560, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
-Exception: Sayer 'D' is not defined.
+  File "renpy/common/00keymap.rpy", line 421, in script
+    python hide:
+  File "E:\2D game\RenPy\renpy-7.1.1-sdk\renpy\ast.py", line 912, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "E:\2D game\RenPy\renpy-7.1.1-sdk\renpy\python.py", line 1959, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/00keymap.rpy", line 421, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 440, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "E:\2D game\RenPy\renpy-7.1.1-sdk\renpy\loadsave.py", line 398, in save
+    roots = renpy.game.log.freeze(None)
+  File "E:\2D game\RenPy\renpy-7.1.1-sdk\renpy\python.py", line 1856, in freeze
+    self.complete(False)
+  File "E:\2D game\RenPy\renpy-7.1.1-sdk\renpy\python.py", line 1466, in complete
+    self.current.stores[name], self.current.delta_ebc[name] = sd.get_changes(begin)
+AttributeError: 'NoneType' object has no attribute 'stores'
 
 Windows-8-6.2.9200
-Ren'Py 7.1.1.929
-Disconnected 1.0
-Thu Jun 27 13:05:40 2019
+Ren'Py 7.3.0.271
+ 
+Thu Jun 27 22:47:21 2019
