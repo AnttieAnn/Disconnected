@@ -581,11 +581,11 @@ label annexplain:
             A "That, means a lot to me, that you would agree to come with me."
             hide Ahappy1o
     show Aarmsb1u
-    A "Uh the soonest flight is tomorrow evening. my Aunt said she'd pick me up at the airport."
+    A "Uh there's a few flights tomorrow"
     A "You could probably stay with us"
     hide Aarmsb1u
     show Aarmsb1d
-    A "Just uh, meet me at LAX."
+    A "Just uh, meet me in Florida I guess."
     hide Aarmsb1d
     scene black with dissolve
     jump act2
