@@ -1,26 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/Act2.rpy", line 82, in script
-    $ Aholepoints = Aholepoints + 1
-  File "game/Act2.rpy", line 82, in <module>
-    $ Aholepoints = Aholepoints + 1
-TypeError: coercing to Unicode: need string or buffer, int found
+  File "game/Act2.rpy", line 42, in script
+    "You exit the plane, spend 50 minutes searching for your luggage, and are now in the lobby."
+  File "game/Act2.rpy", line 42, in <module>
+    "You exit the plane, spend 50 minutes searching for your luggage, and are now in the lobby."
+NameError: name 'AHP' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Act2.rpy", line 82, in script
-    $ Aholepoints = Aholepoints + 1
-  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\ast.py", line 882, in execute
+  File "game/Act2.rpy", line 42, in script
+    "You exit the plane, spend 50 minutes searching for your luggage, and are now in the lobby."
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\ast.py", line 912, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\python.py", line 1913, in py_exec_bytecode
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\python.py", line 1959, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "game/Act2.rpy", line 82, in <module>
-    $ Aholepoints = Aholepoints + 1
-TypeError: coercing to Unicode: need string or buffer, int found
+  File "game/Act2.rpy", line 42, in <module>
+    "You exit the plane, spend 50 minutes searching for your luggage, and are now in the lobby."
+NameError: name 'AHP' is not defined
 
 Windows-8-6.2.9200
-Ren'Py 7.1.1.929
+Ren'Py 7.3.0.271
 Disconnected 0.63
-Fri Jun 28 14:48:53 2019
+Fri Jun 28 15:56:59 2019

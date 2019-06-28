@@ -2,7 +2,7 @@
 
 
 label act1:
-
+    $ AHP = 0
     "The time is 11:58 PM, and you're playing GAME NAME with some of your close online friends"
     show Csmileo
     C "That was a great battle, guys! We made a lot of progress in-game so far."
@@ -93,11 +93,11 @@ label act1:
     hide Aarmsb1u
     hide Aarmsb1d
     if sleepscare == "non":
-        $ Aholepoints = Aholepoints - 1
+        $ AHP -= 1
         #subtract asshole point
         jump goodsleep
     if sleepscare == "ye":
-        $ Aholepoints = Aholepoints + 1
+        $ AHP += 1
         #add asshole points
         jump badsleep
 label goodsleep:
@@ -248,9 +248,9 @@ label location:
     A "Okay first of all, I live in Glendale." #She isn't offended here, use her playful/happy emotes.
     hide Ahappy1o
     show Ahappy1c
-    if Aholepoints == 1:
+    if AHP == 1:
         jump ahole1
-    if Aholepoints == -1:
+    if AHP == -1:
         jump location2
 label ahole1:
     P "Okay so Los Angeles negative, my bad."
@@ -298,7 +298,7 @@ label location2:
                 hide Aangry1
     menu:
             "I'll DM him if you want.":
-                $ Aholepoints = "Aholepoints - 1"
+                $ AHP = AHP - 1
                 show Aarmsb1u
                 P "I can DM him."
                 A "Are you okay with doing that?"

@@ -58,7 +58,6 @@ label start:
 
 label name:
 
-    $ Aholepoints = 0
     if P == '' :
         $ P = P.title()
         "ERROR. ERROR. NAME NOT DETECTED."

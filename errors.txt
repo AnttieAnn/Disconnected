@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Act3.rpy", line 88: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "I'm not really sure what I want to do, yet"
-                                                ^
+File "game/Act2.rpy", line 2: expected statement.
+    Aholepints2 = Aholepoints
+                ^
 
-Ren'Py Version: Ren'Py 7.1.1.929
-Fri Jun 28 15:17:20 2019
+Ren'Py Version: Ren'Py 7.3.0.271
+Fri Jun 28 15:53:04 2019
