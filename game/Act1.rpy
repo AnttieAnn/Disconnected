@@ -298,7 +298,7 @@ label location2:
                 hide Aangry1
     menu:
             "I'll DM him if you want.":
-                $ AHP = AHP - 1
+                $ AHP -= 1
                 show Aarmsb1u
                 P "I can DM him."
                 A "Are you okay with doing that?"

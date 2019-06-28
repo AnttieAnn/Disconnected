@@ -1,4 +1,5 @@
 label act3:
+    define SPV = ("Soft-Spoken Voice")
     "You knock on the door a few times. When there's no answer, you open it yourself."
     "You notice most of the drawers are open and Anne's bags are half packed."
 
@@ -46,7 +47,7 @@ label act3:
     C "When's your flight back to San Francisco?"
     P "In about a couple hours. I just wanted to be early."
     C "Yeah, that seems like you. My flight leaves in about half an hour."
-    "Guess I have half an hour to say my sappy goodbyes, then."#Soft-Spoken voice
+    SSV "Guess I have half an hour to say my sappy goodbyes, then."#Soft-Spoken voice
     "You and Conrad turn around to see who's speaking to you."
     "It's Anne!"
     C "Anne! What are you doing here?"
@@ -98,3 +99,23 @@ label act3:
     C "I'll be sure to update you guys whenever I can."
     A "Brilliant! I'll do it, too."
     P "I'm looking forward to the future. And I'm glad I'll get to share it with you both."
+
+    "An annoucement for Conrad's flight departing soon rings across the airport lobby."
+
+    "You all look at each other a bit saddened that your reunion had to be cut short"
+
+    C "Looks like I'll have to go right now."
+
+    "Conrad stays still for a moment as if he's unsure about what he should do next"
+    "Suddenly, Anne leaps onto him for a bear hug!"
+
+    C "Ack! Tackled! Fou play!"
+    "Conrad and Anne started to laugh as Anne starts to loosen her grip."
+    "You start to laugh as well at the other two's childish antics and then decided to join in for a group hug."
+    "Somehow, all the sadness you felt about leaving started to drift away during that hug."
+
+    A "Both of you have a safe trip back home!"
+    "Anne was the first one to break the hug."
+    A "Hey! Before you go, I have something to give you."
+    "Anne reaches into her purse and pulls out an alligator keychain and hands it to Conrad"
+    A "I got this at the gift shop when [P] and I first landed here."

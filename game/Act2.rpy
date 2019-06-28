@@ -37,10 +37,10 @@ label act2:
                 "Some time passes, and eventually after many delays, the plane is back up in the air, and you arrive in Orlando shortly."
 
         if Airplanemode == "ye":
-            $ AHP = AHP - 1
+            $ AHP -= 1
             jump planedone
         if Airplanemode == "non":
-            $ AHP = AHP + 100
+            $ AHP += 100
             jump planedone
 
 
