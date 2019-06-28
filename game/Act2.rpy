@@ -124,3 +124,237 @@ A "[P] This is one of my aunt's employees. Freight Train."
 A "I uh, don't know his actual name, but he just goes by Freight Train."
 define F = ("Freight Train")
 F "What's up tiny person"
+"You try to make out Freight Train's face, but are too intimidated to get a closer look."
+if AHP < 0:
+    F "I like him."
+if AHP < 99:
+    "Freight Train is observing you, he looks like a tough guy."
+    jump limo
+if AHP > 99:
+    F "I don't like this guy."
+    F "Seems like the fella would wouldn't turn on Airplane mode."
+    A "Oh don't worry Freight Train, I'm sure [P] uses airplane mode whenever he's on an airline."
+    A "After all, you have to be a special kind of evil to not use Airplane mode."
+    jump limo
+label limo:
+    A "So uh, lets head out!"
+    "You follow Freight Train outside the airport, a big black limo is there waiting for you."
+menu:
+    "That's a beautiful car.":
+        P "That's a beautiful car."
+        A "O-oh, my Aunt went a little overboard, I could have just gotten a rental car."
+    "Wow I didn't know that you were so rich.":
+        P "Wow I didn't know that you were so rich."
+        A "O-oh no its not like that!"
+        A "My aunt is the one with the money."
+        A "She even bought me first class tickets for my trip over here! I told her it was unnecessary, but she insisted."
+        A "Too bad I couldn’t figure out how to use the bed recliner."
+        A "It was pretty awkward eating sushi with the headrest reclined all the way to the back."
+        "You start to regret not letting Anne pay for your tickets"
+"You follow Anne inside the limo, Freight Train gets in the drivers seat."
+"It's a very nice limo, with fancy seats, and even some televisions."
+"A few minutes pass, and Anne falls asleep."
+"You arrive at a large house, and the limo stops."
+"Anne is still asleep."
+define whomst = ("???")
+define T = ("Aunt Tiff")
+menu:
+    "Wake her up.":
+        "It would be pretty awkward for you to show up at her Aunt's front door without Anne."
+        "You touch Anne ever so slightly on the shoulder, with the tip of your finger."
+        A "ahhHHHH"
+        "Anne looks pretty pissed."
+        A "[P] you scared the crap out of me!"
+        "You can feel Freight Train staring at you through the rear view mirror."
+        "You and Anne exit the limo."
+        "Anne leads you to the door, and rings the doorbell."
+        "A nice looking women answers the door."
+        whomst "Hello...?"
+        A "Aunt Tiff!"
+        "Anne and her aunt immediately embrace."
+
+    "Let her sleep":
+        "You allow Anne to continue sleeping."
+        "You exit the limo, and walk up to the front door."
+        "You ring the doorbell"
+        whomst "Hello...?"
+        whomst "And you are...?"
+        "You hear the sound of Anne exiting the limo."
+        A "Aunt Tiff!"
+        "Anne runs up to her Aunt and embraces her."
+T "Oh my goodness my little BrilliAnne. I hardly recognized you."
+A "Aunt Tiff this is my friend, [P]."
+P "It's a pleasure to meet you m'am."
+P "BrilliAnne?"
+A "Oh, uh, back when I was little, I used to say 'Brilliant' all the time."
+A "I guess it was kinda my catchphrase."
+T "Oh? Anne didn’t tell me she was bringing over a friend to visit. The more the merrier!"
+T "And please, You can call me aunt Tiff! There’s no need to call me ma’am."
+T "Just how old do you think I am?"
+menu:
+    "30":
+        P "30? You seem pretty young to be an aunt."
+        T "Oh, I like them."
+    "40":
+        P "40? since you're Anne's aunt I assume you must be older than Anne by a little bit."
+        T "..."
+        A "..."
+    "60":
+        P "60? You look pretty old."
+        T "Oh, really? I don't have to let you in my home ya know."
+        A "Aunt Tiff!"
+"Aunt Tiff leads you into the dining room."
+A "Wow, it’s been such a long time since I’ve visited here. Your house has changed so much; I can barely recognize it!"
+A "I don’t remember the dining room being this big."
+T "As time went on, my company grew larger and larger. I suppose that the same applied to my home."
+
+T "If you need anything, I’ll be in the kitchen preparing some snacks for the two of you."
+T "Make yourselves at home!"
+
+"Aunt Tiff exits the room, leaving you and Anne by yourselves."
+
+P "You and your aunt seem to be really close."
+A "Yeah, since I’m her only niece so I’ve always been given special treatment."
+A "It’s a shame that she’s so busy with her business here in Orlando. We rarely get to see each other."
+P "I’m glad that you’re able to get together again with your aunt after all these years apart, but I’m sad it’s under these circumstances."
+T "What circumstances?"
+
+"You turn around and see Aunt Tiff holding a decorative bowl that resembles a barrel filled with crackers for you and Anne."
+
+"You immediately regret your choice of words when you see the look on Anne’s face."
+
+A "Oh, um, I was meaning to tell you about this eventually…"
+A "[P] and I are in Florida to find a missing friend. He hasn’t been answering any of our messages or calls and we’ve been really worried about him."
+A "Ah, I see. You should have told me you were here for more than just a friendly visit, Anne."
+A "I’m sorry, I just didn’t want to make you feel bad and think that was the only reason I came to Florida…"
+A "That’s fine, I’m just glad you’re here. So this friend of yours, tell me about him. "
+A "It seems that he’s very special for both of you to come all the way here searching for him."
+
+"You and Anne spent the rest of the evening telling stories about Conrad to Aunt Tiff."
+
+"During that time, you can’t help but notice a smile on Anne’s face as she reminisced about your time together."
+
+"You started to smile as well."
+
+"And then you started to tell her about Conrad’s sudden disappearance…)"
+
+T "I can tell that Conrad is a nice friend from the stories you’ve told. But It’s awfully strange that he would just disappear on you both like that."
+A "Yeah, that’s why we’re really worried about where he is right now. We have to find him! That’s what he would want us to do."
+T "Are you sure about that?"
+A "What do you mean?"
+T "I had many friendships, relationships, and connections with different people."
+T "Many of them left an impact on my life. Some deeper than others. "
+T "Although some of them may be gone, they left an impression on me that stayed."
+T "It seems that wherever Conrad may be, he has left an impression on both of you that will also stay."
+T "And I’m sure that both of you have also left an impression on him."
+A "I understand what you’re trying to say, but he isn’t gone yet."
+A "I don’t understand why he stopped talking to us… Or where he went..."
+A "But, he’s still going to be a big part of our lives and everything will go back to the way it used to be. We just have to go and find him!"
+A "So that’s why we’re still going to keep looking for him! Right, [P]?"
+"You nod in agreement."
+T "Well I wish the two of you the best of luck."
+A "Thanks Aunt Tiff."
+A "[P] we should hit the hay, we're meeting Conrad's friend easrly tomorrow morning."
+A "Be sure to wake up bright and early."
+"Anne leaves for her room upstairs."
+T "So uh, [P], was it?"
+T "How did you and Anne meet?"
+menu:
+    "Over the internet.":
+        P "Over the internet."
+        T "Really? I've always wanted to try one of those online dating apps."
+        P "Actually, we didn't use a dating app. We have a software called discord."
+
+    "We met a few years ago.":
+        P "We met a few years ago."
+        T "Really? well that's cool."
+        T "Did you all use an online dating app? I've been meaning to give one of those a try."
+        P "Actually, we aren't dating, but there is this app called discord that we use."
+
+T "This cord? What about it?"
+"Aunt Tiff holds up a cable of some sort."
+P "No no no, DIScord. It's an online messaging app."
+T "What's discord?"
+"You explain to Aunt Tiff what discord is." #Sort of fade in and out between phrases to show a pasasage of time and that we are leaving stuff out.
+T "The hypesquad you say? So that's what was on Anne's shirt." #fade
+P "There's this thing called a Wumpus, he's sort of like the mascot."
+T "A wumpus? What kind of word is that?" #fade
+T "It took them THAT long to add screenshare??! Was it worth the wait?" #fade
+T "You use it to play what game? Super Smas-"#fade
+P "But yeah, that's pretty much it."
+T "Huh, that's a really neat program."
+T "Right now the chat platform I use feels so outdated."
+T "Anyway [P], you should go to bed, you have an early day tomorrow."
+T "Your room is straight down that hall on the second floor, last door to the right."
+"You head to your room, get into the bed, and doze off..."
+"The next morning..."
+"You wake up early, about 90 minutes before you're supposed to leave."
+"You walk outside, and realize that no one is awake."
+"Anne must still be sleeping, her room isn't that far away."
+menu:
+    "Wake her":
+        "You decide to wake Anne up."
+        "You enter Anne's room, she's passed out on the bed."
+        "You throw your entire body on the mattress."
+        A "ahhHHHH"
+        A "Oh, [P] it's just you."
+        A "Looks like I slept in, we should head out."
+
+
+    "Let her sleep":
+        "You let her sleep."
+        "You go downstairs to the kitchen and see Aunt Tiffany making some breakfast."
+        T "Hello [P]!"
+        T "Oh...? Is Anne not awake yet?"
+        T "Let me go get her..."
+        "Aunt Tiffany walks upstairs to Anne's room. In the distance you hear her scare Anne awake."
+        A "ahhHHHH"
+"Aunt Tiffany serves the both of you breakfast."
+"She made a lot of food for the both of you. Eggs, bacon, grits, and even a hashbrown casserole!"
+"There are some biscuits, with gravy for dipping."
+A "Thank you for breakfast Aunt Tiff, we'll be headed out now."
+T "Good luck BrilliAnee, I hope ya find your friend!"
+"You and Anne step outside."
+A "Okay [P], we're meeting Conrad's friend at a football field."
+A "She said he'd probably be there."
+A "Freight Train will be here soon with the limo, Aunt Tiff told me that we could use it all day."
+"You see the limo pull up and get in."
+"Freight Train drives you to a football field."
+"You look out and see a number of football players practicing, with a few spectators."
+A "Let's see if we can find Jade."
+"You sit in the stands, looking around for her."
+define J = ("Jade")
+whomst "You look lost, can I help you?"
+A "O-Oh! We're just looking for a friend."
+whomst "Really? Which friend?"
+A "Well, a friend who's gonna take us to our other friend, so we can find out if he's okay."
+"Anne pulls out a picture of Conrad."
+A "You wouldn't happen to know who this is do you? I was told he might be around here."
+whomst "Conrad?"
+A "Yeah! Do you know him?
+Young Athlete: "I’d like to think so. It would be pretty strange if I didn’t during all those years of dating.
+Anne: "Wait a minute, Jade?"
+J "Took ya long enough to recognize me, and Conrad said you were supposed to be the smart one."
+J "How are you doing Anne?"
+A "Oh my gosh I didn't even recognize you! Which makes sense because I've literally never seen your face before."
+A "[P] this is Jade, Conrad's girlfriend."
+Jade: Ex-girlfriend, currently.
+Anne: Oh, I’m sorry! I didn’t realize…
+J "It’s fine, it was fairly recent so I don’t expect you to have known. Guess I didn't mention it when we were talking."
+J "Now that I think about it, Conrad did mention having friends from California. I apologize for not being able to recognize you both.
+A "Can you help us find him? It’s really important.
+J "We haven’t talked to each other since we’ve broken up, so I’m not quite sure where he is right now.
+P "When was that, if you don’t mind me asking?
+J "A little over a month ago.
+A "That’s around the same time he stopped talking to us..."
+J "He's out there walking onto the field."
+J "He just got out of church, so he's talking to some of his buddies before they practice."
+A "Brilliant! I can see him."
+J "Be careful if you approach him, he gets really serious when he's practicing."
+A "That's funny, he gets really passionate about video games when we play together."
+A "Er. used to play."
+J "Well I'm glad I could help ya find him."
+J "Best of luck to ya."
+Anne: Jade is really nice. I wonder why she and Conrad broke up?
+Anne: And around the same time he stopped talking to us…
+Anne: Do you think it’s somehow connected?
