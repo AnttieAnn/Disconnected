@@ -183,14 +183,14 @@ label act3:
         C "No amount of distance or inactivity will ever change that."
         C "I don't think I've ever seen you this serious. I'ts a huge contrast from all of Anne's sappy messages."
         jump ConEnd
-        
-    if ConDM == "Fl"
+
+    if ConDM == "Fl":
         C "You're more than a friend, [P]"
         C "N-not that way! What I'm trying to say is that you're one of my closest friends."
         C "You have quite a way with words. You should try sending Anne one of these. She'll probably send you one of her sappy messages in response."
         jump ConEnd
 
-label ConEnd
+label ConEnd:
     C "I wanted to pin your messages so I can read it back whenever I need a quick smile."
     C "It's probably going to be a long while until the next time I check Discord, but don't hesitate in staying in touch."
     C "I'll try to message you back whenever I manage to get the time."
