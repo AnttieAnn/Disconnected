@@ -144,7 +144,9 @@ label ripconrad:
 
     menu:
         "You start the call.":
+            show Aarmsf1u
             P "I can start the call."
+            hide Aarmsf1u
             show Ahappy1o
             A "Oh good! I was hoping you'd do it actually."
             hide Ahappy1o
@@ -394,9 +396,9 @@ label location2:
             hide Ahappy1o
 
         "Yeah of course!":
-            show Aarmsb1u
+            show Asas1
             P "Yeah of course!"
-            hide Aarmsb1u
+            hide Asas1
             show Ahappy1o
             A "Oh yeah, it was a pretty special moment so I wouldn't expect you to forget."
             hide Ahappy1o
@@ -416,89 +418,175 @@ label location2:
             A "And the closer we got, it became clear that we were all meant to be friends."
             hide Ahappy1o
         "We all became friends overnight.":
+            show Aarmsb1u
             P "We all became friends overnight."
+            hide Aarmsb1u
+            show Ahappy1o
             A "Yeah, it's almost like we were all meant to be together."
-
+            hide Ahappy1o
+    show Aspeak1o
     A "Anyway, there's really no point in playing without Conrad, we need his help to clear the next boss."
     A "So we'll just wait until he comes back."
+    hide Aspeak1o
+    scene black with dissolve
+    scene bg room with dissolve
     "1 month later..."
     "You are receiving a call from Anne on discord!"
     "Accept the call?"
     menu:
         "Accept call":
             "You answered the discord call."
+            show Aarmsb1u
             A "H-hey!!"
             A "It's Anne."
             A "Uh, you knew that, discord shows you who's calling."
             A "I don't know why I said who I was."
             A "A-anyway! I need to tell you something."
+            hide Aarmsb1u
+            show Aarmsb1d
             A "I'm uh, really worried about Conrad."
             A "Like maybe he's okay and we're overreacting."
             A "B-but I want to go make sure he's okay."
             A "So uh, how do I explain this?"
+            hide Aarmsb1d
+            show Aarmsb1u
             A "I uh, went snooping around his friend list, specifically the mutual ones that him and I share."
             A "And it turns out, I'm friends with one of his close friends."
+            hide Aarmsb1u
+            show Aarmsb1d
             A "Just a total coincidence, but I hit her up and she hasn't heard from him in a while either."
+            hide Aarmsb1d
+            show Aarmsb1u
             A "So she's gonna take me to her."
+            hide Aarmsb1u
+            show Aarmsb1d
             A "I'm uh, going to Orlando"
+            hide Aarmsb1d
             jump annexplain
 
 
         "Reject call.":
             "You don't answer the discord call."
             "You have recieved a message from Anne!"
+            show Aarmsb1u
             A "Hey [P]! Give me a call when you can please!!"
             A "I uh, have something really important to tell you."
+            hide Aarmsb1u
 
     menu:
         "Call Anne back":
             "You decide to Call Anne back."
+            show Aarmsb1u
             A "H-hey!!"
             A "You uh, didn't answer the first time, sorry if I interuppted something.."
-            A "It's Anne by the way."
+            A "It's Anne."
             A "Uh wait, you knew that, discord shows you who's calling."
             A "I don't know why I said who I was."
             A "A-anyway! I need to tell you something."
+            hide Aarmsb1u
+            show Aarmsb1d
             A "I'm uh, really worried about Conrad."
             A "Like maybe he's okay and we're overreacting."
             A "B-but I want to go make sure he's okay."
             A "So uh, how do I explain this?"
+            hide Aarmsb1d
+            show Aarmsb1u
             A "I uh, went snooping around his friend list, specifically the mutual ones that him and I share."
             A "And it turns out, I'm friends with one of his close friends."
+            hide Aarmsb1u
+            show Aarmsb1d
             A "Just a total coincidence, but I hit her up and she hasn't heard from him in a while either."
-            A "So she's gonna take me to her."
+            hide Aarmsb1d
+            show Aarmsb1u
+            A "So she's gonna take me to him."
+            hide Aarmsb1u
+            show Aarmsb1d
             A "I'm uh, going to Orlando"
+            hide Aarmsb1d
             jump annexplain
-        "Incoming Call: Anne062819"
+        "Incoming Call: Anne062819" :
+            "You decide to Call Anne back."
+            show Aarmsb1u
+            A "H-hey!!"
+            A "You uh, didn't answer the first time, sorry if I interuppted something.."
+            A "It's Anne."
+            A "Uh wait, you knew that, discord shows you who's calling."
+            A "I don't know why I said who I was."
+            A "A-anyway! I need to tell you something."
+            hide Aarmsb1u
+            show Aarmsb1d
+            A "I'm uh, really worried about Conrad."
+            A "Like maybe he's okay and we're overreacting."
+            A "B-but I want to go make sure he's okay."
+            A "So uh, how do I explain this?"
+            hide Aarmsb1d
+            show Aarmsb1u
+            A "I uh, went snooping around his friend list, specifically the mutual ones that him and I share."
+            A "And it turns out, I'm friends with one of his close friends."
+            hide Aarmsb1u
+            show Aarmsb1d
+            A "Just a total coincidence, but I hit her up and she hasn't heard from him in a while either."
+            hide Aarmsb1d
+            show Aarmsb1u
+            A "So she's gonna take me to him."
+            hide Aarmsb1u
+            show Aarmsb1d
+            A "I'm uh, going to Orlando"
+            hide Aarmsb1d
+            jump annexplain
 label annexplain:
+    show Aarmsb1d
     A "I need to find out if Conrad is okay."
     A "I have a place to stay, I've got a really cool Aunt out there."
     A "I'm really nervous, but I couldn't send anyone else to find him for me, I want to find him and make sure that he's okay."
+    hide Aarmsb1d
     menu:
         "I'll go with you!":
+            show Aarmsb1u
             P "I'll go with you!"
+            hide Aarmsb1u
+            show Ahappy1o
             A "Oh thank goodness you said that. I was trying to find a way to ask you to come."
+            hide Ahappy1o
+            show Ahappy1c
             A "Are you sure? It's a pretty long flight."
+            hide Ahappy1c
             "You recall some money that you have left over from selling some of your old consoles"
+            show Aarmsb1u
             P "I have enough money to get out there, we should be fine."
+            hide Aarmsb1u
+            show Ahappy1o
             A "That, means a lot to me, that you would agree to come with."
+            hide Ahappy1o
 
         "Well, good luck with that.":
+            show Aarmsb1u
             P "Well, good luck with that."
             A "..."
             A "Wait! I need to ask you something."
+            hide Aarmsb1u
+            show Aarmsb1d
             A "I-Is there anyway that you could uh, come with me?"
             P "..."
             A "..."
             A "I don't like flying by myself."
+            hide Aarmsb1d
             "You recall some money that you have left over from selling some of your old consoles"
             "So price wouldn't be a problem."
+            show Aarmsb1d
             P "Alright, I'll go with you."
+            hide Aarmsb1d
+            show Ahappy1o
             A "R-Really!?"
             A "That, means a lot to me, that you would agree to come with me."
-
+            hide Ahappy1o
+    show Aarmsb1u
     A "Uh the soonest flight is tomorrow evening. my Aunt said she'd pick me up at the airport."
     A "You could probably stay with us"
+    hide Aarmsb1u
+    show Aarmsb1d
     A "Just uh, meet me at LAX."
+    hide Aarmsb1d
+    scene black with dissolve
     jump act2
 #End of Act 1
