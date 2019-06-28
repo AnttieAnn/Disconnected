@@ -124,3 +124,50 @@ A "[P] This is one of my aunt's employees. Freight Train."
 A "I uh, don't know his actual name, but he just goes by Freight Train."
 define F = ("Freight Train")
 F "What's up tiny person"
+"You try to make out Freight Train's face, but are too intimidated to get a closer look."
+if AHP < 0:
+    F "I like him."
+if AHP < 99:
+    "Freight Train is observing you, he looks like a tough guy."
+    jump limo
+if AHP > 99:
+    F "I don't like this guy."
+    F "Seems like the fella would wouldn't turn on Airplane mode."
+    A "Oh don't worry Freight Train, I'm sure [P] uses airplane mode whenever he's on an airline."
+    A "After all, you have to be a special kind of evil to not use Airplane mode."
+    jump limo
+label limo:
+    A "So uh, lets head out!"
+    "You follow Freight Train outside the airport, a big black limo is there waiting for you."
+menu:
+    "That's a beautiful car.":
+        P "That's a beautiful car."
+        A "O-oh, my Aunt went a little overboard, I could have just gotten a rental car."
+    "Wow I didn't know that you were so rich.":
+        P "Wow I didn't know that you were so rich."
+        A "O-oh no its not like that!"
+        A "My aunt is the one with the money."
+        A "She even bought me first class tickets for my trip over here! I told her it was unnecessary, but she insisted."
+        A "Too bad I couldn’t figure out how to use the bed recliner."
+        A "It was pretty awkward eating sushi with the headrest reclined all the way to the back."
+        "You start to regret not letting Anne pay for your tickets"
+"You follow Anne inside the limo, Freight Train gets in the drivers seat."
+"It's a very nice limo, with fancy seats, and even some televisions."
+"A few minutes pass, and Anne falls asleep."
+"You arrive at a large house, and the limo stops."
+"Anne is still asleep."
+define whomst = ("???")
+define T = ("Aunt Tiff")
+menu:
+    "Wake her up.":
+        "It would be pretty awkward for you to show up at her Aunt's front door without Anne."
+        "You touch Anne ever so slightly on the shoulder, with the tip of your finger."
+        A "ahhHHHH"
+        "Anne looks pretty pissed."
+        A "[P] you scared the crap out of me!"
+        "You can feel Freight Train staring at you through the rear view mirror."
+        "You and Anne exit the limo."
+    "Let her sleep":
+        "You allow Anne to continue sleeping."
+        "You exit the limo, and walk up to the front door."
+        "You ring the doorbell"
