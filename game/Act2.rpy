@@ -1,6 +1,6 @@
 label act2:
         define Pilot = ("Pilot")
-        "As you check in your baggage, you receive a notification from Discord."
+        "As you check in your baggage, you receive a notification from  Discord."
         show Ahips1
         "It's a message from Anne"
         A "Hey [P]! I'm leaving my flight now."
