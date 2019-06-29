@@ -357,4 +357,170 @@ J "Well I'm glad I could help ya find him."
 J "Best of luck to ya."
 A "Jade is really nice. I wonder why she and Conrad broke up?"
 A "And around the same time he stopped talking to us…"
-A "Do you think it’s somehow connected?"
+A "There’s so many people on the field. I can’t see any of their faces behind those football helmets."
+P "How will we be able to tell which one is Conrad?"
+A "We’ll have to take a closer look at the players if we want to find him."
+
+"Anne starts to approach the inner field, but you immediately stop her"
+
+P "Hey, Anne. There’s a sign posted right here."
+"Please stay five feet away from the inner field at all times."
+
+A "What about it?"
+
+menu:
+    "Follow the sign, we should stay back.":
+        P "Follow the sign. We should stay here."
+        A "No way!"
+        A "We’ve already gotten this far. We can’t let a stupid sign stop us"
+        A "I’ll go by myself. You can stay on the lookout."
+
+        "Anne tries to sneak further onto the field to get a better look. You stay behind."
+
+        "Luckily, there Anne is pretty good at sleuthing around. And all the players are too busy playing football."
+
+        "Your phone vibrates with a new notification."
+
+        A "I can't see him."
+
+        "You look towards the field and see Anne on her phone."
+
+        "But she doesn’t notice a football player is headed straight towards her!"
+
+        P "LOOK OUT!!!"
+
+        A "ahhHHHH"
+
+        "The football player tackles Anne, and she falls to the ground."
+    "Signs are stupid, lets go onto the field."
+        P "Signs are stupid, lets go onto the field."
+        A "Brilliant!"
+        "Luckily, you and Anne are good at sleuthing, and all the players are too busy playing football."
+        A "I can't see him."
+        "Anne checks something on her phone, but doesn't notice a football player headed straight for her."
+        P "LOOK OUT!!!"
+        A "ahhHHHH"
+        "The football player tackles Anne, and she falls to the ground."
+whomst "bruh, watch where you're going."
+A "Ouch..."
+"Anne got knocked down pretty hard, but she seems alright."
+whomst "That scream..."
+C "Anne???!"
+"Conrad runs over from the sidelines."
+A"Conrad?"
+C"Anne? What are you doing here?"
+C"And [P], too?!"
+C"Let’s go move to the side, unless you want to get tackled by another player."
+
+"You, Conrad, and Anne walk off the field to talk."
+
+A "We’ve been looking everywhere for you! I’m glad we were able to find you."
+C "Yeah, that makes one of us…
+A "What are you talking about?"
+C "You two shouldn’t have come here."
+
+(You notice Anne’s smile slowly begin to fade. You can’t hide the disappointment in your face, either.)"
+
+P "What happened to you? Why haven’t you been contacting us?"
+A "And why shouldn’t we be here?"
+C "I never planned on telling either of you. "
+C "Just because you show up here unannounced doesn’t mean I’m obligated to explain myself!."
+A "I’m pretty sure your friends have the right to know why you suddenly stop talking to them."
+A "You’ve always been open to us about what’s going on in your life and so have we!"
+C "Maybe that should change."
+A "We aren’t going anywhere until we get an explanation."
+A "We came all this way for-"
+C "For nothing! Coming here was pointless. I never wanted to be found and assuming that otherwise is a pretty selfish thing for your ends."
+A "Selfish? You were the one who didn’t even take an effort to send a single message!"
+P "We thought something might have happened to you and were worried."
+C "That’s your problem to worry about, not mine."
+C "All I should be worrying about right now is getting back to training. The thing I was doing before I was interrupted by you two."
+A "Oh, so training is more important than talking to your friends?!"
+C "Former. Friends."
+
+"You and Anne stand there speechless."
+
+C "*sigh* This is why I never wanted to talk about this."
+C "If you’re so desperate to get some closure before you go back to California, here you go."
+C "I chose to end this friendship when I stopped talking to you guys."
+C "Makes the decision a lot easier."
+P "Decision?"
+C "I got a sports scholarship at one of my top college picks. A pretty good one, too."
+C "I’ll have to train non-stop if I want to keep it, though. Which means no more video games and a lot less time on my phone."
+P "And a lot less time being spent with us..."
+C "Exactly. I decided that I’d rather end this friendship on my own terms rather than let it die out over time."
+C "I’ll admit that cutting off all communication so abruptly was pretty harsh, but that was the easiest way I knew how to do it."
+A "You never struck me as the type of guy who’d take the easy way out of things."
+C "You never struck me as the type of girl who’d fly across the country just because I wouldn’t respond to a few texts."
+C "But I guess we both underestimated each other."
+A "A few texts…?"
+
+"You stare at Anne’s expression. She looks like she’s about to burst."
+
+A "It’s been over a MONTH!"
+A "We texted you!"
+A "We called you!"
+A "We never stopped trying to contact you!"
+A "We were worried sick about you!"
+A "*I* was worried sick about you!"
+A "Y- you… You!"
+"It looks like Anne is going to explode. What should you do?"
+menu:
+    "Let her explode.":
+        P "..."
+    P "Anne-"
+A "You inconsiderate jerk!"
+A "You could have said something! Anything!"
+
+"Anne starts to cry. You notice Conrad has a pained expression on his face."
+
+A "We should have never come looking for you!"
+A "It would have been better if you stayed gone!"
+C "…"
+A "…"
+P "… Anne…"
+A "You really hurt me..."
+C "Anne, I-"
+C "I never meant for any of this to happen."
+C "I should have handled everything differently..."
+C "I thought that the longer I stayed friends with both of you, the harder it would be to let the both of you go."
+C "So I took the easy way out by cutting off all communication."
+C "Hurting you or making you worry about me was the last thing I wanted to do."
+C "I guess I was running away. First time for everything, right?"
+C "I’m sorry I didn’t say anything… I thought it would be better like this."
+A "I just need to clear my head."
+A "I- I didn’t expect to blow up like that."
+A "It’s just all too painful to hear. "
+A "I’m not sure if I don’t understand or if I don’t want to understand."
+A "All I know is that I feel hurt and confused."
+A "I have to go and clear my head. I’m sorry about what I said..."
+
+"(Anne runs away. You and Conrad stand there trying to take in everything she said.)"
+
+C "She’s really hurt..."
+C "I wouldn’t blame her if she doesn’t forgive me. I wouldn’t blame you if you don’t forgive me, too."
+
+menu:
+    "I forgive you.":
+        P "I forgive you."
+        C "Thank you, [P]"
+    "...":
+        C "I understand."
+
+C "I understand, [P]."
+
+C "I have a lot of regrets of the way I handled all of this."
+C "What Anne said really stung, but I bet not as much as my words stung her."
+C "I don’t know what hurt more, not hearing from me or hearing what I just said. All I know is that she’s hurting."
+P "Come on, we have to go find her."
+"You and Conrad walk back to the limo and find that it’s still there, but Anne is not inside. Anne must have left by foot.)"
+C "Wait, I should stay here."
+P "What are you talking about?"
+C "You should go by yourself. She wouldn’t want to see me."
+P "She flew across the country just to see you."
+P "She’s upset right now, but it’s only because she cares deeply about you."
+C "Are you sure?"
+P "I’m positive. She’s done nothing but think about you for the past month."
+C "I’m still a bit unsure about this, but okay. I’ll come with you."
+
+"You and Conrad arrive at aunt Tiff’s house."
