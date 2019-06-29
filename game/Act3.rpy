@@ -11,7 +11,7 @@ label act3:
     show Cidlec at midtoright
     show Aspeak2o at left with dissolve
     A "I was planning on it, but then I had to think a few things out."
-    A "[P], do you remmeber when I told you that I wasn't sure what I wanted to do after high school?"
+    A "[P], do you remember when I told you that I wasn't sure what I wanted to do after high school?"
     A "I told my aunt about it while we were here."
     hide Aspeak2o
     show Aarmsf2u at left
@@ -124,7 +124,7 @@ label act3:
     menu:
         "Maybe I'll get a job like Anne.":
             P "Maybe I'll get a job like you"
-            A "Brilliant! If you ever need some extra cash, I could probably put in a recomendation to my aunt to hire you."
+            A "Brilliant! If you ever need some extra cash, I could probably put in a recommendation to my aunt to hire you."
             C "*laughs* The image of [P] running aroud and taking orders from your aunt just seems really funny to me."
             C "But hey, that's a great idea. You know we'll always have your back no matter what you decide."
             C "And don't hesitate to reach out to us!"
@@ -160,7 +160,7 @@ label act3:
     "Conrad stays still for a moment as if he's unsure about what he should do next"
     "Suddenly, Anne leaps onto him for a bear hug!"
 
-    C "Ack! Tackled! Fou play!"
+    C "Ack! Tackled! Foul play!"
     "Conrad and Anne started to laugh as Anne starts to loosen her grip."
     "You start to laugh as well at the other two's childish antics and then decided to join in for a group hug."
     "Somehow, all the sadness you felt about leaving started to drift away during that hug."
@@ -170,7 +170,7 @@ label act3:
     A "Hey! Before you go, I have something to give you."
     "Anne reaches into her purse and pulls out an alligator keychain and hands it to Conrad"
     A "I got this at the gift shop when [P] and I first landed here."
-    A "I know it's pretty weird giving you a souvenir from the city you grew up in, but i wanted you to have something to remmeber this moment."
+    A "I know it's pretty weird giving you a souvenir from the city you grew up in, but i wanted you to have something to remember this moment."
     A "The Alligator looks really cool and as if it's prepared for anything that stands in its way!"
     A "It kind of reminded me of you."
 
