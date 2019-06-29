@@ -3,7 +3,7 @@
 
 label act1:
     $ AHP = 0
-    "The time is 11:58 PM, and you're playing GAME NAME with some of your close online friends"
+    "The time is 11:58 PM, and you're playing WhumpCraft with some of your close online friends"
     show Csmileo
     C "That was a great battle, guys! We made a lot of progress in-game so far."
     hide Csmileo
@@ -242,7 +242,7 @@ label location:
     A "Hey you live pretty close to me right?"
     hide Aspeak1o
     show Aspeak1c
-    P "I mean, San Francisco is a couple hours away. LA."
+    P "I mean, San Francisco is a couple hours away from LA."
     hide Aspeak1c
     show Ahappy1o
     A "Okay first of all, I live in Glendale." #She isn't offended here, use her playful/happy emotes.

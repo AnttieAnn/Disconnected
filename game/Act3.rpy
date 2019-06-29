@@ -11,16 +11,38 @@ label act3:
     show Cidlec at midtoright
     show Aspeak2o at left with dissolve
     A "I was planning on it, but then I had to think a few things out."
-    A "[P], do you remember when I told you that I wasn't sure what I wanted to do after high school?"
+    hide Aspeak2o
+    show Aspeak2c at left
+    hide Cidlec
+    show Cidleo at right
+    C "I'm really sorry about everything."
+    hide Cidleo
+    show Cidlec at right
+    hide Aspeak2c
+    show Aspeak2o at left
+    A "There's no need to apologize."
+    A "This scholarship is important to you."
+    hide Aspeak2o
+    show Aarmsf2d at left
+    A "At first, I didn't get why you didn't tell us that you wouldn't be able to talk to us as often instead of disappearing."
+    hide Aarmsf2d
+    show Aarmsf2u at left
+    A "But now, I understand how difficult a decision that must have been."
+    hide Aarmsf2u
+    hide Cidlec
+
+    "Anne's expression turns serious"
+    show Aspeak2o
+    A "[P], do you remmeber when I told you that I wasn't sure what I wanted to do after high school?"
     A "I told my aunt about it while we were here."
     hide Aspeak2o
-    show Aarmsf2u at left
+    show Aarmsf2u
     A "I asked her for advice on what to do since she's successful."
     A "She suggested that I try out working for her over the summer."
     A "She sad that, if I do good job and I like it, it could be a permanent position."
     A "The pay is decent and she said that I can live with her until I find a place of my own."
-    hide Cidlec
-    show Cidleo at right
+    show Aarmsf2u at midtoleft
+    show Cidleo at right with dissolve
     C "Woah, that's great news! That's an amazing opportunity for you, Anne!"
     hide Cidleo
     show Cidlec at right
@@ -76,29 +98,58 @@ label act3:
 
     menu:
         "You should accept the offer.":
+            show Aarmsf2u
             P "You should accept the offer"
             A "Do you really think I should?"
+            hide Aarmsf2u
+            show Ahappy2o
             A "Thank you, both of you."
             A "I haven't decided what I want to do yet, but hearing what both of you helps with my deciision."
+            hide Ahappy2o
 
 
         "You should think about this longer.":
+            show Aarmsf2u
             P "You should think about this longer"
             A "Yeah, you're right."
             A "It's a really great opportunity, but I'm still having some second thoughts."
+            hide Aarmsf2u
+            show Ahappy2o
             A "Thank you, both of you."
             A "I haven't decided what I want to do yet, but hearing your words of support really helps with my decision."
+            hide Ahappy2o
 
+    show Ahappy2c at midtoleft
+    show Cidleo at right with dissolve
     C "No problem. We're here for you, Anne."
+    hide Ahappy2c
+    hide Cidleo
     "A silence filled the air for a moment. Not an uncomfortable one, but one of conemplation"
+    show Aarmsf2u at left
+    show Cidlec at right
     A "I just realized, all this time together and we haven't really gotten to say hello for the first time and actually spend quality time together"
+    hide Cidlec
+    show Cidleo at right
     C "My flight leaves in a few days and I'm assuming you and [P] will have to leave soon as well."
+    hide Cidleo
+    show Cidlec at right
     P "We should make the most out of the time we have left."
+    hide Cidlec
+    show Cidleo at right
     C "Yeah, there's a bunch of theme parks and tourist attractions I'm sure both of you would be interested-"
+    hide Cidleo
+    show Cidlec at right
+
     A "*chuckles* I don't think that's what [P] meant."
     A "We should make the most out of being able to spend time with each other while we can"
+    hide Aarmsf2u
+    show Ahappy2o at left
     A "Even though the circumstances are a little sad, there's a part of me that's actually really happy with how everything turned out."
     A "We got to see each other, even if we're still going to go apart after this. That means more than anything to me."
+    hide Ahappy2o
+    show Ahappy2c at left
+    hide Cidlec
+    show Csmileo at right
     C "Same here."
 
     scene black with fade
@@ -122,35 +173,58 @@ label act3:
     hide Cspeako
     SSV "Guess I have half an hour to say my sappy goodbyes, then."#Soft-Spoken voice
     "You and Conrad turn around to see who's speaking to you."
-    show Asas2
+    show Asas2 with dissolve
     "It's Anne!"
     hide Asas2
     show Asas2 at midtoleft
     show Csmilec at right
     C "Anne! What are you doing here?"
+    hide Csmilec
+    show Cspeakc at right
     P "Are you flying back to Glendale?"
     A "No, but me not flying is part of the reason why I came"
     A "I decided that I want to stay here. I'm going to accept my aunt's offer and wanted to tell you both before I do."
+    hide Asas2
+    show Aarmsf2u at left
     A "But that's not the only reason I'm here."
-
+    hide Cspeakc
+    hide Aarmsf2u
+    show Ahappy2o
     "Anne starts to smile brightly"
-
+    hide Ahappy2o
+    show Asad2c
     A "I wanted to say goodbye to both of you in person before you both go."
     A "I can't believe you're going to college, Conrad."
+    hide Asad2c
+    show Aarmsf2u
     A "*chuckles* And to think, just a few years ago you were this hopeless boy getting wrecked by zombies on WumpCraft"
+    show Aarmsf2u at midtoleft
+    show Csmilec at right with dissolve
     C "Now I'm going to be a hopeless boy getting wrecked by exams in college!"
+    hide Csmilec
+    show Csmileo at right
     C "I have to say, though. It's pretty funy how I'm moving to California at the same time you're moving to Florida."
     C "I guess we're destined to always have the timezone curse."
+    hide Csmileo
+    show Cspeakc at right
     A "I didn't realize your college is in California. Brilliant!"
+    hide Cspeakc
+    show Csmileo at right
     C "That's about the hundreth time I've heard you say 'brilliant' since you came here."
     C "Keep it up and you'll have to change your Discord username to '@BrilliantAnne.'"
+    hide Csmileo
+    show Csmilec at right
+    hide Aarmsf2u
+    show Asas2 at left
     A "One 'brilliant' reference is enough. The username is a bit too on the nose."
     A "So [P], what are you planning to do once you go back home?"
+    hide Asas2
+    hide Csmilec
 
     menu:
         "Maybe I'll get a job like Anne.":
             P "Maybe I'll get a job like you"
-            A "Brilliant! If you ever need some extra cash, I could probably put in a recommendation to my aunt to hire you."
+            A "Brilliant! If you ever need some extra cash, I could probably put in a recomendation to my aunt to hire you."
             C "*laughs* The image of [P] running aroud and taking orders from your aunt just seems really funny to me."
             C "But hey, that's a great idea. You know we'll always have your back no matter what you decide."
             C "And don't hesitate to reach out to us!"
@@ -186,7 +260,7 @@ label act3:
     "Conrad stays still for a moment as if he's unsure about what he should do next"
     "Suddenly, Anne leaps onto him for a bear hug!"
 
-    C "Ack! Tackled! Foul play!"
+    C "Ack! Tackled! Fou play!"
     "Conrad and Anne started to laugh as Anne starts to loosen her grip."
     "You start to laugh as well at the other two's childish antics and then decided to join in for a group hug."
     "Somehow, all the sadness you felt about leaving started to drift away during that hug."
@@ -196,7 +270,7 @@ label act3:
     A "Hey! Before you go, I have something to give you."
     "Anne reaches into her purse and pulls out an alligator keychain and hands it to Conrad"
     A "I got this at the gift shop when [P] and I first landed here."
-    A "I know it's pretty weird giving you a souvenir from the city you grew up in, but i wanted you to have something to remember this moment."
+    A "I know it's pretty weird giving you a souvenir from the city you grew up in, but i wanted you to have something to remmeber this moment."
     A "The Alligator looks really cool and as if it's prepared for anything that stands in its way!"
     A "It kind of reminded me of you."
 
@@ -319,4 +393,7 @@ label ConEnd:
     "You smile to yourself as you put your phone away."
     "Your lives are going to be busier from now on and you won't be able to talk as much."
     "But the memories you've shared together, online and offline, will stay with you forever."
+
+
+    "Credits are in about Page"
     #Cue credits

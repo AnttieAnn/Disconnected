@@ -117,5 +117,6 @@ label name:
     if P == 'credits':
         $ P = P.title()
         jump credits
+    $ p = P.title()
 
     jump act1
