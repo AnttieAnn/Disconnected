@@ -39,7 +39,7 @@ label act3:
     show Aarmsf2u
     A "I asked her for advice on what to do since she's successful."
     A "She suggested that I try out working for her over the summer."
-    A "She sad that, if I do good job and I like it, it could be a permanent position."
+    A "She said that, if I do good job and I like it, it could be a permanent position."
     A "The pay is decent and she said that I can live with her until I find a place of my own."
     show Aarmsf2u at midtoleft
     show Cidleo at right with dissolve
@@ -124,7 +124,7 @@ label act3:
     C "No problem. We're here for you, Anne."
     hide Ahappy2c
     hide Cidleo
-    "A silence filled the air for a moment. Not an uncomfortable one, but one of conemplation"
+    "A silence filled the air for a moment. Not an uncomfortable one, but one of coneplation"
     show Aarmsf2u at left
     show Cidlec at right
     A "I just realized, all this time together and we haven't really gotten to say hello for the first time and actually spend quality time together"
@@ -204,14 +204,14 @@ label act3:
     C "Now I'm going to be a hopeless boy getting wrecked by exams in college!"
     hide Csmilec
     show Csmileo at right
-    C "I have to say, though. It's pretty funy how I'm moving to California at the same time you're moving to Florida."
+    C "I have to say, though. It's pretty funny how I'm moving to California at the same time you're moving to Florida."
     C "I guess we're destined to always have the timezone curse."
     hide Csmileo
     show Cspeakc at right
     A "I didn't realize your college is in California. Brilliant!"
     hide Cspeakc
     show Csmileo at right
-    C "That's about the hundreth time I've heard you say 'brilliant' since you came here."
+    C "That's about the hundredth time I've heard you say 'brilliant' since you came here."
     C "Keep it up and you'll have to change your Discord username to '@BrilliantAnne.'"
     hide Csmileo
     show Cspeakc at right
@@ -330,7 +330,7 @@ label act3:
     A "I got this at the gift shop when [P] and I first landed here."
     hide Aarmsf2u
     show Aarmsf2d
-    A "I know it's pretty weird giving you a souvenir from the city you grew up in, but i wanted you to have something to remmeber this moment."
+    A "I know it's pretty weird giving you a souvenir from the city you grew up in, but i wanted you to have something to remmember this moment."
     hide Aarmsf2d
     show Aarmsf2u
     A "The Alligator looks really cool and as if it's prepared for anything that stands in its way!"
@@ -445,7 +445,7 @@ label ConType:
     C "I was just reading that message again before my plane takes off."
     hide Csmileo
     show Cidleo
-    C "I didn't realized how many messages you and Anne sent me since I disapeared. I've only got around to reading through all of them today."
+    C "I didn't realized how many messages you and Anne sent me since I disappeared. I've only got around to reading through all of them today."
     C "I wish I read this a lot sooner."
     hide Cidleo
     if ConDM == "Person":

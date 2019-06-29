@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/Act2.rpy", line 88: expected menuitem
-    hide Aarmsf1u
-    ^
+File "game/Act2.rpy", line 82: menu statement expects a non-empty block.
+    menu:
+        ^
 
-Ren'Py Version: Ren'Py 7.1.1.929
-Fri Jun 28 22:42:30 2019
+File "game/Act2.rpy", line 83: expected statement.
+    "Alligator.":
+                ^
+
+File "game/Act2.rpy", line 86: expected statement.
+    "Orange.":
+             ^
+
+Ren'Py Version: Ren'Py 7.3.0.271
+Sat Jun 29 01:43:30 2019

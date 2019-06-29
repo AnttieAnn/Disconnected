@@ -1,58 +1,61 @@
 label act2:
-        define Pilot = ("Pilot")
-        "As you check in your baggage, you receive a notification from  Discord."
-        show Ahips1
-        "It's a message from Anne"
-        A "Hey [P]! I'm leaving my flight now."
-        hide Ahips1
-        show Ahappy1o
-        A "Uh the first class plane is really nice, I wish you had let me pay for your ticket lol."
-        A "We can keep talking if ya want so you don't get bored."
-        hide Ahappy1o
-        show Aspeak1o
-        A "Oh wait, actually, you better put your phone in airplane mode."
-        A "I'll hear from ya in a few hours."
-        hide Ahappy1o
-        show Aspeak1o
-        "You board the plane, and the intercom speaks."
-        hide Aspeak1o
-        Pilot "Thank you for flying with Omnia Airlines, please remember to put your phone into airplane mode."
-        "Your moral compass tells you to put your phone into airplane mode, but."
-        "There's an in game event for this game you play on your phone, and it requires the internet.."
-        menu:
-            "Put phone into airplane mode":
-                $ Airplanemode = "ye"
-                "You put your phone in airplane mode."
-                "+1 brownie points for being a good person."
-                "This is your pilot speaking, we will be taking off momentarily."
-                "You decide to doze off and take a nap..."
-                "A few hours later.."
-                Pilot "This is your pilot speaking, just letting you know that this was the smoothest flight of my career, and that we will  be touching down in Orlando momentaily"
+    show Aplane with dissolve
+    define Pilot = ("Pilot")
+    "As you check in your baggage, you receive a notification from  Discord."
+    show Ahips1
+    "It's a message from Anne"
+    A "Hey [P]! I'm leaving my flight now."
+    hide Ahips1
+    show Ahappy1o
+    A "Uh the first class plane is really nice, I wish you had let me pay for your ticket lol."
+    A "We can keep talking if ya want so you don't get bored."
+    hide Ahappy1o
+    show Aspeak1o
+    A "Oh wait, actually, you better put your phone in airplane mode."
+    A "I'll hear from ya in a few hours."
+    hide Ahappy1o
+    show Aspeak1o
+    "You board the plane, and the intercom speaks."
+    hide Aspeak1o
+    Pilot "Thank you for flying with Omnia Airlines, please remember to put your phone into airplane mode."
+    "Your moral compass tells you to put your phone into airplane mode, but."
+    "There's an in game event for this game you play on your phone, and it requires the internet.."
+    menu:
+        "Put phone into airplane mode":
+            $ Airplanemode = "ye"
+            "You put your phone in airplane mode."
+            "+1 brownie points for being a good person."
+            "This is your pilot speaking, we will be taking off momentarily."
+            "You decide to doze off and take a nap..."
+            "A few hours later.."
+            Pilot "This is your pilot speaking, just letting you know that this was the smoothest flight of my career, and that we will  be touching down in Orlando momentaily"
 
-            "Keep internet on.":
-                $ Airplanemode = "non"
-                "You decide that your weeaboo rhythm game is much more important than the safety of you and the passengers."
-                "-1 brownie points for being an awful person."
-                "I hope you feel bad."
-                "This is your pilot speaking, we will be taking off momentarily."
-                "The plane takes off, the scenery out the window is beautiful, but you would rather stare at your stupid game."
-                "Eventually, the plane is so high up that you no longer have a signal."
-                "Not sure what you expected to happen."
-                "Without technology to keep you occupied, you being to doze off.." #add in cool fade transition
-                "A few hours later"
-                Pilot "This is your pilot speaking, due to phones not being shut off or put in airplane mode, we are being forced to make a stop on the ground."
-                "Please remain seated."
-                "Some time passes, and eventually after many delays, the plane is back up in the air, and you arrive in Orlando shortly."
+        "Keep internet on.":
+            $ Airplanemode = "non"
+            "You decide that your weeaboo rhythm game is much more important than the safety of you and the passengers."
+            "-1 brownie points for being an awful person."
+            "I hope you feel bad."
+            "This is your pilot speaking, we will be taking off momentarily."
+            "The plane takes off, the scenery out the window is beautiful, but you would rather stare at your stupid game."
+            "Eventually, the plane is so high up that you no longer have a signal."
+            "Not sure what you expected to happen."
+            "Without technology to keep you occupied, you being to doze off.." #add in cool fade transition
+            "A few hours later"
+            Pilot "This is your pilot speaking, due to phones not being shut off or put in airplane mode, we are being forced to make a stop on the ground."
+            "Please remain seated."
+            "Some time passes, and eventually after many delays, the plane is back up in the air, and you arrive in Orlando shortly."
 
-        if Airplanemode == "ye":
-            $ AHP -= 1
-            jump planedone
-        if Airplanemode == "non":
-            $ AHP += 100
-            jump planedone
+    if Airplanemode == "ye":
+        $ AHP -= 1
+        jump planedone
+    if Airplanemode == "non":
+        $ AHP += 100
+        jump planedone
 
 
 label planedone:
+        scene black with dissolve
+        show Aport with dissolve
         "You exit the plane, spend 50 minutes searching for your luggage, and are now in the lobby."
         "You open up your discord, to see several messages from Anne."
         show Aspeak1o
@@ -78,13 +81,13 @@ label planedone:
         hide Aspeak1o
         show Aarmsf1u
         A "I can’t decide. Which would you like me to buy?"
-menu:
-    "Alligator.":
-        "[P] is typing..."
-        "You realize that there are more of Anne's messages to read."
-    "Orange.":
-        "[P] is typing..."
-        "You realize that there are more of Anne's messages to read."
+        menu:
+            "Alligator.":
+                "[P] is typing..."
+                "You realize that there are more of Anne's messages to read."
+            "Orange.":
+                "[P] is typing..."
+                "You realize that there are more of Anne's messages to read."
 hide Aarmsf1u
 show Aarmsf1d
 A "Oh wait, why am I messaging you lol. You're phone is still in airplane mode."
@@ -199,14 +202,15 @@ if AHP > 99:
     jump limo
 label limo:
     A "So uh, lets head out!"
-    show Ahappy1o
+    show Ahappy2o
     "You follow Freight Train outside the airport, a big black limo is there waiting for you."
-    hide Ahappy1o
+    hide Ahappy2o
 menu:
     "That's a beautiful car.":
         P "That's a beautiful car."
         show Aarmsf2d
         A "O-oh, my Aunt went a little overboard, I could have just gotten a rental car."
+        hide Aarmsf2d
     "Wow I didn't know that you were so rich.":
         P "Wow I didn't know that you were so rich."
         show Aarmsf2d
@@ -219,6 +223,7 @@ menu:
         A "It was pretty awkward eating sushi with the headrest reclined all the way to the back."
         hide Aarmsf2u
         "You start to regret not letting Anne pay for your tickets"
+scene black with dissolve
 "You follow Anne inside the limo, Freight Train gets in the drivers seat."
 "It's a very nice limo, with fancy seats, and even some televisions."
 "A few minutes pass, and Anne falls asleep."
@@ -238,6 +243,7 @@ menu:
         hide Aangry2
         "You and Anne exit the limo."
         show Asas2
+        show Staying with dissolve
         "Anne leads you to the door, and rings the doorbell."
         "A nice looking women answers the door."
         hide Asas2
@@ -251,6 +257,7 @@ menu:
     "Let her sleep":
         "You allow Anne to continue sleeping."
         "You exit the limo, and walk up to the front door."
+        show Staying with dissolve
         "You ring the doorbell"
         show Tidleo at right
         whomst "Hello...?"
@@ -350,7 +357,7 @@ hide Thappy
 
 "You started to smile as well."
 
-"And then you started to tell her about Conrad’s sudden disappearance…)"
+"And then you started to tell her about Conrad’s sudden disappearance…"
 hide Tangry
 show Thappy at right
 T "I can tell that Conrad is a nice friend from the stories you’ve told. But It’s awfully strange that he would just disappear on you both like that."
@@ -438,9 +445,11 @@ A "Okay [P], we're meeting Conrad's friend at a football field. Her name is Jade
 A "She said he'd probably be there."
 A "Freight Train will be here soon with the limo, Aunt Tiff told me that we could use it all day."
 hide Asas2
+scene black with dissolve
 "You see the limo pull up and get in."
 "Freight Train drives you to a football field."
 "You look out and see a number of football players practicing, with a few spectators."
+show Lax with dissolve
 show Ahappy2o
 A "Let's see if we can find Jade."
 hide Ahappy2o
@@ -573,7 +582,8 @@ show Csmileo at right
 C"Let’s go move to the side, unless you want to get tackled by another player."
 scene black with fade
 "You, Conrad, and Anne walk off the field to talk."
-show Ahappy2o at left with fade
+show Lax_side with dissolve
+show Ahappy2o at left
 show Cidlec at midtoright
 A "We’ve been looking everywhere for you! I’m glad we were able to find you."
 hide Cidlec
@@ -584,9 +594,9 @@ show Aarmsf2u at left
 A "What are you talking about?"
 C "You two shouldn’t have come here."
 
-"You notice Anne’s smile slowly begin to fade. You can’t hide the disappointment in your face, either.)"
+"You notice Anne’s smile slowly begin to fade. You can’t hide the disappointment in your face, either."
 hide Aarmsf2u at left
-show Aangry2
+show Aangry2 at left
 P "What happened to you? Why haven’t you been contacting us?"
 A "And why shouldn’t we be here?"
 C "I didn't think I'd telling either of you. "
@@ -677,7 +687,7 @@ C "I have a lot of regrets of the way I handled all of this."
 C "What Anne said really stung, but I bet not as much as my words stung her."
 C "I don’t know what hurt more, not hearing from me or hearing what I just said. All I know is that she’s hurting."
 P "Come on, we have to go find her."
-"You and Conrad walk back to the limo and find that it’s still there, but Anne is not inside. Anne must have left by foot.)"
+"You and Conrad walk back to the limo and find that it’s still there, but Anne is not inside. Anne must have left by foot."
 C "Wait, I should stay here."
 P "What are you talking about?"
 C "You should go by yourself. She wouldn’t want to see me."

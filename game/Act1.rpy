@@ -227,7 +227,7 @@ menu:
             A "Are you sure, I'd love to mine some materials but remember what Conrad would say?"
             hide Aarmsf1d
             show Aarmsf1u
-            A "'Don't mine at night, even if you're feelin kinda brave. Nothing will change if you just wait until day."
+            A "Don't mine at night, even if you're feelin kinda brave. Nothing will change if you just wait until that day."
             hide Aarmsf1u
             show Ahappy1o
             A "But you know what? We can at least go after some of the stronger enemies in there, we should have an easier time since I have this fancy blue sword now."
