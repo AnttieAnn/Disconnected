@@ -257,7 +257,6 @@ menu:
     "Let her sleep":
         "You allow Anne to continue sleeping."
         "You exit the limo, and walk up to the front door."
-        show Staying with dissolve
         "You ring the doorbell"
         show Tidleo at right
         whomst "Hello...?"
@@ -266,6 +265,8 @@ menu:
         show Ahappy2o at left
         A "Aunt Tiff!"
         "Anne runs up to her Aunt and embraces her."
+        show Staying with dissolve
+
 hide Ahappy2o
 hide Tidleo
 show Thappy at right
