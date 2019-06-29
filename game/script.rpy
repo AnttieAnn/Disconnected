@@ -39,7 +39,7 @@ label splashscreen:
 
     define C = Character("Conrad" , color = "#9c84ef")
     define A = Character("Anne" , color = "#ec7260")
-    define P = ("Player_name" , color = "#45ddc0")
+    define P = Character("Player_name" , color = "#45ddc0")
     scene black
 
 

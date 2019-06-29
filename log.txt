@@ -1685,3 +1685,11 @@ Using gl renderer.
 Texture testing:
 - Hardware max texture size: 16384
 - 64px textures work.
+- 128px textures work.
+- 256px textures work.
+- 512px textures work.
+- 1024px textures work.
+- 2048px textures work.
+FBO Maximum Texture Size: 16384
+Root FBO is: 0
+Total time until interface ready: 102.626000166s
