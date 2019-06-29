@@ -53,5 +53,13 @@ label Jade:
     image Jarmsdc = im.FactorScale("images/Jade/J_Idle_C.png",.545)
     image Jarmsdo = im.FactorScale("images/Jade/J_Idle_O.png",.545)
 
+label BG:
+    image Aplane = "images/BG/Airplane.png"
+    image Aport = "images/BG/Airport.png"
+    image Lax = "images/BG/Lax.png"
+    image Lax_side = "images/BG/Lax_side.png"
+    image Moving = "images/BG/Moving.png"
+    image Room1 = "images/BG/Room1.png"
+    image Staying = "images/BG/Staying.png" 
 
     return
