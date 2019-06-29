@@ -30,7 +30,8 @@ label splashscreen:
         with Pause(1)
 
     if randomnum == 4 :
-        show text "OwO?" with dissolve
+        show text "In memorial of Desmond 'Etika' Amofah" with dissolve
+        with Pause(3)
         return
 
     if randomnum == 5:
