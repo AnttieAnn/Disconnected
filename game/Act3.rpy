@@ -201,13 +201,25 @@ label act3:
     show Aarmsf2u at midtoleft
     show Csmilec at right with dissolve
     C "Now I'm going to be a hopeless boy getting wrecked by exams in college!"
+    hide Csmilec
+    show Csmileo at right
     C "I have to say, though. It's pretty funy how I'm moving to California at the same time you're moving to Florida."
     C "I guess we're destined to always have the timezone curse."
+    hide Csmileo
+    show Cspeakc at right
     A "I didn't realize your college is in California. Brilliant!"
+    hide Cspeakc
+    show Csmileo at right
     C "That's about the hundreth time I've heard you say 'brilliant' since you came here."
     C "Keep it up and you'll have to change your Discord username to '@BrilliantAnne.'"
+    hide Csmileo
+    show Csmilec at right
+    hide Aarmsf2u
+    show Asas2 at left
     A "One 'brilliant' reference is enough. The username is a bit too on the nose."
     A "So [P], what are you planning to do once you go back home?"
+    hide Asas2
+    hide Csmilec
 
     menu:
         "Maybe I'll get a job like Anne.":
