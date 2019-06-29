@@ -37,9 +37,9 @@ label splashscreen:
         with Pause(2)
     return
 
-    define C = Character("Conrad" , color = "#c8ffc8")
-    define A = Character("Anne")
-    define P = ("Player_name")
+    define C = Character("Conrad" , color = "#9c84ef")
+    define A = Character("Anne" , color = "#ec7260")
+    define P = ("Player_name" , color = "#45ddc0")
     scene black
 
 
