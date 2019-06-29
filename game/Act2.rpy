@@ -342,10 +342,10 @@ A "[P] this is Jade, Conrad's girlfriend."
 J "Ex-girlfriend, currently."
 A "Oh, I’m sorry! I didn’t realize…"
 J "It’s fine, it was fairly recent so I don’t expect you to have known. Guess I didn't mention it when we were talking."
-J "Now that I think about it, Conrad did mention having friends from California. I apologize for not being able to recognize you both.
-A "Can you help us find him? It’s really important.
-J "We haven’t talked to each other since we’ve broken up, so I’m not quite sure where he is right now.
-P "When was that, if you don’t mind me asking?
+J "Now that I think about it, Conrad did mention having friends from California. I apologize for not being able to recognize you both."
+A "Can you help us find him? It’s really important."
+J "We haven’t talked to each other since we’ve broken up, so I’m not quite sure where he is right now."
+P "When was that, if you don’t mind me asking?"
 J "A little over a month ago."
 A "That’s around the same time he stopped talking to us..."
 J "He's out there walking onto the field."
@@ -357,5 +357,5 @@ A "Er. used to play."
 J "Well I'm glad I could help ya find him."
 J "Best of luck to ya."
 A "Jade is really nice. I wonder why she and Conrad broke up?"
-A "And around the same time he stopped talking to us…""
-A "Do you think it’s somehow connected?""
+A "And around the same time he stopped talking to us…"
+A "Do you think it’s somehow connected?"
