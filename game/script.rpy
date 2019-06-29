@@ -114,6 +114,10 @@ label name:
         $ P = P.title()
         "That's a beautiful name"
 
+    if P == 'credits':
+        $ P = P.title()
+        jump credits
+
     if P == 'restart':
         $ P = P.title()
         jump splashscreen

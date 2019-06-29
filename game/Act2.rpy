@@ -1,6 +1,7 @@
 label act2:
         define Pilot = ("Pilot")
         "As you check in your baggage, you receive a notification from Discord."
+        show Ahips2
         "It's a message from Anne"
         A "Hey [P]! I'm leaving my flight now."
         A "Uh the first class plane is really nice, I wish you had let me pay for your ticket lol."
@@ -374,25 +375,17 @@ menu:
         A "No way!"
         A "We’ve already gotten this far. We can’t let a stupid sign stop us"
         A "I’ll go by myself. You can stay on the lookout."
-
         "Anne tries to sneak further onto the field to get a better look. You stay behind."
-
         "Luckily, there Anne is pretty good at sleuthing around. And all the players are too busy playing football."
-
         "Your phone vibrates with a new notification."
-
         A "I can't see him."
-
         "You look towards the field and see Anne on her phone."
-
         "But she doesn’t notice a football player is headed straight towards her!"
-
         P "LOOK OUT!!!"
-
         A "ahhHHHH"
-
         "The football player tackles Anne, and she falls to the ground."
-    "Signs are stupid, lets go onto the field."
+
+    "Signs are stupid, lets go onto the field.":
         P "Signs are stupid, lets go onto the field."
         A "Brilliant!"
         "Luckily, you and Anne are good at sleuthing, and all the players are too busy playing football."
@@ -415,11 +408,11 @@ C"Let’s go move to the side, unless you want to get tackled by another player.
 "You, Conrad, and Anne walk off the field to talk."
 
 A "We’ve been looking everywhere for you! I’m glad we were able to find you."
-C "Yeah, that makes one of us…
+C "Yeah, that makes one of us…"
 A "What are you talking about?"
 C "You two shouldn’t have come here."
 
-(You notice Anne’s smile slowly begin to fade. You can’t hide the disappointment in your face, either.)"
+"You notice Anne’s smile slowly begin to fade. You can’t hide the disappointment in your face, either.)"
 
 P "What happened to you? Why haven’t you been contacting us?"
 A "And why shouldn’t we be here?"

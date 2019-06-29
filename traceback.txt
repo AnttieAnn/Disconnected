@@ -1,26 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/Act2.rpy", line 42, in script
-    "You exit the plane, spend 50 minutes searching for your luggage, and are now in the lobby."
-  File "game/Act2.rpy", line 42, in <module>
-    "You exit the plane, spend 50 minutes searching for your luggage, and are now in the lobby."
-NameError: name 'AHP' is not defined
+  File "game/credits.rpy", line 22, in script
+    image cred = Text(credits_s, font="fonts/Lismonia Demo.ttf", text_align=0.5) #use this if you want to use special fonts
+  File "game/credits.rpy", line 22, in <module>
+    image cred = Text(credits_s, font="fonts/Lismonia Demo.ttf", text_align=0.5) #use this if you want to use special fonts
+NameError: name 'credits_speed' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Act2.rpy", line 42, in script
-    "You exit the plane, spend 50 minutes searching for your luggage, and are now in the lobby."
-  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\ast.py", line 912, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\python.py", line 1959, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "game/Act2.rpy", line 42, in <module>
-    "You exit the plane, spend 50 minutes searching for your luggage, and are now in the lobby."
-NameError: name 'AHP' is not defined
+  File "game/credits.rpy", line 22, in script
+    image cred = Text(credits_s, font="fonts/Lismonia Demo.ttf", text_align=0.5) #use this if you want to use special fonts
+  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\ast.py", line 981, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\Users\donov\Downloads\renpy-7.1.1-sdk\renpy\python.py", line 1937, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/credits.rpy", line 22, in <module>
+    image cred = Text(credits_s, font="fonts/Lismonia Demo.ttf", text_align=0.5) #use this if you want to use special fonts
+NameError: name 'credits_speed' is not defined
 
 Windows-8-6.2.9200
-Ren'Py 7.3.0.271
-Disconnected 0.63
-Fri Jun 28 15:56:59 2019
+Ren'Py 7.1.1.929
+ 
+Fri Jun 28 22:12:04 2019
