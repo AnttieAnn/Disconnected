@@ -33,4 +33,4 @@ init:
 #    image cred = Text(credits_s, font="myfont.ttf", text_align=0.5) #use this if you want to use special fonts
     image cred = Text(credits_s, text_align=0.5)
     image theend = Text("{size=80}The end", text_align=0.5)
-    image thanks = "images\Credits.png"
+    image thanks = "images/Credits.png"
