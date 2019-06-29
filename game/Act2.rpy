@@ -382,7 +382,7 @@ hide Aarmsf2u
 show Aarmsf2d
 A "But, he’s still going to be a big part of our lives and everything will go back to the way it used to be. We just have to go and find him!"
 hide Aarmsf2d
-show Aarmsf2u at midtoleft
+show Aarmsf2u at left
 A "So that’s why we’re still going to keep looking for him! Right, [P]?"
 "You nod in agreement."
 hide Thappy
@@ -465,34 +465,56 @@ A "Yeah! Do you know him?"
 J "I’d like to think so. It would be pretty strange if I didn’t during all those years of dating."
 A "Wait a minute. Jade?"
 hide Jarmsdo
-show Jhappyo
+show Jhappyo at right
 J "Took ya long enough to recognize me, and Conrad said you were supposed to be the smart one."
+hide Ahappy2o
 J "How are you doing Anne?"
-hide Ahappy
 show Asas2 at left
 A "Oh my gosh I didn't even recognize you! Which makes sense because I've literally never seen your face before."
 A "[P] this is Jade, Conrad's girlfriend."
+hide Ahappy
+hide Jhappyo
+show Jangry at right
 J "Ex-girlfriend, currently."
+hide Asas2
+show Aarmsf2d at left
 A "Oh, I’m sorry! I didn’t realize…"
+hide Jangry
+show Jarmsuo at right
 J "It’s fine, it was fairly recent so I don’t expect you to have known. Guess I didn't mention it when we were talking."
 J "Now that I think about it, Conrad did mention having friends from California. I apologize for not being able to recognize you both."
+hide Aarmsf2d
+show Aarmsf2u at left
 A "Can you help us find him? It’s really important."
-J "We haven’t talked to each other since we’ve broken up, so I’m not quite sure where he is right now."
+J "We haven’t talked to each other since we’ve broken up, but I don't mind."
 P "When was that, if you don’t mind me asking?"
 J "A little over a month ago."
 A "That’s around the same time he stopped talking to us..."
+hide Aarmsf2u
+show Aarmsf2d
 J "He's out there walking onto the field."
 J "He just got out of church, so he's talking to some of his buddies before they practice."
 A "Brilliant! I can see him."
 J "Be careful if you approach him, he gets really serious when he's practicing."
+hide Aarmsf2d
+show Ahappy2o
 A "That's funny, he gets really passionate about video games when we play together."
+hide Ahappy2o
+show Aarmsf2d
 A "Er. used to play."
 J "Well I'm glad I could help ya find him."
+hide Jarmsuo
 J "Best of luck to ya."
+hide Aarmsf2d
+show Aarmsf2u
 A "Jade is really nice. I wonder why she and Conrad broke up?"
+hide Aarmsf2u
+show Aarmsf2d
 A "And around the same time he stopped talking to us…"
 A "There’s so many people on the field. I can’t see any of their faces behind those football helmets."
 P "How will we be able to tell which one is Conrad?"
+hide Aarmsf2d
+show Ahappy2c
 A "We’ll have to take a closer look at the players if we want to find him."
 
 "Anne starts to approach the inner field, but you immediately stop her"
@@ -501,15 +523,19 @@ P "Hey, Anne. There’s a sign posted right here."
 "Please stay five feet away from the inner field at all times."
 
 A "What about it?"
-
+hide Ahappy2c
 menu:
     "Follow the sign, we should stay back.":
         P "Follow the sign. We should stay here."
+        show Aangry2
         A "No way!"
         A "We’ve already gotten this far. We can’t let a stupid sign stop us"
         A "I’ll go by myself. You can stay on the lookout."
+        hide Aangry2
+        show Aangry2 at midtoleft
         "Anne tries to sneak further onto the field to get a better look. You stay behind."
-        "Luckily, there Anne is pretty good at sleuthing around. And all the players are too busy playing football."
+        hide Aangry2
+        "Luckily, Anne is pretty good at sleuthing around. And all the players are too busy playing football."
         "Your phone vibrates with a new notification."
         A "I can't see him."
         "You look towards the field and see Anne on her phone."
@@ -521,35 +547,51 @@ menu:
     "Signs are stupid, lets go onto the field.":
         P "Signs are stupid, lets go onto the field."
         A "Brilliant!"
+        show Ahappy2o
         "Luckily, you and Anne are good at sleuthing, and all the players are too busy playing football."
         A "I can't see him."
         "Anne checks something on her phone, but doesn't notice a football player headed straight for her."
         P "LOOK OUT!!!"
+        hide Ahappy2o
         A "ahhHHHH"
         "The football player tackles Anne, and she falls to the ground."
 whomst "bruh, watch where you're going."
+show Aangry2
 A "Ouch..."
 "Anne got knocked down pretty hard, but she seems alright."
 whomst "That scream..."
 C "Anne???!"
+show Cspeako at midtoright
 "Conrad runs over from the sidelines."
+hide Aangry2
+show Ahappy2o
 A"Conrad?"
 C"Anne? What are you doing here?"
 C"And [P], too?!"
+hide Cspeako
+show Csmileo at right
 C"Let’s go move to the side, unless you want to get tackled by another player."
-
+scene black with fade
 "You, Conrad, and Anne walk off the field to talk."
-
+show Ahappy2o at left with fade
+show Cidlec at midtoright
 A "We’ve been looking everywhere for you! I’m glad we were able to find you."
+hide Cidlec
+show Cidleo at right
 C "Yeah, that makes one of us…"
+hide Ahappy2o
+show Aarmsf2u at left
 A "What are you talking about?"
 C "You two shouldn’t have come here."
 
 "You notice Anne’s smile slowly begin to fade. You can’t hide the disappointment in your face, either.)"
-
+hide Aarmsf2u at left
+show Aangry2
 P "What happened to you? Why haven’t you been contacting us?"
 A "And why shouldn’t we be here?"
-C "I never planned on telling either of you. "
+C "I didn't think I'd telling either of you. "
+hide Cidleo
+show Cidlec at right
 C "Just because you show up here unannounced doesn’t mean I’m obligated to explain myself!."
 A "I’m pretty sure your friends have the right to know why you suddenly stop talking to them."
 A "You’ve always been open to us about what’s going on in your life and so have we!"
@@ -582,7 +624,8 @@ C "But I guess we both underestimated each other."
 A "A few texts…?"
 
 "You stare at Anne’s expression. She looks like she’s about to burst."
-
+hide Aangry2
+show Asad2c at midtoleft
 A "It’s been over a MONTH!"
 A "We texted you!"
 A "We called you!"
@@ -590,11 +633,8 @@ A "We never stopped trying to contact you!"
 A "We were worried sick about you!"
 A "*I* was worried sick about you!"
 A "Y- you… You!"
-"It looks like Anne is going to explode. What should you do?"
-menu:
-    "Let her explode.":
-        P "..."
-    P "Anne-"
+"It looks like Anne is going to explode."
+show Asad2c at left
 A "You inconsiderate jerk!"
 A "You could have said something! Anything!"
 
@@ -615,25 +655,23 @@ C "Hurting you or making you worry about me was the last thing I wanted to do."
 C "I guess I was running away. First time for everything, right?"
 C "I’m sorry I didn’t say anything… I thought it would be better like this."
 A "I just need to clear my head."
-A "I- I didn’t expect to blow up like that."
-A "It’s just all too painful to hear. "
-A "I’m not sure if I don’t understand or if I don’t want to understand."
-A "All I know is that I feel hurt and confused."
-A "I have to go and clear my head. I’m sorry about what I said..."
-
+hide Asad2c
 "(Anne runs away. You and Conrad stand there trying to take in everything she said.)"
 
 C "She’s really hurt..."
+
 C "I wouldn’t blame her if she doesn’t forgive me. I wouldn’t blame you if you don’t forgive me, too."
 
 menu:
     "I forgive you.":
         P "I forgive you."
         C "Thank you, [P]"
+        show Csmileo
+        hide Cidlec
     "...":
         C "I understand."
 
-C "I understand, [P]."
+C "I understand [P]."
 
 C "I have a lot of regrets of the way I handled all of this."
 C "What Anne said really stung, but I bet not as much as my words stung her."
@@ -649,4 +687,5 @@ C "Are you sure?"
 P "I’m positive. She’s done nothing but think about you for the past month."
 C "I’m still a bit unsure about this, but okay. I’ll come with you."
 
-"You and Conrad arrive at aunt Tiff’s house."
+"You and Conrad arrive at Aunt Tiff’s house."
+jump act3
