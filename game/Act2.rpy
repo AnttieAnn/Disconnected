@@ -340,7 +340,7 @@ A "Ah, I see. You should have told me you were here for more than just a friendl
 A "I’m sorry, I just didn’t want to make you feel bad and think that was the only reason I came to Florida…"
 hide Aarmsf2d
 hide Tangry
-show Thappy
+show Thappy at right
 T "That’s fine, I’m just glad you’re here. So this friend of yours, tell me about him. "
 hide Aarmsf2d
 hide Thappy
@@ -351,9 +351,11 @@ hide Thappy
 "You started to smile as well."
 
 "And then you started to tell her about Conrad’s sudden disappearance…)"
+hide Tangry
 show Thappy at right
 T "I can tell that Conrad is a nice friend from the stories you’ve told. But It’s awfully strange that he would just disappear on you both like that."
-show Ahappy2o
+hide Aarmsf2u
+show Ahappy2o at left
 A "Yeah, that’s why we’re really worried about where he is right now. We have to find him! That’s what he would want us to do."
 hide Thappy
 show Tangry at right
@@ -362,6 +364,7 @@ hide Ahappy2o
 show Asas2
 A "What do you mean?"
 hide Tangry
+hide Asas2
 show Tidleo
 T "I had many friendships, relationships, and connections with different people."
 T "Many of them left an impact on my life. Some deeper than others. "
@@ -371,64 +374,50 @@ show Thappy
 T "It seems that wherever Conrad may be, he has left an impression on both of you that will also stay."
 T "And I’m sure that both of you have also left an impression on him."
 hide Thappy
-show Thappy midtoright
+show Thappy at midtoright
+show Aarmsf2u at midtoleft
 A "I understand what you’re trying to say, but he isn’t gone yet."
 A "I don’t understand why he stopped talking to us… Or where he went..."
+hide Aarmsf2u
+show Aarmsf2d
 A "But, he’s still going to be a big part of our lives and everything will go back to the way it used to be. We just have to go and find him!"
+hide Aarmsf2d
+show Aarmsf2u at midtoleft
 A "So that’s why we’re still going to keep looking for him! Right, [P]?"
 "You nod in agreement."
+hide Thappy
+show Tidleo at right
 T "Well I wish the two of you the best of luck."
+hide Tidleo
+hide Aarmsf2u
+show Ahappy2o
 A "Thanks Aunt Tiff."
+hide Ahappy2o
+show Asas2
 A "[P] we should hit the hay, we're meeting Conrad's friend easrly tomorrow morning."
 A "Be sure to wake up bright and early."
 "Anne leaves for her room upstairs."
-T "So uh, [P], was it?"
-T "How did you and Anne meet?"
-menu:
-    "Over the internet.":
-        P "Over the internet."
-        T "Really? I've always wanted to try one of those online dating apps."
-        P "Actually, we didn't use a dating app. We have a software called discord."
-
-    "We met a few years ago.":
-        P "We met a few years ago."
-        T "Really? well that's cool."
-        T "Did you all use an online dating app? I've been meaning to give one of those a try."
-        P "Actually, we aren't dating, but there is this app called discord that we use."
-
-T "This cord? What about it?"
-"Aunt Tiff holds up a cable of some sort."
-P "No no no, DIScord. It's an online messaging app."
-T "What's discord?"
-"You explain to Aunt Tiff what discord is." #Sort of fade in and out between phrases to show a pasasage of time and that we are leaving stuff out.
-T "The hypesquad you say? So that's what was on Anne's shirt." #fade
-P "There's this thing called a Wumpus, he's sort of like the mascot."
-T "A wumpus? What kind of word is that?" #fade
-T "It took them THAT long to add screenshare??! Was it worth the wait?" #fade
-T "You use it to play what game? Super Smas-"#fade
-P "But yeah, that's pretty much it."
-T "Huh, that's a really neat program."
-T "Right now the chat platform I use feels so outdated."
-T "Anyway [P], you should go to bed, you have an early day tomorrow."
-T "Your room is straight down that hall on the second floor, last door to the right."
-"You head to your room, get into the bed, and doze off..."
+hide Asas2 #fade
 "The next morning..."
-"You wake up early, about 90 minutes before you're supposed to leave."
-"You walk outside, and realize that no one is awake."
-"Anne must still be sleeping, her room isn't that far away."
+"You wake up, before Anne does..."
+"You recall that she said to wake up bright and early."
 menu:
     "Wake her":
         "You decide to wake Anne up."
         "You enter Anne's room, she's passed out on the bed."
         "You throw your entire body on the mattress."
         A "ahhHHHH"
+        show Aangry1
         A "Oh, [P] it's just you."
+        hide Aangry1
+        show Asas1
         A "Looks like I slept in, we should head out."
+        hide Asas1
 
 
     "Let her sleep":
         "You let her sleep."
-        "You go downstairs to the kitchen and see Aunt Tiffany making some breakfast."
+        "You go downstairs to the kitchen and hear Aunt Tiffany from the kitchen."
         T "Hello [P]!"
         T "Oh...? Is Anne not awake yet?"
         T "Let me go get her..."
@@ -437,30 +426,50 @@ menu:
 "Aunt Tiffany serves the both of you breakfast."
 "She made a lot of food for the both of you. Eggs, bacon, grits, and even a hashbrown casserole!"
 "There are some biscuits, with gravy for dipping."
+show Ahappy2o
 A "Thank you for breakfast Aunt Tiff, we'll be headed out now."
-T "Good luck BrilliAnee, I hope ya find your friend!"
+show Thappy at right
+T "Good luck BrilliAnne, I hope ya find your friend!"
+hide Thappy
+hide Ahappy2o
 "You and Anne step outside."
-A "Okay [P], we're meeting Conrad's friend at a football field."
+show Asas2
+A "Okay [P], we're meeting Conrad's friend at a football field. Her name is Jade."
 A "She said he'd probably be there."
 A "Freight Train will be here soon with the limo, Aunt Tiff told me that we could use it all day."
+hide Asas2
 "You see the limo pull up and get in."
 "Freight Train drives you to a football field."
 "You look out and see a number of football players practicing, with a few spectators."
+show Ahappy2o
 A "Let's see if we can find Jade."
+hide Ahappy2o
+show Ahappy2c at midtoleft
 "You sit in the stands, looking around for her."
 define J = ("Jade")
+show Jhappyo at midtoright
 whomst "You look lost, can I help you?"
+hide Ahappy2c
+show Ahappy2o at left
 A "O-Oh! We're just looking for a friend."
+hide Jhappyo
+show Jarmsuo at right
 whomst "Really? Which friend?"
 A "Well, a friend who's gonna take us to our other friend, so we can find out if he's okay."
 "Anne pulls out a picture of Conrad."
 A "You wouldn't happen to know who this is do you? I was told he might be around here."
+hide Jarmsuo
+show Jarmsdo at right
 whomst "Conrad?"
 A "Yeah! Do you know him?"
 J "I’d like to think so. It would be pretty strange if I didn’t during all those years of dating."
-A "Wait a minute, Jade?"
+A "Wait a minute. Jade?"
+hide Jarmsdo
+show Jhappyo
 J "Took ya long enough to recognize me, and Conrad said you were supposed to be the smart one."
 J "How are you doing Anne?"
+hide Ahappy
+show Asas2 at left
 A "Oh my gosh I didn't even recognize you! Which makes sense because I've literally never seen your face before."
 A "[P] this is Jade, Conrad's girlfriend."
 J "Ex-girlfriend, currently."
