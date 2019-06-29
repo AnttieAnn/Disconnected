@@ -5,7 +5,7 @@ label act1:
     scene black with dissolve
     show Room1 with fade
     $ AHP = 0
-    "The time is 11:58 PM, and you're playing WhumpCraft with some of your close online friends"
+    "The time is 11:58 PM, and you're playing WumpCraft with some of your close online friends"
     show Csmileo
     C "That was a great battle, guys! We made a lot of progress in-game so far."
     hide Csmileo
