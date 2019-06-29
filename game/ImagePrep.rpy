@@ -43,4 +43,18 @@ label ConradI:
     image Csmileo = im.FactorScale("images/Conrad/C_Smile_O.png",.545)
     image Cspeakc = im.FactorScale("images/Conrad/C_Speak_C.png",.545)
     image Cspeako = im.FactorScale("images/Conrad/C_speak_O.png",.545)
+<<<<<<< HEAD
+=======
+
+label Jade:
+    image J1 = im.FactorScale("images/Jade/J_Angry.png",.545)
+    image J2 = im.FactorScale("images/Jade/J_Happy_C.png",.545)
+    image J3 = im.FactorScale("images/Jade/J_Happy_O.png",.545)
+    image J4 = im.FactorScale("images/Jade/J_idle_2C.png",.545)
+    image J5 = im.FactorScale("images/Jade/J_Idle_2O.png",.545)
+    image J6 = im.FactorScale("images/Jade/J_Idle_C.png",.545)
+    image J7 = im.FactorScale("images/Jade/J_Idle_O.png",.545)
+
+
+>>>>>>> 72ce2405dd43b145e8a9294b38b3ba1def0a41eb
     return
