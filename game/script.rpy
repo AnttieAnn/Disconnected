@@ -55,10 +55,10 @@ label start:
 
     $ P = renpy.input("What is your name?")
 
-    $ P = P.lower()
+
 
 label name:
-
+    $ P = P.lower()
     if P == '' :
         $ P = P.title()
         "ERROR. ERROR. NAME NOT DETECTED."
@@ -117,6 +117,7 @@ label name:
     if P == 'credits':
         $ P = P.title()
         jump credits
-    $ p = P.title()
+    else :
+        $ P = P.title()
 
     jump act1
