@@ -33,7 +33,7 @@ define config.version = "0.832"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""This game was made using third party software such as RenPY and V-katsu. V-Katsu was used for Character art creation (because it was a lot faster that way)
+define gui.about = _p("""This game was made using third party software such as RenPY and V-katsu. V-Katsu was used for Character art creation because it was a lot faster that way, The character desgins are original, models supplied by V-katsu.
 This game was made from an experience we've all been through at some point. Special thanks to our friends for cheering us on during hackweek and not 
 give up on us. Our team toiled through at least a thousands lines of code. So please enjoy!
 """)
