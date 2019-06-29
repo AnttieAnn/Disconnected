@@ -19,7 +19,7 @@ label credits:
     return
 
 init:
-    #image cred = Text(credits_speed, font="fonts/Lismonia_Demo.ttf", text_align=0.5) #use this if you want to use special fonts
+    image cred = Text(credits_speed, font="fonts/Lismonia_Demo.ttf", text_align=0.5) #use this if you want to use special fonts
     image cred = Text("{size=80}These are the credits", text_align=0.5)
     image theend = Text("{size=80}The end bhic", text_align=0.5)
     image thanks = Text("{size=80}Thanks for Playing? ", text_align=0.5)

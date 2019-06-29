@@ -112,15 +112,10 @@ label name:
 
     if P == 'umi':
         $ P = P.title()
-        "That's a beautiful name"
+        jump credits
 
     if P == 'credits':
         $ P = P.title()
         jump credits
-
-    if P == 'restart':
-        $ P = P.title()
-        jump splashscreen
-    $ P = P.title()
 
     jump act1
