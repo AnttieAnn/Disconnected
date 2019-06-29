@@ -1,28 +1,64 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/Act3.rpy", line 415, in script
-    if ConDm == "Humor":
-  File "game/Act3.rpy", line 415, in <module>
-    if ConDm == "Humor":
-NameError: name 'ConDm' is not defined
+While loading <'Image' u'images/BG/Room1.png'>:
+  File "game/Act1.rpy", line 7, in script
+    scene room with dissolve
+IOError: Couldn't find file 'images/BG/Room1.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Act3.rpy", line 415, in script
-    if ConDm == "Humor":
-  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\ast.py", line 1830, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\python.py", line 1990, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\python.py", line 1983, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/Act3.rpy", line 415, in <module>
-    if ConDm == "Humor":
-NameError: name 'ConDm' is not defined
+  File "game/Act1.rpy", line 7, in script
+    scene room with dissolve
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\ast.py", line 1387, in execute
+    renpy.exports.with_statement(trans, paired)
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\exports.py", line 1592, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\core.py", line 2250, in do_with
+    clear=clear)
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\core.py", line 2701, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\core.py", line 3193, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\core.py", line 2093, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 519, in renpy.display.render.render_screen
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\transition.py", line 360, in render
+    bottom = render(self.old_widget, width, height, st, at)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "accelerator.pyx", line 110, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\image.py", line 500, in render
+    return wrap_render(self.target, width, height, st, at)
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\image.py", line 306, in wrap_render
+    rend = render(child, w, h, st, at)
+  File "render.pyx", line 154, in renpy.display.render.render
+  File "render.pyx", line 247, in renpy.display.render.render
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\im.py", line 582, in render
+    return cache.get(self, render=True)
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\im.py", line 266, in get
+    surf = image.load()
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\im.py", line 627, in load
+    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\loader.py", line 576, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'images/BG/Room1.png'.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.0.271
 Disconnected 0.63
-Sat Jun 29 00:38:29 2019
+Sat Jun 29 01:06:22 2019

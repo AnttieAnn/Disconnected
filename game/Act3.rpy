@@ -1,5 +1,5 @@
 label act3:
-    scene bg room with fade
+    show Staying with fade
     define SSV = ("Soft-Spoken Voice")
     "You knock on Anne's door a few times. When there's no answer, you open it yourself."
     "You notice most of the drawers are open and Anne's bags are half packed."
@@ -153,10 +153,11 @@ label act3:
     C "Same here."
 
     scene black with fade
+    hide Staying
     "The next few days are spent with all three of you reminiscing and catching up in everything."
     "You have a great time together but have to get ready preparing to leave."
     "Today is the day of your flight back to California. Conrad's departure is today as well."
-    scene bg room with fade
+    show Aport with fade
     "You arrive at the airport with Conrad."
 
     show Csmilec
@@ -500,6 +501,7 @@ label ConEnd:
     show Csmilec
     C "Take care, [P]."
     scene black with dissolve
+    hide Aport
     hide Csmilec
     "Conrad sends a selfie of him in his plane to the group DM with Anne with a caption"
     "It's an alligator emoji follow by a plus sign with an orange emoji follow by another plus sign with a moon emoji and it would all equal an Airplane emoji with a blue heart emoji next to it"

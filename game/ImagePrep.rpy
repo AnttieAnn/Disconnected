@@ -59,7 +59,7 @@ label BG:
     image Lax = "images/BG/Lax.png"
     image Lax_side = "images/BG/Lax_side.png"
     image Moving = "images/BG/Moving.png"
-    image Room1 = "images/BG/Room1.png"
-    image Staying = "images/BG/Staying.png" 
+    image Room1 = "images/BG/Room_1.png"
+    image Staying = "images/BG/Staying.png"
 
     return

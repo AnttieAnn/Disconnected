@@ -2,6 +2,8 @@
 
 
 label act1:
+    scene black with dissolve
+    show Room1 with fade
     $ AHP = 0
     "The time is 11:58 PM, and you're playing WhumpCraft with some of your close online friends"
     show Csmileo
@@ -337,7 +339,7 @@ label location2:
     "You wrote more than you intended, but are happy with what you sent."
 #Transition effect
     scene black with fade
-    scene bg room with fade
+    show Room1 with fade
     "A week passes, you haven't heard back from Conrad"
     "Anne hasn't messaged you at all..."
     "Until... right now!" #We need to add discord sound effects.
@@ -433,7 +435,7 @@ label location2:
     A "So we'll just wait until he comes back."
     hide Aspeak1o
     scene black with fade
-    scene bg room with fade
+    show Room1 with fade
     "1 month later..."
     "You are receiving a call from Anne on discord!"
     "Accept the call?"
