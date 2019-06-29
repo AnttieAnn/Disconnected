@@ -62,13 +62,21 @@ label planedone:
         show Ahappy1o
         A "I’ll take a quick nap at the airport lobby so I don’t miss you."
         A "Or actually, maybe I should go check out the gift shop to see if I can find anything to surprise you!"
+        hide Ahappy1o
+        show Aarmsf1d
         A "Oops! Guess I ruined the surprise…"
+        hide Aarmsf1d
+        show Aarmsf1u
         A "Oh well, since you already know that I’m going to get you something I’ll let you choose what gift I get for you."
         A "It’s the least I could do since you came all the way here to help me out!"
+        hide Aarmsf1u
+        show Aspeak1o
         A "There’s a cool-looking alligator keychain. The alligator’s jaws also double as a bottle opener! It’s really handy."
         A "But there’s also a cute necklace of an orange with a smiley face on it!"
         A "I actually can't stand oranges, they remind me of this one really annoying character from an anime I watched."
         A "But this necklace is pretty cool. It even lights up when you click on it! It’s really bright."
+        hide Aspeak1o
+        show Aarmsf1u
         A "I can’t decide. Which would you like me to buy?"
 menu:
     "Alligator.":
@@ -77,23 +85,38 @@ menu:
     "Orange.":
         "[P] is typing..."
         "You realize that there are more of Anne's messages to read."
+hide Aarmsf1u
+show Aarmsf1d
 A "Oh wait, why am I messaging you lol. You're phone is still in airplane mode."
-A "I'm assuming it is, you really have to be a terrible person to not turn on airplane mode."
+hide Aarmsf1d
+show Aangry1
+A "At least, I'm assuming it is, you really have to be a terrible person to not turn on airplane mode."
+hide Aangry1
+show Ahappy1o
 A "Guess I’ll have to choose myself. At least I’ll be able to surprise you!"
 "After you stop typing, you immediately see Anne begin to type."
+hide Ahappy1o
+show Aarmsf1u
 A "Hey! I hope you aren't typing on the plane."
 A "Your plane should have arrived by now, right? How was your flight?"
 menu:
     "Pretty smooth, no delays or anything.":
         P "Pretty smooth, no delays or anything."
+        show Aarmsf1d
         P "The pilot even said it was the smoothest flight ever."
     "Pretty rough, we had quite a few delays.":
         P "Pretty rough, we had quite a few delays."
+        hide Aarmsf1u
+        show Aarmsf1d
         A "Aw, I'm sorry to hear that."
-
+hide Aarmsf1d
+show Aarmsf1u
 A "I couldn’t sleep a wink, I kept worrying about Conrad."
+hide Aarmsf1u
+show Aspeak1o
 A "But, hey! That’s why we’re here, right? To make sure he’s safe so we stop worrying about him!"
 A "I’m over here by the gift shop. Haven’t left ever since I landed. It’s really easy to pass the time just browsing."
+hide Aspeak1o
 A "Can you see me? I'm wearing a black shirt."
 "You look around and see Anne facing away from you, staring intently at her phone."
 menu:
@@ -103,47 +126,70 @@ menu:
         A "ahhHHHH"
         $ AHP = AHP + 1
         #Add Ahole point increase here
+        show Aangry2
         A "What the hell?!?"
         A "Just who the hell do you think you are you piece of..."
+        hide Aangry2
         "Anne suddenly recognizes you."
     "Approach her":
         "You walk around so you don't scare her."
         P "Hey"
         "Anne looks up and instantly recognizes you."
+show Ahappy2o
 A "OH MY GOSH HI!!"
 "Anne extends her arm for a hug."
 menu:
     "Hug her.":
         "You accept the hug."
+        hide Ahappy2o
     "Reach for a handshake":
         "You reach your hand out for a shake."
+        hide Ahappy2o
+        show Aarmsf2d
         "Anne realizes what you're doing, puts her hands down and reaches out."
         A "S-Sorry, I just got really excited."
+        hide Aarmsf2d
         "Anne shakes your hand, firmly grasping it."
+show Ahappy2o
 A "I can’t believe this is our first time meeting in real life, I wish it was for a better reason though."
 A "I know I’ve seen pictures of you in the past, but it’s still pretty freaky finally seeing your face in person."
+hide Ahappy2o
+show Aarmsf2d
 A "Wait, that came out wrong!"
-A "You look nice in person, [P]. And in photos!"
+hide Aarmsf2d
+show Aarmsf2u
+A "You look nice in person [P]. And in photos!"
+hide Aarmsf2u
+show Ahips2
 A "Anyways, we can talk more later. We should be looking for our ride."
 A "My aunt sent someone to pick us up and they should be here by now."
+hide Ahips2
 "You notice a very tall man wearing professional attire holding up a sign:"
 "Pick-up for Miss Anne. G."
 "As soon as Anne makes eye contact with the man, she runs up and hugs him."
+show Ahappy2o
 A "FREIGHT TRAIN!!"
+hide Ahappy2o
+show Ahappy2c
 "The man embraces her back."
-A "[P] This is one of my aunt's employees. Freight Train."
+hide Ahappy2c
+show Aspeak1o
+A "[P], this is one of my aunt's employees. Freight Train."
+hide Aspeak1o
+show Aarmsf2u
 A "I uh, don't know his actual name, but he just goes by Freight Train."
+hide Aarmsf2u
 define F = ("Freight Train")
 F "What's up tiny person"
 "You try to make out Freight Train's face, but are too intimidated to get a closer look."
 if AHP < 0:
-    F "I like him."
+    F "I like them."
 if AHP < 99:
     "Freight Train is observing you, he looks like a tough guy."
     jump limo
 if AHP > 99:
-    F "I don't like this guy."
-    F "Seems like the fella would wouldn't turn on Airplane mode."
+    F "I don't like them."
+    F "Seems like a fella who wouldn't turn on Airplane mode."
     A "Oh don't worry Freight Train, I'm sure [P] uses airplane mode whenever he's on an airline."
     A "After all, you have to be a special kind of evil to not use Airplane mode."
     jump limo
