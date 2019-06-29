@@ -45,13 +45,13 @@ label ConradI:
     image Cspeako = im.FactorScale("images/Conrad/C_speak_O.png",.545)
 
 label Jade:
-    image J1 = im.FactorScale("images/Jade/J_Angry.png",.545)
-    image J2 = im.FactorScale("images/Jade/J_Happy_C.png",.545)
-    image J3 = im.FactorScale("images/Jade/J_Happy_O.png",.545)
-    image J4 = im.FactorScale("images/Jade/J_idle_2C.png",.545)
-    image J5 = im.FactorScale("images/Jade/J_Idle_2O.png",.545)
-    image J6 = im.FactorScale("images/Jade/J_Idle_C.png",.545)
-    image J7 = im.FactorScale("images/Jade/J_Idle_O.png",.545)
+    image Jangry = im.FactorScale("images/Jade/J_Angry.png",.545)
+    image Jhappyc = im.FactorScale("images/Jade/J_Happy_C.png",.545)
+    image Jhappyo = im.FactorScale("images/Jade/J_Happy_O.png",.545)
+    image Jarmsuc = im.FactorScale("images/Jade/J_idle_2C.png",.545)
+    image Jarmsuo = im.FactorScale("images/Jade/J_Idle_2O.png",.545)
+    image Jarmsdc = im.FactorScale("images/Jade/J_Idle_C.png",.545)
+    image Jarmsdo = im.FactorScale("images/Jade/J_Idle_O.png",.545)
 
 
     return
