@@ -1,7 +1,7 @@
 label act3:
     scene bg room with fade
     define SSV = ("Soft-Spoken Voice")
-    "You knock on the door a few times. When there's no answer, you open it yourself."
+    "You knock on Anne's door a few times. When there's no answer, you open it yourself."
     "You notice most of the drawers are open and Anne's bags are half packed."
     show Cidleo
     C "Leaving already?"
@@ -11,6 +11,12 @@ label act3:
     show Cidlec at midtoright
     show Aspeak2o at left with dissolve
     A "I was planning on it, but then I had to think a few things out."
+    C "I'm really sorry about everything."
+    A "There's no need to apologize."
+    A "This scholarship is important to you."
+    A "At first, I didn't get why you didn't tell us that you wouldn't be able to talk to us as often instead of disappearing."
+    A "But now, I understand how difficult a decision that must have been."
+    "Anne's expression turns serious"
     A "[P], do you remmeber when I told you that I wasn't sure what I wanted to do after high school?"
     A "I told my aunt about it while we were here."
     hide Aspeak2o
@@ -74,20 +80,39 @@ label act3:
     hide Cidle
     hide Aarmsf2u
 
-    #menu:
-        #"You should accept the offer.":
+    menu:
+        "You should accept the offer.":
+            P "You should accept the offer"
+            A "Do you really think I should?"
+            A "Thank you, both of you."
+            A "I haven't decided what I want to do yet, but hearing what both of you helps with my deciision."
 
-        #"You should think about this longer.":
 
-    show Aarmsf2u at left
-    A "Yeah, it's a really great opportunity."
-    hide Aarmsf2u
-    show Aarmsf2d at left
-    A "But"
-    hide Aarmsf2d
+        "You should think about this longer.":
+            P "You should think about this longer"
+            A "Yeah, you're right."
+            A "It's a really great opportunity, but I'm still having some second thoughts."
+            A "Thank you, both of you."
+            A "I haven't decided what I want to do yet, but hearing your words of support really helps with my decision."
+
+    C "No problem. We're here for you, Anne."
+    "A silence filled the air for a moment. Not an uncomfortable one, but one of conemplation"
+    A "I just realized, all this time together and we haven't really gotten to say hello for the first time and actually spend quality time together"
+    C "My flight leaves in a few days and I'm assuming you and [P] will have to leave soon as well."
+    P "We should make the most out of the time we have left."
+    C "Yeah, there's a bunch of theme parks and tourist attractions I'm sure both of you would be interested-"
+    A "*chuckles* I don't think that's what [P] meant."
+    A "We should make the most out of being able to spend time with each other while we can"
+    A "Even though the circumstances are a little sad, there's a part of me that's actually really happy with how everything turned out."
+    A "We got to see each other, even if we're still going to go apart after this. That means more than anything to me."
+    C "Same here."
+
     scene black with fade
+    "The next few days are spent with all three of you reminiscing and catching up in everything."
+    "You have a great time together but have to get ready preparing to leave."
+    "Today is the day of your flight back to California. Conrad's departure is today as well."
     scene bg room with fade
-    "You arrive at the airport with Conrad as you both prepare to leave."
+    "You arrive at the airport with Conrad."
 
     show Csmilec
     C "What are the odds of us leaving on the same day, huh?"
@@ -97,10 +122,17 @@ label act3:
     hide Cspeako
     show Cspeakc
     P "In about a couple hours. I just wanted to be early."
+    show Cspeako
+    hide Cspeakc
     C "Yeah, that seems like you. My flight leaves in about half an hour."
+    hide Cspeako
     SSV "Guess I have half an hour to say my sappy goodbyes, then."#Soft-Spoken voice
     "You and Conrad turn around to see who's speaking to you."
+    show Asas2
     "It's Anne!"
+    hide Asas2
+    show Asas2 at midtoleft
+    show Csmilec at right
     C "Anne! What are you doing here?"
     P "Are you flying back to Glendale?"
     A "No, but me not flying is part of the reason why I came"
@@ -212,12 +244,49 @@ label act3:
     "You recieve a notification from Discord."
     "Conrad pinned a message to your DM."
     "It was the DM you sent to him a month ago!"
+    if ConDM == "Person":
+        P "Hey, Conrad"
+        P "Sorry to bother you."
+        P "I just wanted to make sure you're okay."
+        P "You haven't been talking to us all day and I was just worried that something must have happened"
+        P "Somehow talking to you always seems to make my day a little brighter. I don't know what I'd do without you."
+        P "Just know that you're one of my closest friends."
+        P "Text me back when you can. I miss you"
+        jump ConType
+    if ConDm == "Humor":
+        P "Heyo, Conrad!"
+        P "I hope I didn't interrupt you dying in WumpCraft for the millionth time, haha."
+        P "But seriously, everything's ok right?"
+        P "You're starting to make me worried. I need you to bring me into another laughing fit. You always knew how to do that."
+        P "Just know that you're one of my closest friends."
+        P "Text me back when you can, I miss making fun of you."
+        jump ConType
+
+    if ConDM == "Seri":
+        P "Conrad?"
+        P "Hey, I hope I'm not bothering you."
+        P "I just wanted to make sure everything's alright."
+        p "I'm really worried about you. You haven't been online all day and I just wanted to make sure everythign was alright."
+        P "You mean alot to me... I have no idea what I would do if something were to happen to you"
+        P "Just know that you're one of my closest friends."
+        P "Message me back when you can. I miss talking to you"
+
+    if ConDM == "Fl":
+        P "Hey, Con~"
+        P "I hope I'm not distracting you. You always had a way of distracting me when i least expected it."
+        P "But seriously, is everything okay?"
+        P "It feels weird not hearing from you. You'd always talk nonstop about WumpCraft but you would talk about this one girl... something else... the girl again..."
+        P "but that's beside the point"
+        P "Just know that you're one of my closest friends."
+        P "Slide into my DMs when you can. I miss hanging out with you."
+label ConType:
     "Conrad is typing..."
     C "I was just reading that message again before my plane takes off."
     C "I didn't realized how many messages you and Anne sent me since I disapeared. I've only got around to reading through all of them today."
     C "I wish I read this a lot sooner."
 
     if ConDM == "Person":
+
         C "[P], you truly mean a lot to me."
         C "You're one of my closest friends and I'm grateful that you're a part of my life."
         C "Your message was pretty sappy. Maybe even more sappy than all of Anne's messages, if that's even possible."

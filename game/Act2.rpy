@@ -332,7 +332,8 @@ A "Well, a friend who's gonna take us to our other friend, so we can find out if
 A "You wouldn't happen to know who this is do you? I was told he might be around here."
 whomst "Conrad?"
 A "Yeah! Do you know him?"
-J "I’d like to think so. It would be pretty strange if I didn’t during all those years of dating."
+define YA = ("Young Athlete")
+YA "I’d like to think so. It would be pretty strange if I didn’t during all those years of dating."
 A "Wait a minute, Jade?"
 J "Took ya long enough to recognize me, and Conrad said you were supposed to be the smart one."
 J "How are you doing Anne?"
@@ -341,10 +342,10 @@ A "[P] this is Jade, Conrad's girlfriend."
 J "Ex-girlfriend, currently."
 A "Oh, I’m sorry! I didn’t realize…"
 J "It’s fine, it was fairly recent so I don’t expect you to have known. Guess I didn't mention it when we were talking."
-J "Now that I think about it, Conrad did mention having friends from California. I apologize for not being able to recognize you both."
-A "Can you help us find him? It’s really important."
-J "We haven’t talked to each other since we’ve broken up, so I’m not quite sure where he is right now."
-P "When was that, if you don’t mind me asking?"
+J "Now that I think about it, Conrad did mention having friends from California. I apologize for not being able to recognize you both.
+A "Can you help us find him? It’s really important.
+J "We haven’t talked to each other since we’ve broken up, so I’m not quite sure where he is right now.
+P "When was that, if you don’t mind me asking?
 J "A little over a month ago."
 A "That’s around the same time he stopped talking to us..."
 J "He's out there walking onto the field."
@@ -356,5 +357,5 @@ A "Er. used to play."
 J "Well I'm glad I could help ya find him."
 J "Best of luck to ya."
 A "Jade is really nice. I wonder why she and Conrad broke up?"
-A "And around the same time he stopped talking to us…"
-A "Do you think it’s somehow connected?"
+A "And around the same time he stopped talking to us…""
+A "Do you think it’s somehow connected?""
