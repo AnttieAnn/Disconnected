@@ -30,6 +30,7 @@ label splashscreen:
         with Pause(1)
 
     if randomnum == 4 :
+        show text "OwO?" with dissolve
         return
 
     if randomnum == 5:
@@ -39,8 +40,7 @@ label splashscreen:
 
     define C = Character("Conrad" , color = "#9c84ef")
     define A = Character("Anne" , color = "#ec7260")
-    define P = Character("Player_name" , color = "#45ddc0")
-
+    define P = ("Player_name" , color = "#45ddc0")
     scene black
 
 

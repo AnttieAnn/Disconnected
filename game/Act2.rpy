@@ -332,8 +332,7 @@ A "Well, a friend who's gonna take us to our other friend, so we can find out if
 A "You wouldn't happen to know who this is do you? I was told he might be around here."
 whomst "Conrad?"
 A "Yeah! Do you know him?"
-define YA = ("Young Athlete")
-YA "I’d like to think so. It would be pretty strange if I didn’t during all those years of dating."
+J "I’d like to think so. It would be pretty strange if I didn’t during all those years of dating."
 A "Wait a minute, Jade?"
 J "Took ya long enough to recognize me, and Conrad said you were supposed to be the smart one."
 J "How are you doing Anne?"

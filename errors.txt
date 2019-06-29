@@ -2,9 +2,33 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 42: invalid syntax
-    ("Player_name" , color = "#45ddc0")
-                            ^
+File "game/Act2.rpy", line 335: expected statement.
+    Young Athlete: "I’d like to think so. It would be pretty strange if I didn’t during all those years of dating."
+                 ^
 
-Ren'Py Version: Ren'Py 7.3.0.271
-Fri Jun 28 20:59:28 2019
+File "game/Act2.rpy", line 336: expected statement.
+    Anne: "Wait a minute, Jade?"
+        ^
+
+File "game/Act2.rpy", line 341: expected statement.
+    Jade: "Ex-girlfriend, currently."
+        ^
+
+File "game/Act2.rpy", line 342: expected statement.
+    Anne: "Oh, I’m sorry! I didn’t realize…"
+        ^
+
+File "game/Act2.rpy", line 358: expected statement.
+    Anne: "Jade is really nice. I wonder why she and Conrad broke up?"
+        ^
+
+File "game/Act2.rpy", line 359: expected statement.
+    Anne: "And around the same time he stopped talking to us…"
+        ^
+
+File "game/Act2.rpy", line 360: expected statement.
+    Anne: "Do you think it’s somehow connected?"
+        ^
+
+Ren'Py Version: Ren'Py 7.1.1.929
+Fri Jun 28 19:43:53 2019
