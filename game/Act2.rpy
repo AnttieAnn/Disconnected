@@ -59,7 +59,7 @@ label planedone:
         A "Just arrived in Orlando! ✈️"
         A "Your flight should be arriving a little later than mine."
         hide Aspeak1o
-        show
+        show Ahappy1o
         A "I’ll take a quick nap at the airport lobby so I don’t miss you."
         A "Or actually, maybe I should go check out the gift shop to see if I can find anything to surprise you!"
         A "Oops! Guess I ruined the surprise…"
