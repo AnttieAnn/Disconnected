@@ -616,7 +616,6 @@ label annexplain:
     show Aspeak1o
     A "Just uh, meet me in Florida I guess." #I wanna add a better transition into act 2
     hide Aspeak1o
-    hide Room1
     scene black with fade
     hide Room1
     jump act2
