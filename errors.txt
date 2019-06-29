@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Act2.rpy", line 375: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    A "No way!"
+File "game/Act2.rpy", line 88: expected menuitem
+    hide Aarmsf1u
     ^
 
 Ren'Py Version: Ren'Py 7.1.1.929
-Fri Jun 28 22:08:42 2019
+Fri Jun 28 22:42:30 2019

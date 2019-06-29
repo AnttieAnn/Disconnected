@@ -213,81 +213,156 @@ label act3:
     C "That's about the hundreth time I've heard you say 'brilliant' since you came here."
     C "Keep it up and you'll have to change your Discord username to '@BrilliantAnne.'"
     hide Csmileo
-    show Csmilec at right
+    show Cspeakc at right
     hide Aarmsf2u
     show Asas2 at left
     A "One 'brilliant' reference is enough. The username is a bit too on the nose."
     A "So [P], what are you planning to do once you go back home?"
     hide Asas2
-    hide Csmilec
+    hide Cspeakc
 
     menu:
         "Maybe I'll get a job like Anne.":
+            show Asas2 at left
+            show Cspeakc at right
             P "Maybe I'll get a job like you"
+            hide Asas2
+            show Ahappy2o at left
             A "Brilliant! If you ever need some extra cash, I could probably put in a recomendation to my aunt to hire you."
+            hide Ahappy2o
+            show Ahappy2c at left
+            hide Cspeakc
+            show Csmileo at right
             C "*laughs* The image of [P] running aroud and taking orders from your aunt just seems really funny to me."
+            hide Csmileo
+            show Cspeako at right
             C "But hey, that's a great idea. You know we'll always have your back no matter what you decide."
+            hide Cspeakc
+            show Csmilec at right
             C "And don't hesitate to reach out to us!"
 
         "Maybe I'll go to college like Conrad.":
+            show Asas2 at left
+            show Cspeakc at right
             P "Maybe I'll go to college like Conrad."
+            hide Cspeakc
+            show Csmileo at right
             C "Hey, that's pretty cool! Maybe we'll end up at the same college. I could put a good word in to my coach and have us on the same football team!"
+            hide Csmileo
+            show Cspeakc at right
+            hide Asas2
+            show Ahappy2o at left
             A "*laughs*"
             A "The image of [P] running around and trying to be an athlete just seems really funny to me."
             A "But hey, that's a great idea. You know we'll always support your decision no matter what."
+            hide Ahappy2o
+            show Ahappy2c at left
+            hide Cspeakc
+            show Csmilec at right
             C "And don't hesitate to reach out to us!"
 
         "I'm not really sure what I want to do, yet":
+            show Asas2 at left
+            show Cspeakc at right
             P "I'm not really sure what I want to do, yet."
+            hide Asas2
+            show Ahappy2o at left
             A "That's totally fine. You know we'll always have your back no matter what you decide."
+            hide Ahappy2o
+            show Ahappy2c at left
+            hide Cspeakc
+            show Csmilec at right
             C "I couldn't have said it better myself!"
+            hide Csmilec
+            show Csmilec at right
             C "If you ever need help with whatever you want to do after all of this, don't hesitate to reach out to us!"
-
+    hide Ahappy2c
+    show Ahappy2o at left
     A "Conrad's right. Just because we're all going in different directions in life doesn't mean we have to cut each other out completely."
+    hide Ahappy2o
+    show Asas2 at left
     A "I'm probably going to be really busy helping my aunt."
+    hide Csmilec
+    show Cspeako at right
     C "And training's going to be crazy for me for the next four years..."
     C "But I won't ghost on all of you like I did last time. I'll make sure of it."
+    hide Cspeako
+    show Csmileo at right
     C "I'll be sure to update you guys whenever I can."
+    hide Csmileo
+    show Cspeakc at right
+    hide Asas2
+    show Ahappy2o at left
     A "Brilliant! I'll do it, too."
+    hide Ahappy2o
+    show Ahappy2c at left
     P "I'm looking forward to the future. And I'm glad I'll get to share it with you both."
+    hide Cspeakc
+    hide Ahappy2c
 
     "An annoucement for Conrad's flight departing soon rings across the airport lobby."
 
     "You all look at each other a bit saddened that your reunion had to be cut short"
-
+    show Csmileo
     C "Looks like I'll have to go right now."
+    hide Csmileo
 
     "Conrad stays still for a moment as if he's unsure about what he should do next"
     "Suddenly, Anne leaps onto him for a bear hug!"
-
-    C "Ack! Tackled! Fou play!"
+    show Csmilec
+    C "Ack! Tackled! Foul play!"
+    hide Csmilec
     "Conrad and Anne started to laugh as Anne starts to loosen her grip."
     "You start to laugh as well at the other two's childish antics and then decided to join in for a group hug."
     "Somehow, all the sadness you felt about leaving started to drift away during that hug."
-
+    show Cspeakc at right
+    show Ahappy2o at left
     A "Both of you have a safe trip back home!"
+    hide Ahappy2o
+    hide Cspeakc
     "Anne was the first one to break the hug."
+    show Aarmsf2u
     A "Hey! Before you go, I have something to give you."
+    hide Aarmsf2u
     "Anne reaches into her purse and pulls out an alligator keychain and hands it to Conrad"
+    show Aarmsf2u
     A "I got this at the gift shop when [P] and I first landed here."
+    hide Aarmsf2u
+    show Aarmsf2d
     A "I know it's pretty weird giving you a souvenir from the city you grew up in, but i wanted you to have something to remmeber this moment."
+    hide Aarmsf2d
+    show Aarmsf2u
     A "The Alligator looks really cool and as if it's prepared for anything that stands in its way!"
+    hide Aarmsf2u
+    show Ahappy2o
     A "It kind of reminded me of you."
+    hide Ahappy2o
 
     "Conrad smiles and hooks up the keychain to his bag."
-
+    show Csmileo
     C "I'll keep it with me always, Anne."
+    hide Csmileo
+    show Csmileo
     C "I'll text you guys right before I have to depart, I'm glad we got to see each other."
+    hide Csmileo
+    show Csmilec
     P "Same here."
+    show Csmilec at midtoright
+    show Ahappy2o at left with dissolve
     A "Who knows, maybe one day the stars will align for us to meet up in real life again some day for some reason!"
+    hide Ahappy2o
+    show Ahappy2c at left
     P "I'll be looking forward to then."
+    hide Ahappy2c
+    hide Csmilec
 
     "Conrad carries his bags and gives you and Anne one last look before he goes to catch his flight."
     "You carry your bags too, planning to go to check-in. But before you can go, Anne stops you."
 
+    show Aarmsf2u
     A "Don't think I forgot about you, silly!"
     A "Do me a favor and hold out your wrist."
-
+    hide Aarmsf2u
     "You hesitantly hold out your wrist as Anne wraps a bracelet around it."
     "It has some kind of stone attached on it."
 

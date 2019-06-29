@@ -30,7 +30,8 @@ label splashscreen:
         with Pause(1)
 
     if randomnum == 4 :
-        show text "In memorial of Desmond 'Eitka' Amofah" with dissolve
+        show text "In memorial of Desmond 'Etika' Amofah" with dissolve
+        with Pause(3)
         return
 
     if randomnum == 5:
@@ -55,10 +56,10 @@ label start:
 
     $ P = renpy.input("What is your name?")
 
-
+    $ P = P.lower()
 
 label name:
-    $ P = P.lower()
+
     if P == '' :
         $ P = P.title()
         "ERROR. ERROR. NAME NOT DETECTED."
@@ -118,7 +119,6 @@ label name:
     if P == 'credits':
         $ P = P.title()
         jump credits
-    else :
-        $ P = P.title()
+    $ p = P.title()
 
     jump act1
