@@ -30,6 +30,7 @@ label splashscreen:
         with Pause(1)
 
     if randomnum == 4 :
+        show text "OwO?" with dissolve
         return
 
     if randomnum == 5:
