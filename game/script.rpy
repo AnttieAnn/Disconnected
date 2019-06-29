@@ -77,9 +77,10 @@ label name:
         $ P = P.title()
         "Squish it"
 
-    if P == 'eli':
+    if P == 'reli':
         $ P = P.title()
         "Hey Eli, remember those graphics you were supposed to make?"
+        jump credits
 
     if P == 'hunter' :
         $ P = P.title()

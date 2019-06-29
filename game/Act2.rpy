@@ -1,7 +1,7 @@
 label act2:
+        #hi
         define Pilot = ("Pilot")
         "As you check in your baggage, you receive a notification from Discord."
-        show Ahips2
         "It's a message from Anne"
         A "Hey [P]! I'm leaving my flight now."
         A "Uh the first class plane is really nice, I wish you had let me pay for your ticket lol."
@@ -283,7 +283,7 @@ A "It seems that he’s very special for both of you to come all the way here se
 
 "You started to smile as well."
 
-"And then you started to tell her about Conrad’s sudden disappearance…)"
+"And then you started to tell her about Conrad’s sudden disappearance…"
 
 T "I can tell that Conrad is a nice friend from the stories you’ve told. But It’s awfully strange that he would just disappear on you both like that."
 A "Yeah, that’s why we’re really worried about where he is right now. We have to find him! That’s what he would want us to do."
@@ -421,16 +421,24 @@ menu:
         A "No way!"
         A "We’ve already gotten this far. We can’t let a stupid sign stop us"
         A "I’ll go by myself. You can stay on the lookout."
-        "Anne tries to sneak further onto the field to get a better look. You stay behind."
-        "Luckily, there Anne is pretty good at sleuthing around. And all the players are too busy playing football."
-        "Your phone vibrates with a new notification."
-        A "I can't see him."
-        "You look towards the field and see Anne on her phone."
-        "But she doesn’t notice a football player is headed straight towards her!"
-        P "LOOK OUT!!!"
-        A "ahhHHHH"
-        "The football player tackles Anne, and she falls to the ground."
 
+        "Anne tries to sneak further onto the field to get a better look. You stay behind."
+
+        "Luckily, there Anne is pretty good at sleuthing around. And all the players are too busy playing football."
+
+        "Your phone vibrates with a new notification."
+
+        A "I can't see him."
+
+        "You look towards the field and see Anne on her phone."
+
+        "But she doesn’t notice a football player is headed straight towards her!"
+
+        P "LOOK OUT!!!"
+
+        A "ahhHHHH"
+
+        "The football player tackles Anne, and she falls to the ground."
     "Signs are stupid, lets go onto the field.":
         P "Signs are stupid, lets go onto the field."
         A "Brilliant!"
@@ -458,7 +466,7 @@ C "Yeah, that makes one of us…"
 A "What are you talking about?"
 C "You two shouldn’t have come here."
 
-"You notice Anne’s smile slowly begin to fade. You can’t hide the disappointment in your face, either.)"
+"You notice Anne’s smile slowly begin to fade. You can’t hide the disappointment in your face, either."
 
 P "What happened to you? Why haven’t you been contacting us?"
 A "And why shouldn’t we be here?"
@@ -534,7 +542,7 @@ A "I’m not sure if I don’t understand or if I don’t want to understand."
 A "All I know is that I feel hurt and confused."
 A "I have to go and clear my head. I’m sorry about what I said..."
 
-"(Anne runs away. You and Conrad stand there trying to take in everything she said.)"
+"Anne runs away. You and Conrad stand there trying to take in everything she said.)"
 
 C "She’s really hurt..."
 C "I wouldn’t blame her if she doesn’t forgive me. I wouldn’t blame you if you don’t forgive me, too."
