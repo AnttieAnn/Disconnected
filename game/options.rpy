@@ -21,7 +21,7 @@ define config.name = _("Disconnected")
 define gui.show_name = False
 #Gui Colours
 define gui.hover_color = '#3284d6'
-define gui.accent_color = '#7289DA'
+define gui.accent_color = '#45ddc0'
 define gui.idle_color = '#ffffff'
 define gui.interface_text_color ='#ffffff'
 define gui.hover_color = '#3284d6'
