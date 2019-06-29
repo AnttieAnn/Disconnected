@@ -101,7 +101,7 @@ label name:
         "That's a pretty name!"
 
     if P == 'anttie' :
-        $ p = P.title()
+        $ P = P.title()
         "Follow @AnttieAnt on Twitter ;)"
 
     if P == 'speachbyte':

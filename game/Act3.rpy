@@ -366,22 +366,38 @@ label act3:
     "You hesitantly hold out your wrist as Anne wraps a bracelet around it."
     "It has some kind of stone attached on it."
 
+    show Ahappy2o
     A "Brilliant! It looks great on you."
+    hide Ahappy2o
+    show Aarmsf2u
     A "While I was buying stuff at the gift shop, I saw this hanging by the counter."
     A "The cashier told me that it's a moonstone, the state stone of Florida."
+    hide Aarmsf2u
+    show Asas2
     A "I looked it up on my phone and apparently it's a healing stone that's supposed to help bring calm, peace, and balance."
+    hide Asas2
+    show Ahappy2o
     A "All of those descriptions fit you pretty well, so I decided to get it for you!"
+    hide Ahappy2o
     "Anne presses on her necklace. To your surprise, it lights up!"
+    show Aarmsf2u
     A "I also got a little something for myself, too!"
     A "It's the orange necklace I got from the gift shop when we arrived here."
     P "It shines brightly, just like you."
+    hide Aarmsf2u
+    show Aarmsf2d
     A "D-do you really think so?"
     A "If I'm being totally honest, I only got it because the smiley face looked cute..."
+    hide Aarmsf2d
+    show Ahappy2o
     A "But I'm glad we were each able to have something that fits each of us."
     A "This way, we each have something to remember this moment."
     A "Not that I'll ever forget this moment, but it's always nice to have a souvenir!"
 
+    hide Ahappy2o
+    show Aarmsf2u
     A "Have a safe trip home, [P]"
+    hide Aarmsf2u
     "You say goodbye to Anne and head towards baggage check-in."
     "You glance at the bracelet Anne gave you. You find it difficult to hold back a smile."
     "You recieve a notification from Discord."
@@ -396,7 +412,7 @@ label act3:
         P "Just know that you're one of my closest friends."
         P "Text me back when you can. I miss you"
         jump ConType
-    if ConDm == "Humor":
+    if ConDM == "Humor":
         P "Heyo, Conrad!"
         P "I hope I didn't interrupt you dying in WumpCraft for the millionth time, haha."
         P "But seriously, everything's ok right?"
@@ -424,41 +440,67 @@ label act3:
         P "Slide into my DMs when you can. I miss hanging out with you."
 label ConType:
     "Conrad is typing..."
+    show Csmileo
     C "I was just reading that message again before my plane takes off."
+    hide Csmileo
+    show Cidleo
     C "I didn't realized how many messages you and Anne sent me since I disapeared. I've only got around to reading through all of them today."
     C "I wish I read this a lot sooner."
-
+    hide Cidleo
     if ConDM == "Person":
-
+        show Csmileo
         C "[P], you truly mean a lot to me."
         C "You're one of my closest friends and I'm grateful that you're a part of my life."
+        hide Csmileo
+        show Csmilec
         C "Your message was pretty sappy. Maybe even more sappy than all of Anne's messages, if that's even possible."
+        hide Csmilec
         jump ConEnd
 
     if ConDM == "Humor":
+        show Csmileo
         C "I know we like to make fun of each other a lot, [P]."
         C "But I want you to know that you're one of my closest friends."
-        C "Your message made me lough. That was definitely refreashing after reading all of Anne's sappy messages."
+        hide Csmileo
+        show Csmilec
+        C "Your message made me laugh. That was definitely refreashing after reading all of Anne's sappy messages."
+        hide Csmilec
         jump ConEnd
 
     if ConDM == "Seri":
+        show Csmileo
         C "You're one of my closest friends, [P]."
         C "No amount of distance or inactivity will ever change that."
+        hide Csmileo
+        show Csmilec
         C "I don't think I've ever seen you this serious. I'ts a huge contrast from all of Anne's sappy messages."
+        hide Csmilec
         jump ConEnd
 
     if ConDM == "Fl":
+        show Csmileo
         C "You're more than a friend, [P]"
+        hide Csmileo
+        show Csmilec
         C "N-not that way! What I'm trying to say is that you're one of my closest friends."
         C "You have quite a way with words. You should try sending Anne one of these. She'll probably send you one of her sappy messages in response."
+        hide Csmilec
         jump ConEnd
 
 label ConEnd:
+    show Cidle
     C "I wanted to pin your messages so I can read it back whenever I need a quick smile."
+    hide Cidle
+    show Cspeako
     C "It's probably going to be a long while until the next time I check Discord, but don't hesitate in staying in touch."
+    hide Cspeako
+    show Csmileo
     C "I'll try to message you back whenever I manage to get the time."
+    hide Csmileo
+    show Csmilec
     C "Take care, [P]."
-
+    scene black with dissolve
+    hide Csmilec
     "Conrad sends a selfie of him in his plane to the group DM with Anne with a caption"
     "It's an alligator emoji follow by a plus sign with an orange emoji follow by another plus sign with a moon emoji and it would all equal an Airplane emoji with a blue heart emoji next to it"
     "He has a bright smile while holding up his alligator keychain!"
@@ -470,5 +512,4 @@ label ConEnd:
     "But the memories you've shared together, online and offline, will stay with you forever."
 
 
-    "Credits are in about Page"
     #Cue credits
