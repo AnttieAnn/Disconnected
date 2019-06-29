@@ -230,6 +230,7 @@ scene black with dissolve
 "You arrive at a large house, and the limo stops."
 "Anne is still asleep."
 define whomst = ("???")
+
 define T = ("Aunt Tiff")
 menu:
     "Wake her up.":
@@ -243,7 +244,7 @@ menu:
         hide Aangry2
         "You and Anne exit the limo."
         show Asas2
-        show Staying with dissolve
+        show droom with dissolve
         "Anne leads you to the door, and rings the doorbell."
         "A nice looking women answers the door."
         hide Asas2
@@ -259,13 +260,14 @@ menu:
         "You exit the limo, and walk up to the front door."
         "You ring the doorbell"
         show Tidleo at right
+        show droom with dissolve
         whomst "Hello...?"
         whomst "And you are...?"
         "You hear the sound of Anne exiting the limo."
         show Ahappy2o at left
         A "Aunt Tiff!"
         "Anne runs up to her Aunt and embraces her."
-        show Staying with dissolve
+
 
 hide Ahappy2o
 hide Tidleo
@@ -352,6 +354,7 @@ show Thappy at right
 T "That’s fine, I’m just glad you’re here. So this friend of yours, tell me about him. "
 hide Aarmsf2d
 hide Thappy
+show Moving with dissolve
 "You and Anne spent the rest of the evening telling stories about Conrad to Aunt Tiff."
 
 "During that time, you can’t help but notice a smile on Anne’s face as she reminisced about your time together."

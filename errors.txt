@@ -2,17 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/Act2.rpy", line 82: menu statement expects a non-empty block.
-    menu:
-        ^
+File "game/Act2.rpy", line 246: expected 'image_name_component' not found.
+    show "droom.png" 
+         ^
 
-File "game/Act2.rpy", line 83: expected statement.
-    "Alligator.":
-                ^
-
-File "game/Act2.rpy", line 86: expected statement.
-    "Orange.":
-             ^
+File "game/Act2.rpy", line 261: expected 'image_name_component' not found.
+    show "droom.png"
+         ^
 
 Ren'Py Version: Ren'Py 7.3.0.271
-Sat Jun 29 01:43:30 2019
+Sat Jun 29 02:24:13 2019

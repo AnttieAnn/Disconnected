@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' u'images/BG/Room1.png'>:
-  File "game/Act1.rpy", line 7, in script
-    scene room with dissolve
-IOError: Couldn't find file 'images/BG/Room1.png'.
+While loading <'Image' u'images/BG/droon.png'>:
+  File "game/Act2.rpy", line 247, in script
+    show droom with dissolve
+IOError: Couldn't find file 'images/BG/droon.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/Act1.rpy", line 7, in script
-    scene room with dissolve
+  File "game/Act2.rpy", line 247, in script
+    show droom with dissolve
   File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\ast.py", line 1387, in execute
     renpy.exports.with_statement(trans, paired)
   File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\exports.py", line 1592, in with_statement
@@ -28,8 +28,8 @@ Full traceback:
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 154, in renpy.display.render.render
   File "render.pyx", line 247, in renpy.display.render.render
-  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\transition.py", line 360, in render
-    bottom = render(self.old_widget, width, height, st, at)
+  File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\transition.py", line 361, in render
+    top = render(self.new_widget, width, height, st, at)
   File "render.pyx", line 154, in renpy.display.render.render
   File "render.pyx", line 247, in renpy.display.render.render
   File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\display\layout.py", line 722, in render
@@ -56,9 +56,9 @@ Full traceback:
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
   File "C:\Users\a2316\OneDrive\Desktop\Project Disconnected\renpy-7.3.0-sdk\renpy\loader.py", line 576, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'images/BG/Room1.png'.
+IOError: Couldn't find file 'images/BG/droon.png'.
 
 Windows-8-6.2.9200
 Ren'Py 7.3.0.271
-Disconnected 0.63
-Sat Jun 29 01:06:22 2019
+Disconnected 0.832
+Sat Jun 29 02:28:21 2019

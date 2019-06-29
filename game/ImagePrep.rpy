@@ -61,5 +61,5 @@ label BG:
     image Moving = "images/BG/Moving.png"
     image Room1 = "images/BG/Room_1.png"
     image Staying = "images/BG/Staying.png"
-
+    image droom = "images/BG/droom.png"
     return
