@@ -14,12 +14,12 @@ label credits:
         yanchor 0.5 ypos 0.5
         xanchor 0.5 xpos 0.5
     with dissolve
-    with Pause(3)
+    with Pause(10)
     hide thanks
     return
 
 init python:
-    credits = ('Backgrounds', 'Airgoof'), ('Backgrounds', 'Dorktwerp'), ('Sprites and CG', 'Ballclown'), ('GUI', 'Cuddlywad'), ('Writing', 'Dorktwerp'), ('Writing', 'Fingerpookie'), ('Programming', 'Dorktwerp'), ('Music', 'Grumblemuck'), ('Music', 'Headwookum')
+    credits = ('Backgrounds', 'Eli'), ('Sprites and CG', 'Eli'), ('Writing', 'Gastt'), ('Writing', 'DonoDeluxe'), ('Programming', 'AnttieAnn'), ('Music', 'DonoDeluxe')
     credits_s = "{size=80}Credits\n\n"
     c1 = ''
     for c in credits:
@@ -33,4 +33,4 @@ init:
 #    image cred = Text(credits_s, font="myfont.ttf", text_align=0.5) #use this if you want to use special fonts
     image cred = Text(credits_s, text_align=0.5)
     image theend = Text("{size=80}The end", text_align=0.5)
-    image thanks = Text("{size=80}Thanks for Playing!", text_align=0.5)
+    image thanks = "images\Credits.png"
