@@ -1,14 +1,21 @@
 label act2:
-        #hi
         define Pilot = ("Pilot")
         "As you check in your baggage, you receive a notification from Discord."
+        show Ahips1
         "It's a message from Anne"
         A "Hey [P]! I'm leaving my flight now."
+        hide Ahips1
+        show Ahappy1o
         A "Uh the first class plane is really nice, I wish you had let me pay for your ticket lol."
         A "We can keep talking if ya want so you don't get bored."
+        hide Ahappy1o
+        show Aspeak1o
         A "Oh wait, actually, you better put your phone in airplane mode."
         A "I'll hear from ya in a few hours."
+        hide Ahappy1o
+        show Aspeak1o
         "You board the plane, and the intercom speaks."
+        hide Aspeak1o
         Pilot "Thank you for flying with Omnia Airlines, please remember to put your phone into airplane mode."
         "Your moral compass tells you to put your phone into airplane mode, but."
         "There's an in game event for this game you play on your phone, and it requires the internet.."
@@ -48,8 +55,11 @@ label act2:
 label planedone:
         "You exit the plane, spend 50 minutes searching for your luggage, and are now in the lobby."
         "You open up your discord, to see several messages from Anne."
+        show Aspeak1o
         A "Just arrived in Orlando! ✈️"
         A "Your flight should be arriving a little later than mine."
+        hide Aspeak1o
+        show Ahappy1o
         A "I’ll take a quick nap at the airport lobby so I don’t miss you."
         A "Or actually, maybe I should go check out the gift shop to see if I can find anything to surprise you!"
         hide Ahappy1o
@@ -163,9 +173,9 @@ hide Ahappy2o
 show Ahappy2c
 "The man embraces her back."
 hide Ahappy2c
-show Aspeak1o
+show Aspeak2o
 A "[P], this is one of my aunt's employees. Freight Train."
-hide Aspeak1o
+hide Aspeak2o
 show Aarmsf2u
 A "I uh, don't know his actual name, but he just goes by Freight Train."
 hide Aarmsf2u
@@ -180,23 +190,34 @@ if AHP < 99:
 if AHP > 99:
     F "I don't like them."
     F "Seems like a fella who wouldn't turn on Airplane mode."
+    show Ahappy1o
     A "Oh don't worry Freight Train, I'm sure [P] uses airplane mode whenever he's on an airline."
+    hide Ahappy1o
+    show Asas2
     A "After all, you have to be a special kind of evil to not use Airplane mode."
+    hide Asas2
     jump limo
 label limo:
     A "So uh, lets head out!"
+    show Ahappy1o
     "You follow Freight Train outside the airport, a big black limo is there waiting for you."
+    hide Ahappy1o
 menu:
     "That's a beautiful car.":
         P "That's a beautiful car."
+        show Aarmsf2d
         A "O-oh, my Aunt went a little overboard, I could have just gotten a rental car."
     "Wow I didn't know that you were so rich.":
         P "Wow I didn't know that you were so rich."
+        show Aarmsf2d
         A "O-oh no its not like that!"
         A "My aunt is the one with the money."
         A "She even bought me first class tickets for my trip over here! I told her it was unnecessary, but she insisted."
+        hide Aarmsf2d
+        show Aarmsf2u
         A "Too bad I couldn’t figure out how to use the bed recliner."
         A "It was pretty awkward eating sushi with the headrest reclined all the way to the back."
+        hide Aarmsf2u
         "You start to regret not letting Anne pay for your tickets"
 "You follow Anne inside the limo, Freight Train gets in the drivers seat."
 "It's a very nice limo, with fancy seats, and even some televisions."
@@ -210,13 +231,20 @@ menu:
         "It would be pretty awkward for you to show up at her Aunt's front door without Anne."
         "You touch Anne ever so slightly on the shoulder, with the tip of your finger."
         A "ahhHHHH"
+        show Aangry2
         "Anne looks pretty pissed."
         A "[P] you scared the crap out of me!"
         "You can feel Freight Train staring at you through the rear view mirror."
+        hide Aangry2
         "You and Anne exit the limo."
+        show Asas2
         "Anne leads you to the door, and rings the doorbell."
         "A nice looking women answers the door."
+        hide Asas2
+        show Tidleo at right
         whomst "Hello...?"
+        hide Asas2
+        show Ahappy2o at midtoleft
         A "Aunt Tiff!"
         "Anne and her aunt immediately embrace."
 
@@ -224,76 +252,126 @@ menu:
         "You allow Anne to continue sleeping."
         "You exit the limo, and walk up to the front door."
         "You ring the doorbell"
+        show Tidleo at right
         whomst "Hello...?"
         whomst "And you are...?"
         "You hear the sound of Anne exiting the limo."
+        show Ahappy2o at left
         A "Aunt Tiff!"
         "Anne runs up to her Aunt and embraces her."
+hide Ahappy2o
+hide Tidleo
+show Thappy at right
 T "Oh my goodness my little BrilliAnne. I hardly recognized you."
+show Asas2 at left
 A "Aunt Tiff this is my friend, [P]."
 P "It's a pleasure to meet you m'am."
 P "BrilliAnne?"
+hide Asas2
+show Aarmsf2d at left
 A "Oh, uh, back when I was little, I used to say 'Brilliant' all the time."
+show Aarmsf2u at left
 A "I guess it was kinda my catchphrase."
-T "Oh? Anne didn’t tell me she was bringing over a friend to visit. The more the merrier!"
+hide Thappy
+show Tidleo at right
+T "Anne, you didn’t tell me she was bringing over a friend to visit. The more the merrier!"
+hide Tidleo
+show Thappy at right
+hide Aarmsf2u
 T "And please, You can call me aunt Tiff! There’s no need to call me ma’am."
+hide Aarmsf2d
 T "Just how old do you think I am?"
+hide Thappy
 menu:
     "30":
         P "30? You seem pretty young to be an aunt."
-        T "Oh, I like them."
+        show Thappy
+        T "Oh, I like this one."
+        hide Thappy
     "40":
         P "40? since you're Anne's aunt I assume you must be older than Anne by a little bit."
+        show Tangry at right
         T "..."
+        show Aarmsf2d at left
         A "..."
+        hide Tangry
+        hide Aarmsf2d
     "60":
+        hide Aarmsf2d
         P "60? You look pretty old."
+        show Tangry at right
         T "Oh, really? I don't have to let you in my home ya know."
+        show Aangry2
         A "Aunt Tiff!"
+        hide Tangry
+        hide Aangry2
 "Aunt Tiff leads you into the dining room."
+show Asas2
 A "Wow, it’s been such a long time since I’ve visited here. Your house has changed so much; I can barely recognize it!"
 A "I don’t remember the dining room being this big."
+hide Asas2
+show Ahappy2c at midtoleft
+show Thappy at right
 T "As time went on, my company grew larger and larger. I suppose that the same applied to my home."
-
+hide Thappy
+show Tidleo at right
 T "If you need anything, I’ll be in the kitchen preparing some snacks for the two of you."
 T "Make yourselves at home!"
-
+hide Tidleo
 "Aunt Tiff exits the room, leaving you and Anne by yourselves."
 
 P "You and your aunt seem to be really close."
+hide Ahappy2c
+show Asas2
 A "Yeah, since I’m her only niece so I’ve always been given special treatment."
 A "It’s a shame that she’s so busy with her business here in Orlando. We rarely get to see each other."
 P "I’m glad that you’re able to get together again with your aunt after all these years apart, but I’m sad it’s under these circumstances."
 T "What circumstances?"
-
-"You turn around and see Aunt Tiff holding a decorative bowl that resembles a barrel filled with crackers for you and Anne."
+show Tangry at right
+"You turn around and see Aunt Tiff holding a decorative bowl of crackers."
 
 "You immediately regret your choice of words when you see the look on Anne’s face."
-
+hide Asas2
+show Aarmsf2d
 A "Oh, um, I was meaning to tell you about this eventually…"
 A "[P] and I are in Florida to find a missing friend. He hasn’t been answering any of our messages or calls and we’ve been really worried about him."
+show Aarmsf2u
 A "Ah, I see. You should have told me you were here for more than just a friendly visit, Anne."
 A "I’m sorry, I just didn’t want to make you feel bad and think that was the only reason I came to Florida…"
-A "That’s fine, I’m just glad you’re here. So this friend of yours, tell me about him. "
-A "It seems that he’s very special for both of you to come all the way here searching for him."
-
+hide Aarmsf2d
+hide Tangry
+show Thappy
+T "That’s fine, I’m just glad you’re here. So this friend of yours, tell me about him. "
+hide Aarmsf2d
+hide Thappy
 "You and Anne spent the rest of the evening telling stories about Conrad to Aunt Tiff."
 
 "During that time, you can’t help but notice a smile on Anne’s face as she reminisced about your time together."
 
 "You started to smile as well."
 
-"And then you started to tell her about Conrad’s sudden disappearance…"
-
+"And then you started to tell her about Conrad’s sudden disappearance…)"
+show Thappy at right
 T "I can tell that Conrad is a nice friend from the stories you’ve told. But It’s awfully strange that he would just disappear on you both like that."
+show Ahappy2o
 A "Yeah, that’s why we’re really worried about where he is right now. We have to find him! That’s what he would want us to do."
+hide Thappy
+show Tangry at right
 T "Are you sure about that?"
+hide Ahappy2o
+show Asas2
 A "What do you mean?"
+hide Tangry
+show Tidleo
 T "I had many friendships, relationships, and connections with different people."
 T "Many of them left an impact on my life. Some deeper than others. "
 T "Although some of them may be gone, they left an impression on me that stayed."
+hide Tidleo
+show Thappy
 T "It seems that wherever Conrad may be, he has left an impression on both of you that will also stay."
 T "And I’m sure that both of you have also left an impression on him."
+hide Thappy
+show Thappy midtoright
 A "I understand what you’re trying to say, but he isn’t gone yet."
 A "I don’t understand why he stopped talking to us… Or where he went..."
 A "But, he’s still going to be a big part of our lives and everything will go back to the way it used to be. We just have to go and find him!"
@@ -421,24 +499,16 @@ menu:
         A "No way!"
         A "We’ve already gotten this far. We can’t let a stupid sign stop us"
         A "I’ll go by myself. You can stay on the lookout."
-
         "Anne tries to sneak further onto the field to get a better look. You stay behind."
-
         "Luckily, there Anne is pretty good at sleuthing around. And all the players are too busy playing football."
-
         "Your phone vibrates with a new notification."
-
         A "I can't see him."
-
         "You look towards the field and see Anne on her phone."
-
         "But she doesn’t notice a football player is headed straight towards her!"
-
         P "LOOK OUT!!!"
-
         A "ahhHHHH"
-
         "The football player tackles Anne, and she falls to the ground."
+
     "Signs are stupid, lets go onto the field.":
         P "Signs are stupid, lets go onto the field."
         A "Brilliant!"
@@ -466,7 +536,7 @@ C "Yeah, that makes one of us…"
 A "What are you talking about?"
 C "You two shouldn’t have come here."
 
-"You notice Anne’s smile slowly begin to fade. You can’t hide the disappointment in your face, either."
+"You notice Anne’s smile slowly begin to fade. You can’t hide the disappointment in your face, either.)"
 
 P "What happened to you? Why haven’t you been contacting us?"
 A "And why shouldn’t we be here?"
@@ -542,7 +612,7 @@ A "I’m not sure if I don’t understand or if I don’t want to understand."
 A "All I know is that I feel hurt and confused."
 A "I have to go and clear my head. I’m sorry about what I said..."
 
-"Anne runs away. You and Conrad stand there trying to take in everything she said.)"
+"(Anne runs away. You and Conrad stand there trying to take in everything she said.)"
 
 C "She’s really hurt..."
 C "I wouldn’t blame her if she doesn’t forgive me. I wouldn’t blame you if you don’t forgive me, too."
