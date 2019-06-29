@@ -513,5 +513,6 @@ label ConEnd:
     "Your lives are going to be busier from now on and you won't be able to talk as much."
     "But the memories you've shared together, online and offline, will stay with you forever."
 
+    jump credits
 
     #Cue credits
