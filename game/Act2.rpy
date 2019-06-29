@@ -1,14 +1,21 @@
 label act2:
         define Pilot = ("Pilot")
         "As you check in your baggage, you receive a notification from Discord."
-        show Ahips2
+        show Ahips1
         "It's a message from Anne"
         A "Hey [P]! I'm leaving my flight now."
+        hide Ahips1
+        show Ahappy1o
         A "Uh the first class plane is really nice, I wish you had let me pay for your ticket lol."
         A "We can keep talking if ya want so you don't get bored."
+        hide Ahappy1o
+        show Aspeak1o
         A "Oh wait, actually, you better put your phone in airplane mode."
         A "I'll hear from ya in a few hours."
+        hide Ahappy1o
+        show Aspeak1o
         "You board the plane, and the intercom speaks."
+        hide Aspeak1o
         Pilot "Thank you for flying with Omnia Airlines, please remember to put your phone into airplane mode."
         "Your moral compass tells you to put your phone into airplane mode, but."
         "There's an in game event for this game you play on your phone, and it requires the internet.."
@@ -48,8 +55,11 @@ label act2:
 label planedone:
         "You exit the plane, spend 50 minutes searching for your luggage, and are now in the lobby."
         "You open up your discord, to see several messages from Anne."
+        show Aspeak1o
         A "Just arrived in Orlando! ✈️"
         A "Your flight should be arriving a little later than mine."
+        hide Aspeak1o
+        show
         A "I’ll take a quick nap at the airport lobby so I don’t miss you."
         A "Or actually, maybe I should go check out the gift shop to see if I can find anything to surprise you!"
         A "Oops! Guess I ruined the surprise…"

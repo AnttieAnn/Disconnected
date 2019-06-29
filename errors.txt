@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/Act2.rpy", line 375: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    A "No way!"
-    ^
+File "game/Act2.rpy", line 62: expected 'image_name_component' not found.
+    show
+        ^
 
 Ren'Py Version: Ren'Py 7.1.1.929
-Fri Jun 28 22:08:42 2019
+Fri Jun 28 22:30:16 2019
