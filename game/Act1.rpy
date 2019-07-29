@@ -88,6 +88,7 @@ label act1:
             hide Aangry1
             "You decide to leave the call before Anne has time to yell at you."
 
+    show Room1 with fade
     show Aarmsb1d
     A "I can’t believe I fell asleep in voice chat again."
     show Aarmsb1u

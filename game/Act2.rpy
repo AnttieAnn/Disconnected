@@ -25,8 +25,9 @@ label act2:
             $ Airplanemode = "ye"
             "You put your phone in airplane mode."
             "+1 brownie points for being a good person."
-            "This is your pilot speaking, we will be taking off momentarily."
+            Pilot "This is your pilot speaking, we will be taking off momentarily."
             "You decide to doze off and take a nap..."
+            show Aplane with fade
             "A few hours later.."
             Pilot "This is your pilot speaking, just letting you know that this was the smoothest flight of my career, and that we will  be touching down in Orlando momentaily"
 
@@ -40,10 +41,11 @@ label act2:
             "Eventually, the plane is so high up that you no longer have a signal."
             "Not sure what you expected to happen."
             "Without technology to keep you occupied, you being to doze off.." #add in cool fade transition
+            show Aplane with fade
             "A few hours later"
-            Pilot "This is your pilot speaking, due to phones not being shut off or put in airplane mode, we are being forced to make a stop on the ground."
+            Pilot "This is your pilot speaking, due to devices not being shut off or put in airplane mode, we are being forced to make a stop on the ground."
             "Please remain seated."
-            "Some time passes, and eventually after many delays, the plane is back up in the air, and you arrive in Orlando shortly."
+            "Some time passes, and eventually after many delays, the plane is back up in the air, and you arrive in Orlando."
 
     if Airplanemode == "ye":
         $ AHP -= 1
